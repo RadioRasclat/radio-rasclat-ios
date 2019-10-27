@@ -2,7 +2,7 @@
     "station":
     [
      {
-     "name": "Radio Rasclat Live",
+     "name": "Live",
      "streamURL": "http://station.radio-rasclat.com:8000/stream",
      "imageURL": "station-absolutecountry.png",
      "desc": "Stimulate the gun finger.",
