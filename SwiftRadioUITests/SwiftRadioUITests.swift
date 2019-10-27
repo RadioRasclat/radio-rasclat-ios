@@ -56,7 +56,7 @@ class SwiftRadioUITests: XCTestCase {
     
     func assertAboutContent() {
         XCTAssertTrue(app.buttons["email me"].exists)
-        XCTAssertTrue(app.buttons["matthewfecher.com"].exists)
+        XCTAssertTrue(app.buttons["radio-rasclat.com"].exists)
     }
     
     func assertPaused() {

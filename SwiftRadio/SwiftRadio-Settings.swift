@@ -17,7 +17,7 @@ import UIKit
 let kDebugLog = true
 
 // AirPlayButton Color
-let globalTintColor = UIColor(red: 255, green: 129/255, blue: 63/255, alpha: 1);
+let globalTintColor = UIColor(red: 255/255, green: 129/255, blue: 63/255, alpha: 1);
 
 //**************************************
 // STATION JSON
