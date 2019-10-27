@@ -56,7 +56,7 @@ class InfoDetailViewController: UIViewController {
     
     func loadDefaultText() {
         // Add your own default ext
-        stationLongDescTextView.text = "You are listening to Swift Radio. This is a sweet open source project. Tell your friends, swiftly!"
+        stationLongDescTextView.text = "You are listening to Radio Rasclat. This is a sweet open source project. Tell your friends, swiftly!"
     }
     
     func setupStationLogo() {

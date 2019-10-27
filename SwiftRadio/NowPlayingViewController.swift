@@ -348,7 +348,7 @@ class NowPlayingViewController: UIViewController {
     
     @IBAction func shareButtonPressed(_ sender: UIButton) {
         
-        let radioShoutout = "I'm listening to \(currentStation.name) via Swift Radio Pro"
+        let radioShoutout = "I'm listening to \(currentStation.name) via Radio Rasclat"
         let shareImage = ShareImageGenerator(radioShoutout: radioShoutout, track: currentTrack).generate()
         
         let activityViewController = UIActivityViewController(activityItems: [radioShoutout, shareImage], applicationActivities: nil)
