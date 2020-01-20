@@ -3,10 +3,10 @@
     [
      {
      "name": "Radio Rasclat",
-     "streamURL": "http://station.radio-rasclat.com:8000/stream",
+     "streamURL": "https://station.radio-rasclat.com:8443/live",
      "imageURL": "station-absolutecountry.png",
      "desc": "Stimulate the gun finger.",
-     "longDesc": "Radio Rasclat was originally initialised for the tour of the Kunsthochschule Kassel under the name Radio Rundgang as a project by Domenik Töfflinger. During the opening hours we streamed live music from the basement of the basic class Visual Communication. This radio gives our artists/DJs a platform to try out and play."
+     "longDesc": "Radio Rasclat is a non-commercial internet radio which streams your music and serves as a place for the exchange, dialogue and cooperation of music."
      }
     ]
 }
