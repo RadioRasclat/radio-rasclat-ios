@@ -51,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2066E9124180A01001419CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2066E9224180A1D001419CB /* Recordings */,
+				B2B356F52417D5820092A9C6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2066E9224180A1D001419CB /* Recordings */ = {
+			isa = PBXGroup;
+			children = (
+				B2B356EE2417CD9E0092A9C6 /* RecordingList.swift */,
+				B28D56462417C76D00CA3854 /* RecordingRow.swift */,
+				B2B356F02417CFE80092A9C6 /* RecordingDetail.swift */,
+			);
+			path = Recordings;
+			sourceTree = "<group>";
+		};
 		B28D56122417C01E00CA3854 = {
 			isa = PBXGroup;
 			children = (
@@ -70,15 +89,12 @@
 		B28D561D2417C01E00CA3854 /* RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
+				B2066E9124180A01001419CB /* Views */,
 				B2B356FA2417E3ED0092A9C6 /* Controller */,
 				B28D56432417C35200CA3854 /* Resources */,
 				B28D563E2417C2B900CA3854 /* Models */,
 				B28D561E2417C01E00CA3854 /* AppDelegate.swift */,
 				B28D56202417C01E00CA3854 /* SceneDelegate.swift */,
-				B2B356F52417D5820092A9C6 /* ContentView.swift */,
-				B2B356EE2417CD9E0092A9C6 /* RecordingList.swift */,
-				B28D56462417C76D00CA3854 /* RecordingRow.swift */,
-				B2B356F02417CFE80092A9C6 /* RecordingDetail.swift */,
 				B28D56242417C02000CA3854 /* Assets.xcassets */,
 				B28D56292417C02000CA3854 /* LaunchScreen.storyboard */,
 				B28D562C2417C02000CA3854 /* Info.plist */,

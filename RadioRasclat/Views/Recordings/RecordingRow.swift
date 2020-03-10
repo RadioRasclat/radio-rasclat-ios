@@ -23,6 +23,7 @@ struct RecordingRow: View {
                     .clipped()
                 .clipShape(RoundedRectangle(cornerRadius: 5))
                 .padding(.all, 5.0)
+                .shadow(radius: 2.0)
             })
                 .frame(width: 80, height: 80)
             VStack(alignment: .leading) {
