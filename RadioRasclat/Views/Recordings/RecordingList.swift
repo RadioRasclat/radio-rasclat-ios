@@ -16,7 +16,8 @@ struct RecordingsList: View {
                     RecordingRow(recording: recording)
                 }
             }
-            .navigationBarTitle(Text("Broadcasts"))
+            .navigationBarTitle(Text("Broadcasts")
+            .font(.system(.body, design: .rounded)).fontWeight(.medium))
         }
     }
 }

@@ -16,16 +16,16 @@ struct ContentView: View {
                 Image(systemName: "folder")
                 Text("Broadcasts")
               }
-            Text("The content of the first view")
+            LiveView()
             .tabItem {
                Image(systemName: "hifispeaker")
                Text("Live")
              }
-            Text("The content of the first view")
-            .tabItem {
-               Image(systemName: "calendar")
-               Text("Schedule")
-             }
+            // Text("The content of the first view")
+            // .tabItem {
+            //   Image(systemName: "calendar")
+            //   Text("Schedule")
+            // }
         }.edgesIgnoringSafeArea(.top)
     }
 }

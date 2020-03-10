@@ -28,7 +28,7 @@ struct RecordingRow: View {
                 .frame(width: 80, height: 80)
             VStack(alignment: .leading) {
                 Text(recording.title)
-                    .font(.body)
+                    .font(.system(.body, design: .rounded)).fontWeight(.medium)
             }
         }
     }
