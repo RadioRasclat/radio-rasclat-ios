@@ -2,7 +2,7 @@
 
 # Radio Rasclat iOS
 
-[![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://circleci.com/gh/kickstarter/ios-oss) ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
+[![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://travis-ci.com/dmnktoe/radio-rasclat-ios) ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
 
 Welcome to Radio Rasclat it's open source iOS app!
 
@@ -37,7 +37,7 @@ We do too, wanna [participate](https://www.radio-rasclat.com/about)?
 
 ## Demo / Download
 
-<a _ngcontent-tme-c11="" href="https://apps.apple.com/us/app/radio-rasclat/id1499269866?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-02-17&amp;kind=iossoftware&amp;bubble=ios_apps) no-repeat;width:135px;height:40px;" target="_blank"></a>
+[![Travis CI](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-02-17&amp;kind=iossoftware&amp;bubble=ios_apps)](https://apps.apple.com/de/app/radio-rasclat/id1499269866)
 
 ## License
 
@@ -56,3 +56,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+## To-Do
+
+Fastlane & Snapfile integration.
