@@ -1,6 +1,6 @@
 <div align="center"><img src="https://assets.dmnktoe.de/radio-rasclat/logo/logo.svg" width="140"></div>
 
-# Radio Rasclat
+# Radio Rasclat iOS
 
 [![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://circleci.com/gh/kickstarter/ios-oss) ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version)
 
