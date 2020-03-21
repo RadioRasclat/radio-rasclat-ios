@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B24BC33C241818120070DE09 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BC33B241818120070DE09 /* LiveView.swift */; };
+		B25EFAFC2426CFC80053C42D /* FRadioPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = B25EFAFB2426CFC80053C42D /* FRadioPlayer */; };
 		B28D561F2417C01E00CA3854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D561E2417C01E00CA3854 /* AppDelegate.swift */; };
 		B28D56212417C01E00CA3854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D56202417C01E00CA3854 /* SceneDelegate.swift */; };
 		B28D56252417C02000CA3854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28D56242417C02000CA3854 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25EFAFC2426CFC80053C42D /* FRadioPlayer in Frameworks */,
 				B2B356F92417D8060092A9C6 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +166,7 @@
 			name = RadioRasclat;
 			packageProductDependencies = (
 				B2B356F82417D8060092A9C6 /* URLImage */,
+				B25EFAFB2426CFC80053C42D /* FRadioPlayer */,
 			);
 			productName = RadioRasclat;
 			productReference = B28D561B2417C01E00CA3854 /* RadioRasclat.app */;
@@ -195,6 +198,7 @@
 			mainGroup = B28D56122417C01E00CA3854;
 			packageReferences = (
 				B2B356F72417D8060092A9C6 /* XCRemoteSwiftPackageReference "url-image" */,
+				B25EFAFA2426CFC80053C42D /* XCRemoteSwiftPackageReference "FRadioPlayer" */,
 			);
 			productRefGroup = B28D561C2417C01E00CA3854 /* Products */;
 			projectDirPath = "";
@@ -428,6 +432,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B25EFAFA2426CFC80053C42D /* XCRemoteSwiftPackageReference "FRadioPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fethica/FRadioPlayer.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.19;
+			};
+		};
 		B2B356F72417D8060092A9C6 /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
@@ -439,6 +451,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B25EFAFB2426CFC80053C42D /* FRadioPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B25EFAFA2426CFC80053C42D /* XCRemoteSwiftPackageReference "FRadioPlayer" */;
+			productName = FRadioPlayer;
+		};
 		B2B356F82417D8060092A9C6 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B2B356F72417D8060092A9C6 /* XCRemoteSwiftPackageReference "url-image" */;
