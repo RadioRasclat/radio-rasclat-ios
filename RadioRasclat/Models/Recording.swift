@@ -14,6 +14,9 @@ struct Recording: Hashable, Codable, Identifiable {
     var description: String
     var image: URL
     var audio: URL
+    var show: ShowTitle
+    var timeStart: String
+    var timeEnd: String
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -21,5 +24,14 @@ struct Recording: Hashable, Codable, Identifiable {
         case description
         case image
         case audio
+        case show
+        case timeStart
+        case timeEnd
     }
+}
+
+struct ShowTitle:  Hashable, Codable {
+    var id: String
+    var title: String
+    var image: URL
 }
