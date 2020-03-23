@@ -10,6 +10,16 @@ import SwiftUI
 import URLImage
 import AVFoundation
 
+extension Font {
+    static func avenirNextRegular(size: Int) -> Font {
+        return Font.custom("AvenirNext-Regular", size: CGFloat(size))
+    }
+    
+    static func avenirNextBold(size: Int) -> Font {
+        return Font.custom("AvenirNext-Bold", size: CGFloat(size))
+    }
+}
+
 struct AudioPlayerControlsView: View {
     private enum PlaybackState: Int {
         case waitingForSelection
@@ -90,8 +100,7 @@ struct AudioPlayerControlsView: View {
     }
 }
 
-
-struct RecordingDetail: View {
+/*struct RecordingDetail: View {
     let player = AVPlayer()
     private let items = [(url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
      title: "Song-1"),
@@ -139,15 +148,129 @@ struct RecordingDetail: View {
         }
         .navigationBarTitle(Text(recording.title), displayMode: .inline)
     }
+}*/
+
+struct RecordingDetail: View {
+    var recording: Recording
+    
+    static let taskDateFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+        return formatter
+    }()
+
+    var dueDate = Date()
+    
+    var body: some View {
+        ScrollView {
+            GeometryReader { geometry in
+                ZStack {
+                    if geometry.frame(in: .global).minY <= 0 {
+                        URLImage(self.recording.image,
+                        content:  {
+                            $0.image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: geometry.size.width, height: geometry.size.height)
+                                .offset(y: geometry.frame(in: .global).minY/9)
+                                .clipped()
+                        })
+                    } else {
+                        URLImage(self.recording.image,
+                        content:  {
+                            $0.image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: geometry.size.width, height: geometry.size.height + geometry.frame(in: .global).minY)
+                                .clipped()
+                                .offset(y: -geometry.frame(in: .global).minY)
+                        })
+                    }
+                }
+            }
+                .frame(height: 350)
+            VStack(alignment: .leading) {
+                HStack {
+                    URLImage(recording.show.image,
+                    content:  {
+                        $0.image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 60, height: 60)
+                            .clipped()
+                            .cornerRadius(50)
+                    })
+                    VStack(alignment: .leading) {
+                        Text("Radio Rasclat Show:")
+                            .font(.avenirNextRegular(size: 17))
+                            .foregroundColor(.gray)
+                        Text(recording.show.title)
+                            .font(.avenirNextBold(size: 17))
+                    }
+                }
+                    .padding(.top, 10)
+                Text(recording.title)
+                    .font(.avenirNextBold(size: 30))
+                    .lineLimit(nil)
+                Text("\(dueDate, formatter: Self.taskDateFormat)")
+                    .font(.avenirNextRegular(size: 17))
+                    .foregroundColor(.gray)
+                    .padding(.top, 10)
+                Text(recording.description)
+                    .font(.avenirNextRegular(size: 17))
+                    .lineLimit(nil)
+                    .padding(.top, 10)
+            }
+                .frame(width: 390)
+        }
+            .edgesIgnoringSafeArea(.top)
+    }
 }
 
-struct RecordingDetail_Previews: PreviewProvider {
+class ViewFrame: ObservableObject {
+    var startingRect: CGRect?
+    
+    @Published var frame: CGRect {
+        willSet {
+            if startingRect == nil {
+                startingRect = newValue
+            }
+        }
+    }
+    
+    init() {
+        self.frame = .zero
+    }
+}
+
+struct GeometryGetter: View {
+    @Binding var rect: CGRect
+    
+    var body: some View {
+        GeometryReader { geometry in
+            AnyView(Color.clear)
+                .preference(key: RectanglePreferenceKey.self, value: geometry.frame(in: .global))
+        }.onPreferenceChange(RectanglePreferenceKey.self) { (value) in
+            self.rect = value
+        }
+    }
+}
+
+struct RectanglePreferenceKey: PreferenceKey {
+    static var defaultValue: CGRect = .zero
+    
+    static func reduce(value: inout CGRect, nextValue: () -> CGRect) {
+        value = nextValue()
+    }
+}
+
+/*struct RecordingDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             RecordingDetail(recording: recordings[4])
         }
     }
-}
+}*/
 
 import Combine
 class PlayerTimeObserver {
