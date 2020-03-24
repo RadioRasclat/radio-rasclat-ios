@@ -220,6 +220,7 @@ struct RecordingDetail: View {
                     .font(.avenirNextRegular(size: 17))
                     .lineLimit(nil)
                     .padding(.top, 10)
+                    .padding(.bottom, 40)
             }
                 .frame(width: 380)
         }
