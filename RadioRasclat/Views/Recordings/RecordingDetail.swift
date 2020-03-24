@@ -196,32 +196,32 @@ struct RecordingDetail: View {
                         $0.image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 60, height: 60)
+                            .frame(width: 40, height: 40)
                             .clipped()
-                            .cornerRadius(50)
+                            .cornerRadius(5)
                     })
                     VStack(alignment: .leading) {
                         Text("Radio Rasclat Show:")
-                            .font(.avenirNextRegular(size: 17))
+                            .font(.avenirNextRegular(size: 14))
                             .foregroundColor(.gray)
                         Text(recording.show.title)
-                            .font(.avenirNextBold(size: 17))
+                            .font(.avenirNextBold(size: 14))
                     }
                 }
                     .padding(.top, 10)
                 Text(recording.title)
-                    .font(.avenirNextBold(size: 30))
+                    .font(.avenirNextBold(size: 28))
                     .lineLimit(nil)
                 Text("\(dueDate, formatter: Self.taskDateFormat)")
                     .font(.avenirNextRegular(size: 17))
                     .foregroundColor(.gray)
-                    .padding(.top, 10)
+                    .padding(.top, 5)
                 Text(recording.description)
                     .font(.avenirNextRegular(size: 17))
                     .lineLimit(nil)
                     .padding(.top, 10)
             }
-                .frame(width: 390)
+                .frame(width: 380)
         }
             .edgesIgnoringSafeArea(.top)
     }
