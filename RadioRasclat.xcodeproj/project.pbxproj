@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		B24BC33B241818120070DE09 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
-		B28D561B2417C01E00CA3854 /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28D561B2417C01E00CA3854 /* Radio Rasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Rasclat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28D561E2417C01E00CA3854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B28D56202417C01E00CA3854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B28D56242417C02000CA3854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		B28D561C2417C01E00CA3854 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B28D561B2417C01E00CA3854 /* RadioRasclat.app */,
+				B28D561B2417C01E00CA3854 /* Radio Rasclat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				B25EFAFB2426CFC80053C42D /* FRadioPlayer */,
 			);
 			productName = RadioRasclat;
-			productReference = B28D561B2417C01E00CA3854 /* RadioRasclat.app */;
+			productReference = B28D561B2417C01E00CA3854 /* Radio Rasclat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -382,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Radio Rasclat";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -402,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Radio Rasclat";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
