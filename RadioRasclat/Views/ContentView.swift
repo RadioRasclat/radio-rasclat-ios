@@ -26,7 +26,7 @@ struct ContentView: View {
             //   Image(systemName: "calendar")
             //   Text("Schedule")
             // }
-        }.edgesIgnoringSafeArea(.top)
+        }
     }
 }
 
