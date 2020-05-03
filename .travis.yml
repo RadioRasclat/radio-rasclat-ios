@@ -1,4 +1,4 @@
 language: objective-c
-osx_image: xcode11.1
+osx_image: xcode11.4.1
 script:
   - xcodebuild -scheme RadioRasclat -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11' build
