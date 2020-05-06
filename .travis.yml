@@ -1,4 +1,2 @@
 language: objective-c
-osx_image: xcode11.4.1
-script:
-  - xcodebuild -scheme RadioRasclat -sdk iphonesimulator -destination 'platform=iOS Simulator,id=1CED7FFD-E495-4BFD-B866-8A0EB1844B03,OS=11.4' build
+script: xcodebuild -workspace RadioRasclat.xcworkspace -scheme RadioRasclat -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
