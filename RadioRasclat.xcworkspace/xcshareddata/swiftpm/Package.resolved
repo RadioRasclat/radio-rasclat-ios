@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FRadioPlayer",
+        "repositoryURL": "https://github.com/fethica/FRadioPlayer.git",
+        "state": {
+          "branch": null,
+          "revision": "53e7fdc3615fe587919a7321d44cfa969b61c3f8",
+          "version": "0.1.19"
+        }
+      },
+      {
+        "package": "URLImage",
+        "repositoryURL": "https://github.com/dmytro-anokhin/url-image.git",
+        "state": {
+          "branch": null,
+          "revision": "5d3a5dc84f9bdf948d8b136f7a1b0099af68f114",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

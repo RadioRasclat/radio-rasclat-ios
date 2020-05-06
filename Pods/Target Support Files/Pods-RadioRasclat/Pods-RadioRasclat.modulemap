@@ -1,0 +1,6 @@
+framework module Pods_RadioRasclat {
+  umbrella header "Pods-RadioRasclat-umbrella.h"
+
+  export *
+  module * { export * }
+}
