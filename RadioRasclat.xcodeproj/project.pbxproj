@@ -58,6 +58,7 @@
 		2C2AE36BD8210ED610754660 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		62BD0B15DEBC8F35E7A522FF /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.debug.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
 		8489E23D2462F1B000CE91A5 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
+		8489E23E2462F40F00CE91A5 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		84F1A3572462EF86005BBD5F /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F1A3592462EF86005BBD5F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		84F1A35B2462EF86005BBD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		84F1A3582462EF86005BBD5F /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				8489E23E2462F40F00CE91A5 /* OneSignalNotificationServiceExtension.entitlements */,
 				84F1A3592462EF86005BBD5F /* NotificationService.swift */,
 				84F1A35B2462EF86005BBD5F /* Info.plist */,
 			);
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2253E3054A246B0874ECD0A /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -455,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C2AE36BD8210ED610754660 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
