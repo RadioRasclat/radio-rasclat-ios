@@ -6,7 +6,6 @@ target 'RadioRasclat' do
   use_frameworks!
 
   # Pods for RadioRasclat
-  pod 'FRadioPlayer'
   pod 'OneSignal', '>= 2.11.2', '< 3.0'
 
 end
