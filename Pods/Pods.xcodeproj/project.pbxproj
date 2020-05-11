@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,12 +19,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1B0F8107CFBA7AEDB30AAD909EE2225B /* Pods-RadioRasclat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8007A91C209348F0194014715D1E445 /* Pods-RadioRasclat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93D1DB31AA11471FAFC28AA5C69EDF9F /* Pods-RadioRasclat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F99314AF684C60E99E5CD27C2EA6E7 /* Pods-RadioRasclat-dummy.m */; };
+		0889CD33CDD9E971EBD850EDCA2339B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		102591ED6E12FFA23E2F193F08E0FAFB /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9933646A224577E7BE6DBD2901645BFD /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B0F8107CFBA7AEDB30AAD909EE2225B /* Pods-RadioRasclat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCF3D7BEC1A93FA8F531228F1E5880D /* Pods-RadioRasclat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FB56B9C04926F7EF64ECA6B1FA43C49 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E764701DF0059E37769AAE0B2D670CF /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */; };
+		93D1DB31AA11471FAFC28AA5C69EDF9F /* Pods-RadioRasclat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF05A6164879D00FACD152A00ACDC6 /* Pods-RadioRasclat-dummy.m */; };
 		C58AF2602C150FAD680F893F2A819722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		196E34E451081EFBEDE1D7338050684C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
+			remoteInfo = OneSignal;
+		};
 		B44C9F86DF7A048C89EA4B1B854A3405 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -35,23 +45,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3151397B0F846BF3203D83F25DBFFB6E /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
+		004FAA70CFA2545B4ADFB4CF4A60FCB0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E4ABDF43843B60C82A621CEE8A51EE5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		17AA4BA429DA8EBBA16E41B71BE68040 /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
+		23C3B2B39FFF26D23AE2090664F74471 /* Pods-RadioRasclat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DCF3D7BEC1A93FA8F531228F1E5880D /* Pods-RadioRasclat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42F99314AF684C60E99E5CD27C2EA6E7 /* Pods-RadioRasclat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-dummy.m"; sourceTree = "<group>"; };
-		8CE80F444E16D453B101E6F49FBF4133 /* Pods-RadioRasclat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat.modulemap"; sourceTree = "<group>"; };
+		3324D2DF51500A61992655B9A4051FF1 /* Pods-RadioRasclat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat.modulemap"; sourceTree = "<group>"; };
+		3E764701DF0059E37769AAE0B2D670CF /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		4A7C8FBDE3D29556BD181F32BF7D6D65 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		4F730F581794A842470A6F08C5F857D8 /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
+		8C0D836239BAA0266654E24C7C3A854F /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		902E93CF36123E61715248B4BAD22E33 /* OneSignal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.debug.xcconfig; sourceTree = "<group>"; };
-		9D23EE7F3FDC00E982DC593984F92B64 /* Pods-RadioRasclat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-Info.plist"; sourceTree = "<group>"; };
+		9933646A224577E7BE6DBD2901645BFD /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		99B490E74E1B99C47F8F1D24E2584776 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RadioRasclat.framework; path = "Pods-RadioRasclat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD6FC75264B5B44AD4488ED4A7093A1C /* Pods-RadioRasclat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B427F43458C6F7B6C0EB4681BDD0D8E1 /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
+		B8191FF276EE19A9B64A9BCA56C99ED2 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
 		DE970C2B67E152876EBCB1DA43AB863F /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
-		E2296BCF895B1DA23E545C99483D0525 /* Pods-RadioRasclat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-acknowledgements.plist"; sourceTree = "<group>"; };
-		E8007A91C209348F0194014715D1E445 /* Pods-RadioRasclat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-umbrella.h"; sourceTree = "<group>"; };
+		E369D647C3675C9E5BD5B193904B9C1D /* Pods-RadioRasclat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-Info.plist"; sourceTree = "<group>"; };
+		E5CF05A6164879D00FACD152A00ACDC6 /* Pods-RadioRasclat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-dummy.m"; sourceTree = "<group>"; };
 		EB8C2A5F2DDBF831C0AA4A938F63A708 /* OneSignal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.release.xcconfig; sourceTree = "<group>"; };
+		F5A309C06F09564FE7B957DD717910B8 /* Pods-RadioRasclat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AEA94A8204D1CF2B09AE2E4B9B0B1D32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0889CD33CDD9E971EBD850EDCA2339B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C26DAE1E598E2C33A6A01AE0FF9A3872 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DB587292DA2B1546BCD3D5F84E9594 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				367808253522F78627D31F36D0E5696F /* Pods-RadioRasclat */,
+				C88DC154B0B695CBE20B9A012BB20061 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		09E310EB22806134300BFC537FB27F3D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,22 +109,6 @@
 			path = "../Target Support Files/OneSignal";
 			sourceTree = "<group>";
 		};
-		15D94D6D4B768DF8A94EF24DA5DA3CA7 /* Pods-RadioRasclat */ = {
-			isa = PBXGroup;
-			children = (
-				8CE80F444E16D453B101E6F49FBF4133 /* Pods-RadioRasclat.modulemap */,
-				AD6FC75264B5B44AD4488ED4A7093A1C /* Pods-RadioRasclat-acknowledgements.markdown */,
-				E2296BCF895B1DA23E545C99483D0525 /* Pods-RadioRasclat-acknowledgements.plist */,
-				42F99314AF684C60E99E5CD27C2EA6E7 /* Pods-RadioRasclat-dummy.m */,
-				9D23EE7F3FDC00E982DC593984F92B64 /* Pods-RadioRasclat-Info.plist */,
-				E8007A91C209348F0194014715D1E445 /* Pods-RadioRasclat-umbrella.h */,
-				3151397B0F846BF3203D83F25DBFFB6E /* Pods-RadioRasclat.debug.xcconfig */,
-				B427F43458C6F7B6C0EB4681BDD0D8E1 /* Pods-RadioRasclat.release.xcconfig */,
-			);
-			name = "Pods-RadioRasclat";
-			path = "Target Support Files/Pods-RadioRasclat";
-			sourceTree = "<group>";
-		};
 		1D40C0AE1924259957A7C76C1386542E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +117,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3C0C6268B3E275C5D36AF51E0F5F66A9 /* Products */ = {
+		367808253522F78627D31F36D0E5696F /* Pods-RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
-				A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */,
+				3324D2DF51500A61992655B9A4051FF1 /* Pods-RadioRasclat.modulemap */,
+				23C3B2B39FFF26D23AE2090664F74471 /* Pods-RadioRasclat-acknowledgements.markdown */,
+				F5A309C06F09564FE7B957DD717910B8 /* Pods-RadioRasclat-acknowledgements.plist */,
+				E5CF05A6164879D00FACD152A00ACDC6 /* Pods-RadioRasclat-dummy.m */,
+				E369D647C3675C9E5BD5B193904B9C1D /* Pods-RadioRasclat-Info.plist */,
+				2DCF3D7BEC1A93FA8F531228F1E5880D /* Pods-RadioRasclat-umbrella.h */,
+				17AA4BA429DA8EBBA16E41B71BE68040 /* Pods-RadioRasclat.debug.xcconfig */,
+				4F730F581794A842470A6F08C5F857D8 /* Pods-RadioRasclat.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-RadioRasclat";
+			path = "Target Support Files/Pods-RadioRasclat";
 			sourceTree = "<group>";
 		};
 		699A7B2578216D4BEBAE7B6C9CF67AED /* OneSignal */ = {
@@ -123,12 +151,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CB888B4E80F27B36B8A1C4FBA3B42194 /* Targets Support Files */ = {
+		C81A2313A219B17DAF3AA3E06FB91359 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15D94D6D4B768DF8A94EF24DA5DA3CA7 /* Pods-RadioRasclat */,
+				A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */,
+				9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C88DC154B0B695CBE20B9A012BB20061 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B8191FF276EE19A9B64A9BCA56C99ED2 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap */,
+				004FAA70CFA2545B4ADFB4CF4A60FCB0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown */,
+				99B490E74E1B99C47F8F1D24E2584776 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist */,
+				3E764701DF0059E37769AAE0B2D670CF /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */,
+				4A7C8FBDE3D29556BD181F32BF7D6D65 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist */,
+				9933646A224577E7BE6DBD2901645BFD /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */,
+				0E4ABDF43843B60C82A621CEE8A51EE5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				8C0D836239BAA0266654E24C7C3A854F /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
+			path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -137,8 +182,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				1D40C0AE1924259957A7C76C1386542E /* Pods */,
-				3C0C6268B3E275C5D36AF51E0F5F66A9 /* Products */,
-				CB888B4E80F27B36B8A1C4FBA3B42194 /* Targets Support Files */,
+				C81A2313A219B17DAF3AA3E06FB91359 /* Products */,
+				00DB587292DA2B1546BCD3D5F84E9594 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +214,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCEA307372FE8EA31998DC80BA5DBBF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102591ED6E12FFA23E2F193F08E0FAFB /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +244,25 @@
 			productReference = A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E6C029DEE6E194140138EBF646B60D88 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C42BD5CF9741E184394062047683E6F /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat-OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				DCEA307372FE8EA31998DC80BA5DBBF1 /* Headers */,
+				A333A8850E992843F0E8A9531B5D0A0D /* Sources */,
+				AEA94A8204D1CF2B09AE2E4B9B0B1D32 /* Frameworks */,
+				F970FC89C8828F9A1C92A3E6CAAE4F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2480411B9D4A724628C1BCA9E2B1342C /* PBXTargetDependency */,
+			);
+			name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
+			productName = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
+			productReference = 9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,7 +273,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -209,12 +281,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 3C0C6268B3E275C5D36AF51E0F5F66A9 /* Products */;
+			productRefGroup = C81A2313A219B17DAF3AA3E06FB91359 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */,
 				43E8FDAF39A57DCCBC0EC5F801A28B4E /* Pods-RadioRasclat */,
+				E6C029DEE6E194140138EBF646B60D88 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -227,9 +300,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F970FC89C8828F9A1C92A3E6CAAE4F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A333A8850E992843F0E8A9531B5D0A0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB56B9C04926F7EF64ECA6B1FA43C49 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE7DD81EF40569B2BBCE7FECF140E2AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +329,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2480411B9D4A724628C1BCA9E2B1342C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignal;
+			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
+			targetProxy = 196E34E451081EFBEDE1D7338050684C /* PBXContainerItemProxy */;
+		};
 		A43EB1DDD3F6F4FA0A121E7345511FB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OneSignal;
@@ -252,7 +346,7 @@
 /* Begin XCBuildConfiguration section */
 		0EF0A11828143DCC371390DB898ED911 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B427F43458C6F7B6C0EB4681BDD0D8E1 /* Pods-RadioRasclat.release.xcconfig */;
+			baseConfigurationReference = 4F730F581794A842470A6F08C5F857D8 /* Pods-RadioRasclat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -289,9 +383,47 @@
 			};
 			name = Release;
 		};
+		153A0DCEEDFE2D23CD4493FF591F9F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4ABDF43843B60C82A621CEE8A51EE5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		42044E5CE7F55CEBCD06C816882D924F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3151397B0F846BF3203D83F25DBFFB6E /* Pods-RadioRasclat.debug.xcconfig */;
+			baseConfigurationReference = 17AA4BA429DA8EBBA16E41B71BE68040 /* Pods-RadioRasclat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -326,6 +458,45 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		6722DB8F96E88932A237EA9E346D8AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C0D836239BAA0266654E24C7C3A854F /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -492,6 +663,15 @@
 			buildConfigurations = (
 				F3E9F9E9585F98343983C0CCCCB54092 /* Debug */,
 				A878C3D55F709CAD45EF8ECE52195E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C42BD5CF9741E184394062047683E6F /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat-OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153A0DCEEDFE2D23CD4493FF591F9F0E /* Debug */,
+				6722DB8F96E88932A237EA9E346D8AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
