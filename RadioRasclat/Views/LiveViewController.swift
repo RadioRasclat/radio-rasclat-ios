@@ -6,4 +6,14 @@
 //  Copyright © 2020 Domenik Toefflinger. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LiveViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
