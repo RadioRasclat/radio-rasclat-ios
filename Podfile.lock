@@ -1,0 +1,20 @@
+PODS:
+  - FRadioPlayer (0.1.20)
+  - OneSignal (2.13.1)
+
+DEPENDENCIES:
+  - FRadioPlayer
+  - OneSignal (< 3.0, >= 2.11.2)
+
+SPEC REPOS:
+  trunk:
+    - FRadioPlayer
+    - OneSignal
+
+SPEC CHECKSUMS:
+  FRadioPlayer: 5c35ba963b69663a4f7d34405c09847d7aebbfcc
+  OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
+
+PODFILE CHECKSUM: 757dee4d4bdfee815d5427150e8bdfb974fad0a0
+
+COCOAPODS: 1.9.1
