@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B209E56C2469CF3C003C8672 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56B2469CF3C003C8672 /* Track.swift */; };
 		B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56E2469CF85003C8672 /* LiveViewController.swift */; };
+		B23D74712469D60800F22B24 /* BroadcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D74702469D60800F22B24 /* BroadcastsViewController.swift */; };
 		B2C450902469CDBB000AB7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */; };
 		B2C450922469CDBB000AB7AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C450912469CDBB000AB7AE /* SceneDelegate.swift */; };
 		B2C450942469CDBB000AB7AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C450932469CDBB000AB7AE /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		B209E56B2469CF3C003C8672 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B209E56E2469CF85003C8672 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
+		B23D74702469D60800F22B24 /* BroadcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastsViewController.swift; sourceTree = "<group>"; };
 		B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Rasclat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C450912469CDBB000AB7AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				B209E56E2469CF85003C8672 /* LiveViewController.swift */,
+				B23D74702469D60800F22B24 /* BroadcastsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				B2C450942469CDBB000AB7AE /* ViewController.swift in Sources */,
 				B2C450902469CDBB000AB7AE /* AppDelegate.swift in Sources */,
+				B23D74712469D60800F22B24 /* BroadcastsViewController.swift in Sources */,
 				B2C450922469CDBB000AB7AE /* SceneDelegate.swift in Sources */,
 				B209E56C2469CF3C003C8672 /* Track.swift in Sources */,
 				B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */,
