@@ -23,6 +23,7 @@
 		74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B209E56B2469CF3C003C8672 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B209E56E2469CF85003C8672 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
 		B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Rasclat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C450912469CDBB000AB7AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		B2C4508E2469CDBB000AB7AE /* RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
+				B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */,
 				B209E56D2469CF72003C8672 /* Views */,
 				B209E56A2469CF2B003C8672 /* Models */,
 				B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */,
@@ -377,6 +379,7 @@
 			baseConfigurationReference = E9CAC34CE2974CAFC25A81C9 /* Pods-RadioRasclat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RadioRasclat/Radio Rasclat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
@@ -396,6 +399,7 @@
 			baseConfigurationReference = 3D6886BC0C249B4D468248A1 /* Pods-RadioRasclat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RadioRasclat/Radio Rasclat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
