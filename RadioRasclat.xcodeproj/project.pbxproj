@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7596ECFF685CF5608ADF9234 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */; };
 		B209E56C2469CF3C003C8672 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56B2469CF3C003C8672 /* Track.swift */; };
 		B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56E2469CF85003C8672 /* LiveViewController.swift */; };
 		B23D74712469D60800F22B24 /* BroadcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D74702469D60800F22B24 /* BroadcastsViewController.swift */; };
@@ -16,11 +17,39 @@
 		B2C450972469CDBB000AB7AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C450952469CDBB000AB7AE /* Main.storyboard */; };
 		B2C450992469CDBC000AB7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C450982469CDBC000AB7AE /* Assets.xcassets */; };
 		B2C4509C2469CDBC000AB7AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C4509A2469CDBC000AB7AE /* LaunchScreen.storyboard */; };
-		B2CCD1BB2469EAFD00387D50 /* FRadioPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */; };
+		B2CCD1BB2469EAFD00387D50 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B2CCD1BA2469EAFD00387D50 /* SwiftPackageProductDependency */; };
+		B2CCD1C32469FB4000387D50 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCD1C22469FB4000387D50 /* NotificationService.swift */; };
+		B2CCD1C72469FB4000387D50 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3A1E07CD413C758EF79E9CE /* Pods_RadioRasclat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B2CCD1C52469FB4000387D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C450842469CDBB000AB7AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2CCD1BF2469FB4000387D50;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2CCD1CB2469FB4000387D50 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2CCD1C72469FB4000387D50 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		294CF6FDC342CD41BAE59B94 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6886BC0C249B4D468248A1 /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.release.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
 		74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B209E56B2469CF3C003C8672 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -35,6 +64,10 @@
 		B2C450982469CDBC000AB7AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2C4509B2469CDBC000AB7AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2C4509D2469CDBC000AB7AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CCD1C22469FB4000387D50 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B2CCD1C42469FB4000387D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E9CAC34CE2974CAFC25A81C9 /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.debug.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,8 +76,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CCD1BB2469EAFD00387D50 /* FRadioPlayer in Frameworks */,
+				B2CCD1BB2469EAFD00387D50 /* BuildFile in Frameworks */,
 				C3A1E07CD413C758EF79E9CE /* Pods_RadioRasclat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CCD1BD2469FB4000387D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596ECFF685CF5608ADF9234 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +97,8 @@
 			children = (
 				E9CAC34CE2974CAFC25A81C9 /* Pods-RadioRasclat.debug.xcconfig */,
 				3D6886BC0C249B4D468248A1 /* Pods-RadioRasclat.release.xcconfig */,
+				294CF6FDC342CD41BAE59B94 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -81,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */,
+				319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C4508E2469CDBB000AB7AE /* RadioRasclat */,
+				B2CCD1C12469FB4000387D50 /* OneSignalNotificationServiceExtension */,
 				B2C4508D2469CDBB000AB7AE /* Products */,
 				05C8E162E200FB81C20AEAFC /* Pods */,
 				B27A672F4825801320165B54 /* Frameworks */,
@@ -99,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */,
+				B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +166,15 @@
 			path = RadioRasclat;
 			sourceTree = "<group>";
 		};
+		B2CCD1C12469FB4000387D50 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B2CCD1C22469FB4000387D50 /* NotificationService.swift */,
+				B2CCD1C42469FB4000387D50 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,18 +186,38 @@
 				B2C450882469CDBB000AB7AE /* Sources */,
 				B2C450892469CDBB000AB7AE /* Frameworks */,
 				B2C4508A2469CDBB000AB7AE /* Resources */,
+				B2CCD1CB2469FB4000387D50 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2CCD1C62469FB4000387D50 /* PBXTargetDependency */,
+			);
+			name = RadioRasclat;
+			packageProductDependencies = (
+				B2CCD1BA2469EAFD00387D50 /* SwiftPackageProductDependency */,
+			);
+			productName = RadioRasclat;
+			productReference = B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CCD1C82469FB4000387D50 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				C9431E51A6F161D8C69E1628 /* [CP] Check Pods Manifest.lock */,
+				B2CCD1BC2469FB4000387D50 /* Sources */,
+				B2CCD1BD2469FB4000387D50 /* Frameworks */,
+				B2CCD1BE2469FB4000387D50 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RadioRasclat;
-			packageProductDependencies = (
-				B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */,
-			);
-			productName = RadioRasclat;
-			productReference = B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */;
-			productType = "com.apple.product-type.application";
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -157,6 +232,9 @@
 					B2C4508B2469CDBB000AB7AE = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					B2CCD1BF2469FB4000387D50 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = B2C450872469CDBB000AB7AE /* Build configuration list for PBXProject "RadioRasclat" */;
@@ -169,13 +247,14 @@
 			);
 			mainGroup = B2C450832469CDBB000AB7AE;
 			packageReferences = (
-				B2CCD1B92469EAFD00387D50 /* XCRemoteSwiftPackageReference "FRadioPlayer" */,
+				B2CCD1B92469EAFD00387D50 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = B2C4508D2469CDBB000AB7AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B2C4508B2469CDBB000AB7AE /* RadioRasclat */,
+				B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +267,13 @@
 				B2C4509C2469CDBC000AB7AE /* LaunchScreen.storyboard in Resources */,
 				B2C450992469CDBC000AB7AE /* Assets.xcassets in Resources */,
 				B2C450972469CDBB000AB7AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CCD1BE2469FB4000387D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +302,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C9431E51A6F161D8C69E1628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioRasclat-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,7 +340,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2CCD1BC2469FB4000387D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CCD1C32469FB4000387D50 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2CCD1C62469FB4000387D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */;
+			targetProxy = B2CCD1C52469FB4000387D50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B2C450952469CDBB000AB7AE /* Main.storyboard */ = {
@@ -372,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9CAC34CE2974CAFC25A81C9 /* Pods-RadioRasclat.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "RadioRasclat/Radio Rasclat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D6886BC0C249B4D468248A1 /* Pods-RadioRasclat.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "RadioRasclat/Radio Rasclat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -403,6 +529,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat;
 				PRODUCT_NAME = "Radio Rasclat";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B2CCD1C92469FB4000387D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294CF6FDC342CD41BAE59B94 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2CCD1CA2469FB4000387D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -429,10 +597,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B2CCD1C82469FB4000387D50 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CCD1C92469FB4000387D50 /* Debug */,
+				B2CCD1CA2469FB4000387D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B2CCD1B92469EAFD00387D50 /* XCRemoteSwiftPackageReference "FRadioPlayer" */ = {
+		B2CCD1B92469EAFD00387D50 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fethica/FRadioPlayer.git";
 			requirement = {
@@ -443,9 +620,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */ = {
+		B2CCD1BA2469EAFD00387D50 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B2CCD1B92469EAFD00387D50 /* XCRemoteSwiftPackageReference "FRadioPlayer" */;
+			package = B2CCD1B92469EAFD00387D50 /* RemoteSwiftPackageReference */;
 			productName = FRadioPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
