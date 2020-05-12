@@ -16,10 +16,7 @@ class LiveViewController: UIViewController {
     @IBOutlet weak var trackLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var artworkImageView: UIImageView!
-    @IBOutlet weak var volumeParentView: UIView!
-    
-    var mpVolumeSlider: UISlider?
-    
+        
     // Singleton ref to player
     let player: FRadioPlayer = FRadioPlayer.shared
     
@@ -38,33 +35,12 @@ class LiveViewController: UIViewController {
         player.delegate = self
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
         
-        // Setup volumeSlider
-        setupVolumeSlider()
-        
         setupRemoteTransportControls()
     }
     
     //*****************************************************************
     // MARK: - Setup
     //*****************************************************************
-    
-    func setupVolumeSlider() {
-        // Note: This slider implementation uses a MPVolumeView
-        // The volume slider only works in devices, not the simulator.
-        for subview in MPVolumeView().subviews {
-            guard let volumeSlider = subview as? UISlider else { continue }
-            mpVolumeSlider = volumeSlider
-        }
-        
-        guard let mpVolumeSlider = mpVolumeSlider else { return }
-        
-        volumeParentView.addSubview(mpVolumeSlider)
-        
-        mpVolumeSlider.translatesAutoresizingMaskIntoConstraints = false
-        mpVolumeSlider.leftAnchor.constraint(equalTo: volumeParentView.leftAnchor).isActive = true
-        mpVolumeSlider.rightAnchor.constraint(equalTo: volumeParentView.rightAnchor).isActive = true
-        mpVolumeSlider.centerYAnchor.constraint(equalTo: volumeParentView.centerYAnchor).isActive = true
-    }
 
     @IBAction func playButtonPressed(_ sender: Any) {
         player.play()
