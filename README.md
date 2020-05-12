@@ -2,7 +2,7 @@
 
 # Radio Rasclat iOS
 
-[![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://travis-ci.com/dmnktoe/radio-rasclat-ios) ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
+[![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://travis-ci.com/dmnktoe/radio-rasclat-ios) <img src="https://img.shields.io/github/issues/dmnktoe/radio-rasclat-ios"> ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
 
 Welcome to Radio Rasclat it's open source iOS app!
 
