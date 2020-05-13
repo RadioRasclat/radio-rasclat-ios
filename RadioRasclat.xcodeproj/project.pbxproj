@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7596ECFF685CF5608ADF9234 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */; };
+		84AE56DE246C3F2300548A09 /* Radio_RasclatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE56DD246C3F2300548A09 /* Radio_RasclatUITests.swift */; };
 		B209E56C2469CF3C003C8672 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56B2469CF3C003C8672 /* Track.swift */; };
 		B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56E2469CF85003C8672 /* LiveViewController.swift */; };
 		B23D74712469D60800F22B24 /* BroadcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D74702469D60800F22B24 /* BroadcastsViewController.swift */; };
@@ -24,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		84AE56E0246C3F2300548A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C450842469CDBB000AB7AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C4508B2469CDBB000AB7AE;
+			remoteInfo = RadioRasclat;
+		};
 		B2CCD1C52469FB4000387D50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2C450842469CDBB000AB7AE /* Project object */;
@@ -52,6 +60,9 @@
 		319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6886BC0C249B4D468248A1 /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.release.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
 		74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Radio RasclatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AE56DD246C3F2300548A09 /* Radio_RasclatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio_RasclatUITests.swift; sourceTree = "<group>"; };
+		84AE56DF246C3F2300548A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B209E56B2469CF3C003C8672 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B209E56E2469CF85003C8672 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
@@ -72,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84AE56D8246C3F2300548A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2C450892469CDBB000AB7AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +119,15 @@
 				C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		84AE56DC246C3F2300548A09 /* Radio RasclatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84AE56DD246C3F2300548A09 /* Radio_RasclatUITests.swift */,
+				84AE56DF246C3F2300548A09 /* Info.plist */,
+			);
+			path = "Radio RasclatUITests";
 			sourceTree = "<group>";
 		};
 		B209E56A2469CF2B003C8672 /* Models */ = {
@@ -134,6 +161,7 @@
 			children = (
 				B2C4508E2469CDBB000AB7AE /* RadioRasclat */,
 				B2CCD1C12469FB4000387D50 /* OneSignalNotificationServiceExtension */,
+				84AE56DC246C3F2300548A09 /* Radio RasclatUITests */,
 				B2C4508D2469CDBB000AB7AE /* Products */,
 				05C8E162E200FB81C20AEAFC /* Pods */,
 				B27A672F4825801320165B54 /* Frameworks */,
@@ -145,6 +173,7 @@
 			children = (
 				B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */,
 				B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */,
+				84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +207,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84AE56DA246C3F2300548A09 /* Radio RasclatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AE56E4246C3F2300548A09 /* Build configuration list for PBXNativeTarget "Radio RasclatUITests" */;
+			buildPhases = (
+				84AE56D7246C3F2300548A09 /* Sources */,
+				84AE56D8246C3F2300548A09 /* Frameworks */,
+				84AE56D9246C3F2300548A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AE56E1246C3F2300548A09 /* PBXTargetDependency */,
+			);
+			name = "Radio RasclatUITests";
+			productName = "Radio RasclatUITests";
+			productReference = 84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B2C4508B2469CDBB000AB7AE /* RadioRasclat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2C450A02469CDBC000AB7AE /* Build configuration list for PBXNativeTarget "RadioRasclat" */;
@@ -225,10 +272,14 @@
 		B2C450842469CDBB000AB7AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Domenik Toefflinger";
 				TargetAttributes = {
+					84AE56DA246C3F2300548A09 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B2C4508B2469CDBB000AB7AE;
+					};
 					B2C4508B2469CDBB000AB7AE = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -255,11 +306,19 @@
 			targets = (
 				B2C4508B2469CDBB000AB7AE /* RadioRasclat */,
 				B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */,
+				84AE56DA246C3F2300548A09 /* Radio RasclatUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84AE56D9246C3F2300548A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2C4508A2469CDBB000AB7AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +386,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84AE56D7246C3F2300548A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AE56DE246C3F2300548A09 /* Radio_RasclatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2C450882469CDBB000AB7AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +418,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		84AE56E1246C3F2300548A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2C4508B2469CDBB000AB7AE /* RadioRasclat */;
+			targetProxy = 84AE56E0246C3F2300548A09 /* PBXContainerItemProxy */;
+		};
 		B2CCD1C62469FB4000387D50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */;
@@ -378,6 +450,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84AE56E2246C3F2300548A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = "Radio RasclatUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dmnktoe.Radio-RasclatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioRasclat;
+			};
+			name = Debug;
+		};
+		84AE56E3246C3F2300548A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = "Radio RasclatUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dmnktoe.Radio-RasclatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioRasclat;
+			};
+			name = Release;
+		};
 		B2C4509E2469CDBC000AB7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -591,6 +703,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84AE56E4246C3F2300548A09 /* Build configuration list for PBXNativeTarget "Radio RasclatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AE56E2246C3F2300548A09 /* Debug */,
+				84AE56E3246C3F2300548A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2C450872469CDBB000AB7AE /* Build configuration list for PBXProject "RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
