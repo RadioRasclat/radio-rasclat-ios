@@ -4,4 +4,7 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod repo update
 - pod install
-script: xcodebuild -workspace RadioRasclat.xcworkspace -scheme RadioRasclat -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script:
+- xcodebuild -workspace RadioRasclat.xcworkspace -scheme RadioRasclat -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
