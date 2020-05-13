@@ -5,6 +5,6 @@ before_install:
 - pod repo update
 - pod install
 script:
-- xcodebuild -workspace RadioRasclat.xcworkspace -scheme RadioRasclat -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
+- xcodebuild -workspace RadioRasclat.xcworkspace -scheme RadioRasclat -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' build test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
