@@ -15,28 +15,69 @@
 			dependencies = (
 			);
 			name = OneSignal;
-			productName = OneSignal;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0889CD33CDD9E971EBD850EDCA2339B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		102591ED6E12FFA23E2F193F08E0FAFB /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9933646A224577E7BE6DBD2901645BFD /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B0F8107CFBA7AEDB30AAD909EE2225B /* Pods-RadioRasclat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCF3D7BEC1A93FA8F531228F1E5880D /* Pods-RadioRasclat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FB56B9C04926F7EF64ECA6B1FA43C49 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E764701DF0059E37769AAE0B2D670CF /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */; };
-		93D1DB31AA11471FAFC28AA5C69EDF9F /* Pods-RadioRasclat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF05A6164879D00FACD152A00ACDC6 /* Pods-RadioRasclat-dummy.m */; };
-		C58AF2602C150FAD680F893F2A819722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0BE3E98C1CB0BCDD448F18CBA561B4E5 /* WhatsNewItemsViewController+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CFCF4B066AEFADC2B3D0F783512F6B /* WhatsNewItemsViewController+Cell.swift */; };
+		0E1E581366DA66B9377EFE36F0FE08B5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C06F329718D74099C0C91C52784FC408 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */; };
+		15343CB47FFBB0752355C2388481FE36 /* WhatsNewButtonViewController+DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476C745D8DC27F37D4F89D0C93ECD8D /* WhatsNewButtonViewController+DetailButton.swift */; };
+		1D34744199255BB8C9950B8DC61B47B9 /* UIColor+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A82EAF3E56C125322D9EEB9B4EE012 /* UIColor+Defaults.swift */; };
+		1EBF95B39A517FB60C32154A17A4E3EE /* WhatsNewVersionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E02F9098617A4AE359D61E9D1BC9E8 /* WhatsNewVersionStore.swift */; };
+		2153E67600F1B493D658A13371FFFE73 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80553FE4618631D417995B8A90D291B /* Anchor.swift */; };
+		2729AF82673099FB4FAD7F68B86D0610 /* WhatsNew+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D0011435DEB83C1461FF7BE8A72A55 /* WhatsNew+Version.swift */; };
+		2EE45E86A416F33B422FD18E8D14D06F /* InMemoryWhatsNewVersionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C50EB573560524BD3B7FCB9F5FDCBC /* InMemoryWhatsNewVersionStore.swift */; };
+		30455E0017F945465D91268E24CC93DB /* WhatsNewItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74066824E7253787393F525D21348F /* WhatsNewItemsViewController.swift */; };
+		30B583EDA3F98BD8D47BC4BFA5C80383 /* WhatsNewButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C5C6F760852354B4B1075D249B3149 /* WhatsNewButtonViewController.swift */; };
+		38908B6EA5AC50CC23758321FE5D4C50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		3D75C321F85BD2EA903FDECB24A4CCF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		49C8993D1F51145FF20FC34B9695961E /* WhatsNewViewController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820CB474CCB592E36AE7ABB314631414 /* WhatsNewViewController+Theme.swift */; };
+		52892E5AD9C85CF79AB36703A2D2824F /* WhatsNewViewController+ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473425267D7FE1358EAD3853C2C389D /* WhatsNewViewController+ItemsView.swift */; };
+		575CE7E6D9E87305D6A9CD367C7475C7 /* WhatsNewTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE074B4B7D589953EA54BEDC4B29C0C /* WhatsNewTitleViewController.swift */; };
+		70F82F331B19164DDB91B939F14B3624 /* Pods-RadioRasclat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD8109AC5996607B3BB345135E21945 /* Pods-RadioRasclat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB5E5115ACC97A044E3115376C8D2FA /* WhatsNewViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA885AC9C0A2CC737F03795C9A1D5931 /* WhatsNewViewController+Animation.swift */; };
+		7D16802E323ECF2E5CD496E692813B50 /* WhatsNewKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EF49E50E958CC6BA8C741D43340442 /* WhatsNewKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B861AC7AE697A9A4CAE60371F883399 /* Pods-RadioRasclat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0141D5184016DA695900F5294813DBA7 /* Pods-RadioRasclat-dummy.m */; };
+		8D7DF75D8F09457EF4B3B56BCC797264 /* UIView+MakeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27359E71F17A7A8485859BD86FF5450B /* UIView+MakeConstraints.swift */; };
+		95F27623EB740A15CFB04C1C8E6052AD /* WhatsNewKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8AC3EA025E01D4B63F8438B08E1326 /* WhatsNewKit-dummy.m */; };
+		96B6AD640CD6C7EA382954F09F832D35 /* WhatsNew+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA4309999E58B67ACC6304AB3CF65E /* WhatsNew+Item.swift */; };
+		9BFAED413C77521632FE85B0F8378963 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1965141AE38DABA5DA71DFA08709AEBC /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB41EC206D193644344058FD550703D /* WhatsNewViewController+TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE22DBA933193D5EB33303F61DB36D /* WhatsNewViewController+TitleView.swift */; };
+		A9C3F8449C359B062DD460A18B41B3FB /* WhatsNewViewController+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2809240A05BEB1043C346652A9118463 /* WhatsNewViewController+Configuration.swift */; };
+		AC4AAE0600260145FC2ADCA9BF478AFC /* WhatsNewViewController+HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D9505AFD3D67DA20DC813581823031 /* WhatsNewViewController+HapticFeedback.swift */; };
+		B71393D8EE8C272F9CCC352FE8C17D99 /* WhatsNewButtonViewController+CompletionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB0F81B4CBFFA2B9CDF870875000CF /* WhatsNewButtonViewController+CompletionButton.swift */; };
+		C3D1CECF1CC2AB92B141A417CD725870 /* KeyValueWhatsNewVersionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749932D0A04EF510F2E977EC4954E1FE /* KeyValueWhatsNewVersionStore.swift */; };
+		CA4B746E44E30E24E219B979305220B2 /* WhatsNewViewController+CompletionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301571F200384C6570EA26EB72735E1C /* WhatsNewViewController+CompletionButton.swift */; };
+		CAADF2BEFD84F412A9FAC46869662A12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		CF9CDE647C30949EDA7EB61106983A60 /* WhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F966F10915DB69AC07FD6666235E85 /* WhatsNewViewController.swift */; };
+		E1E8500019AEE73013DBEA8956FDD41F /* WhatsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB08DA4663EFCE3F793A31CD3A98FD4 /* WhatsNew.swift */; };
+		E51B887B812715507ED5DF218CBACBF2 /* WhatsNewViewController+DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A589A3F13C36938E010B8A2C89E1759 /* WhatsNewViewController+DetailButton.swift */; };
+		EC3AC7B1C8B77F7A060E673DE51E3F18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		196E34E451081EFBEDE1D7338050684C /* PBXContainerItemProxy */ = {
+		47465F0BBFAEC652614D3D08E2A31105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9704B189A5639F0B7534EC8872960E23;
+			remoteInfo = WhatsNewKit;
+		};
+		7489A1EF270C078126E47AC1447DF539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9704B189A5639F0B7534EC8872960E23;
+			remoteInfo = WhatsNewKit;
+		};
+		8217303646BE10BDF8578901E831690D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
 			remoteInfo = OneSignal;
 		};
-		B44C9F86DF7A048C89EA4B1B854A3405 /* PBXContainerItemProxy */ = {
+		FF051313BF88E04B06C237D81CD9635D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,179 +87,283 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004FAA70CFA2545B4ADFB4CF4A60FCB0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0E4ABDF43843B60C82A621CEE8A51EE5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		17AA4BA429DA8EBBA16E41B71BE68040 /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
-		23C3B2B39FFF26D23AE2090664F74471 /* Pods-RadioRasclat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2DCF3D7BEC1A93FA8F531228F1E5880D /* Pods-RadioRasclat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-umbrella.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3324D2DF51500A61992655B9A4051FF1 /* Pods-RadioRasclat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat.modulemap"; sourceTree = "<group>"; };
-		3E764701DF0059E37769AAE0B2D670CF /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
-		4A7C8FBDE3D29556BD181F32BF7D6D65 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
-		4F730F581794A842470A6F08C5F857D8 /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
-		8C0D836239BAA0266654E24C7C3A854F /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		902E93CF36123E61715248B4BAD22E33 /* OneSignal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.debug.xcconfig; sourceTree = "<group>"; };
-		9933646A224577E7BE6DBD2901645BFD /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
-		99B490E74E1B99C47F8F1D24E2584776 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8191FF276EE19A9B64A9BCA56C99ED2 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
-		DE970C2B67E152876EBCB1DA43AB863F /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
-		E369D647C3675C9E5BD5B193904B9C1D /* Pods-RadioRasclat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-Info.plist"; sourceTree = "<group>"; };
-		E5CF05A6164879D00FACD152A00ACDC6 /* Pods-RadioRasclat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-dummy.m"; sourceTree = "<group>"; };
-		EB8C2A5F2DDBF831C0AA4A938F63A708 /* OneSignal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.release.xcconfig; sourceTree = "<group>"; };
-		F5A309C06F09564FE7B957DD717910B8 /* Pods-RadioRasclat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-acknowledgements.plist"; sourceTree = "<group>"; };
+		0141D5184016DA695900F5294813DBA7 /* Pods-RadioRasclat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-dummy.m"; sourceTree = "<group>"; };
+		01500E3CFB09EAAE31EB163B164F6B15 /* Pods-RadioRasclat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-Info.plist"; sourceTree = "<group>"; };
+		026018A4474D98563547F7CF1EC32AFD /* WhatsNewKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WhatsNewKit.debug.xcconfig; sourceTree = "<group>"; };
+		0A74066824E7253787393F525D21348F /* WhatsNewItemsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsNewItemsViewController.swift; path = Sources/Components/Items/WhatsNewItemsViewController.swift; sourceTree = "<group>"; };
+		0EE074B4B7D589953EA54BEDC4B29C0C /* WhatsNewTitleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsNewTitleViewController.swift; path = Sources/Components/Title/WhatsNewTitleViewController.swift; sourceTree = "<group>"; };
+		103991EC3A7F690F45E3934881ED3367 /* Pods-RadioRasclat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat.modulemap"; sourceTree = "<group>"; };
+		139230FA0EE4DAE872270D773BA4A9CA /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		163C1AA213F9E51F616BCDC33BBF4ED8 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		1965141AE38DABA5DA71DFA08709AEBC /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		27359E71F17A7A8485859BD86FF5450B /* UIView+MakeConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+MakeConstraints.swift"; path = "Sources/Extensions/UIView+MakeConstraints.swift"; sourceTree = "<group>"; };
+		2809240A05BEB1043C346652A9118463 /* WhatsNewViewController+Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+Configuration.swift"; path = "Sources/Configuration/WhatsNewViewController+Configuration.swift"; sourceTree = "<group>"; };
+		28E718C4157672501EDB968F9DFD4972 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2AA4F585867A96506FEDD400870A0CEE /* OneSignal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.release.xcconfig; sourceTree = "<group>"; };
+		301571F200384C6570EA26EB72735E1C /* WhatsNewViewController+CompletionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+CompletionButton.swift"; path = "Sources/Configuration/WhatsNewViewController+CompletionButton.swift"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		39CFCF4B066AEFADC2B3D0F783512F6B /* WhatsNewItemsViewController+Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewItemsViewController+Cell.swift"; path = "Sources/Components/Items/WhatsNewItemsViewController+Cell.swift"; sourceTree = "<group>"; };
+		3ECB0F81B4CBFFA2B9CDF870875000CF /* WhatsNewButtonViewController+CompletionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewButtonViewController+CompletionButton.swift"; path = "Sources/Components/Buttons/WhatsNewButtonViewController+CompletionButton.swift"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BB8F7EF9BC0CA08E4098CCF1870F542 /* WhatsNewKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WhatsNewKit-prefix.pch"; sourceTree = "<group>"; };
+		4E64572F27DF22B47BE0F5C844D72137 /* WhatsNewKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WhatsNewKit.release.xcconfig; sourceTree = "<group>"; };
+		5584B95A9C40C5119385B110DB59D6DC /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		57D9505AFD3D67DA20DC813581823031 /* WhatsNewViewController+HapticFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+HapticFeedback.swift"; path = "Sources/Configuration/WhatsNewViewController+HapticFeedback.swift"; sourceTree = "<group>"; };
+		57F966F10915DB69AC07FD6666235E85 /* WhatsNewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsNewViewController.swift; path = Sources/WhatsNewViewController.swift; sourceTree = "<group>"; };
+		5A589A3F13C36938E010B8A2C89E1759 /* WhatsNewViewController+DetailButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+DetailButton.swift"; path = "Sources/Configuration/WhatsNewViewController+DetailButton.swift"; sourceTree = "<group>"; };
+		5BD8109AC5996607B3BB345135E21945 /* Pods-RadioRasclat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioRasclat-umbrella.h"; sourceTree = "<group>"; };
+		60EF49E50E958CC6BA8C741D43340442 /* WhatsNewKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WhatsNewKit-umbrella.h"; sourceTree = "<group>"; };
+		62355309EBCD367AA96A88E9591D3397 /* WhatsNewKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WhatsNewKit-Info.plist"; sourceTree = "<group>"; };
+		62DE22DBA933193D5EB33303F61DB36D /* WhatsNewViewController+TitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+TitleView.swift"; path = "Sources/Configuration/WhatsNewViewController+TitleView.swift"; sourceTree = "<group>"; };
+		64E02F9098617A4AE359D61E9D1BC9E8 /* WhatsNewVersionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsNewVersionStore.swift; path = Sources/Store/WhatsNewVersionStore.swift; sourceTree = "<group>"; };
+		7473425267D7FE1358EAD3853C2C389D /* WhatsNewViewController+ItemsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+ItemsView.swift"; path = "Sources/Configuration/WhatsNewViewController+ItemsView.swift"; sourceTree = "<group>"; };
+		749932D0A04EF510F2E977EC4954E1FE /* KeyValueWhatsNewVersionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyValueWhatsNewVersionStore.swift; path = Sources/Store/KeyValueWhatsNewVersionStore.swift; sourceTree = "<group>"; };
+		780A12D66A1B8FE3F511E97575DA4743 /* Pods-RadioRasclat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioRasclat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		78C5C6F760852354B4B1075D249B3149 /* WhatsNewButtonViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsNewButtonViewController.swift; path = Sources/Components/Buttons/WhatsNewButtonViewController.swift; sourceTree = "<group>"; };
+		7A9485D5005ACFF057A3BFFBD0387F65 /* WhatsNewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WhatsNewKit.framework; path = WhatsNewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9B471C4162ECB67BF2E7E49E8DE6C6 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		7FF505A9586CE464FF2808D1F9E4089E /* OneSignal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.debug.xcconfig; sourceTree = "<group>"; };
+		81EE59107646B9D0DCF68906082244CA /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
+		820CB474CCB592E36AE7ABB314631414 /* WhatsNewViewController+Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+Theme.swift"; path = "Sources/Theme/WhatsNewViewController+Theme.swift"; sourceTree = "<group>"; };
+		83C50EB573560524BD3B7FCB9F5FDCBC /* InMemoryWhatsNewVersionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryWhatsNewVersionStore.swift; path = Sources/Store/InMemoryWhatsNewVersionStore.swift; sourceTree = "<group>"; };
+		8F8AC3EA025E01D4B63F8438B08E1326 /* WhatsNewKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WhatsNewKit-dummy.m"; sourceTree = "<group>"; };
+		90D0011435DEB83C1461FF7BE8A72A55 /* WhatsNew+Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNew+Version.swift"; path = "Sources/Models/WhatsNew+Version.swift"; sourceTree = "<group>"; };
+		90FA4309999E58B67ACC6304AB3CF65E /* WhatsNew+Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNew+Item.swift"; path = "Sources/Models/WhatsNew+Item.swift"; sourceTree = "<group>"; };
+		9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RadioRasclat.framework; path = "Pods-RadioRasclat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A82EAF3E56C125322D9EEB9B4EE012 /* UIColor+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Defaults.swift"; path = "Sources/Extensions/UIColor+Defaults.swift"; sourceTree = "<group>"; };
+		AA885AC9C0A2CC737F03795C9A1D5931 /* WhatsNewViewController+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewViewController+Animation.swift"; path = "Sources/Configuration/WhatsNewViewController+Animation.swift"; sourceTree = "<group>"; };
+		B36E4779A1EFEBC072BEE1E3DE7A0C7E /* Pods-RadioRasclat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RadioRasclat-frameworks.sh"; sourceTree = "<group>"; };
+		B476C745D8DC27F37D4F89D0C93ECD8D /* WhatsNewButtonViewController+DetailButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WhatsNewButtonViewController+DetailButton.swift"; path = "Sources/Components/Buttons/WhatsNewButtonViewController+DetailButton.swift"; sourceTree = "<group>"; };
+		BC810506AC13418F10042CEBC2FA541B /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		C06F329718D74099C0C91C52784FC408 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		C5F63DB94AB92F72860BC3311C941986 /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
+		D80553FE4618631D417995B8A90D291B /* Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchor.swift; path = Sources/Extensions/Anchor.swift; sourceTree = "<group>"; };
+		DAA27F1A1973D9A8E72A470C75087CD8 /* Pods-RadioRasclat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioRasclat-acknowledgements.plist"; sourceTree = "<group>"; };
+		F75B2A159585A60D1A5F7749B05C7CB9 /* WhatsNewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WhatsNewKit.modulemap; sourceTree = "<group>"; };
+		FB9DFEC0E1BD3A6BDCA15961E4EBB27D /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
+		FBB08DA4663EFCE3F793A31CD3A98FD4 /* WhatsNew.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsNew.swift; path = Sources/Models/WhatsNew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AEA94A8204D1CF2B09AE2E4B9B0B1D32 /* Frameworks */ = {
+		B13447531C2E7BEC50B4C2E9EC513585 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0889CD33CDD9E971EBD850EDCA2339B9 /* Foundation.framework in Frameworks */,
+				3D75C321F85BD2EA903FDECB24A4CCF1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C26DAE1E598E2C33A6A01AE0FF9A3872 /* Frameworks */ = {
+		B640DC6E1D207042BD8216EC761F75F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C58AF2602C150FAD680F893F2A819722 /* Foundation.framework in Frameworks */,
+				EC3AC7B1C8B77F7A060E673DE51E3F18 /* Foundation.framework in Frameworks */,
+				38908B6EA5AC50CC23758321FE5D4C50 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88A0627C8FB3A99420B49DD412A94E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAADF2BEFD84F412A9FAC46869662A12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00DB587292DA2B1546BCD3D5F84E9594 /* Targets Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				367808253522F78627D31F36D0E5696F /* Pods-RadioRasclat */,
-				C88DC154B0B695CBE20B9A012BB20061 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16B3ED17D05C5E91543FB0F831701330 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				81EE59107646B9D0DCF68906082244CA /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap */,
+				28E718C4157672501EDB968F9DFD4972 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown */,
+				139230FA0EE4DAE872270D773BA4A9CA /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist */,
+				C06F329718D74099C0C91C52784FC408 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */,
+				BC810506AC13418F10042CEBC2FA541B /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist */,
+				1965141AE38DABA5DA71DFA08709AEBC /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */,
+				5584B95A9C40C5119385B110DB59D6DC /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				7C9B471C4162ECB67BF2E7E49E8DE6C6 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
+			path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension";
+			sourceTree = "<group>";
+		};
+		2477ECFF692835EA7A484602768C3E4F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				383482CCD9AF0D804B3E83BC57ADB890 /* Pods-RadioRasclat */,
+				16B3ED17D05C5E91543FB0F831701330 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		09E310EB22806134300BFC537FB27F3D /* Support Files */ = {
+		383482CCD9AF0D804B3E83BC57ADB890 /* Pods-RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
-				902E93CF36123E61715248B4BAD22E33 /* OneSignal.debug.xcconfig */,
-				EB8C2A5F2DDBF831C0AA4A938F63A708 /* OneSignal.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/OneSignal";
-			sourceTree = "<group>";
-		};
-		1D40C0AE1924259957A7C76C1386542E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				699A7B2578216D4BEBAE7B6C9CF67AED /* OneSignal */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		367808253522F78627D31F36D0E5696F /* Pods-RadioRasclat */ = {
-			isa = PBXGroup;
-			children = (
-				3324D2DF51500A61992655B9A4051FF1 /* Pods-RadioRasclat.modulemap */,
-				23C3B2B39FFF26D23AE2090664F74471 /* Pods-RadioRasclat-acknowledgements.markdown */,
-				F5A309C06F09564FE7B957DD717910B8 /* Pods-RadioRasclat-acknowledgements.plist */,
-				E5CF05A6164879D00FACD152A00ACDC6 /* Pods-RadioRasclat-dummy.m */,
-				E369D647C3675C9E5BD5B193904B9C1D /* Pods-RadioRasclat-Info.plist */,
-				2DCF3D7BEC1A93FA8F531228F1E5880D /* Pods-RadioRasclat-umbrella.h */,
-				17AA4BA429DA8EBBA16E41B71BE68040 /* Pods-RadioRasclat.debug.xcconfig */,
-				4F730F581794A842470A6F08C5F857D8 /* Pods-RadioRasclat.release.xcconfig */,
+				103991EC3A7F690F45E3934881ED3367 /* Pods-RadioRasclat.modulemap */,
+				780A12D66A1B8FE3F511E97575DA4743 /* Pods-RadioRasclat-acknowledgements.markdown */,
+				DAA27F1A1973D9A8E72A470C75087CD8 /* Pods-RadioRasclat-acknowledgements.plist */,
+				0141D5184016DA695900F5294813DBA7 /* Pods-RadioRasclat-dummy.m */,
+				B36E4779A1EFEBC072BEE1E3DE7A0C7E /* Pods-RadioRasclat-frameworks.sh */,
+				01500E3CFB09EAAE31EB163B164F6B15 /* Pods-RadioRasclat-Info.plist */,
+				5BD8109AC5996607B3BB345135E21945 /* Pods-RadioRasclat-umbrella.h */,
+				C5F63DB94AB92F72860BC3311C941986 /* Pods-RadioRasclat.debug.xcconfig */,
+				FB9DFEC0E1BD3A6BDCA15961E4EBB27D /* Pods-RadioRasclat.release.xcconfig */,
 			);
 			name = "Pods-RadioRasclat";
 			path = "Target Support Files/Pods-RadioRasclat";
 			sourceTree = "<group>";
 		};
-		699A7B2578216D4BEBAE7B6C9CF67AED /* OneSignal */ = {
+		7DBE8BA1312A734259539B541CF435C3 /* WhatsNewKit */ = {
 			isa = PBXGroup;
 			children = (
-				CFE090658AE1E3252BAA8610D3A558D4 /* Frameworks */,
-				09E310EB22806134300BFC537FB27F3D /* Support Files */,
+				D80553FE4618631D417995B8A90D291B /* Anchor.swift */,
+				83C50EB573560524BD3B7FCB9F5FDCBC /* InMemoryWhatsNewVersionStore.swift */,
+				749932D0A04EF510F2E977EC4954E1FE /* KeyValueWhatsNewVersionStore.swift */,
+				A9A82EAF3E56C125322D9EEB9B4EE012 /* UIColor+Defaults.swift */,
+				27359E71F17A7A8485859BD86FF5450B /* UIView+MakeConstraints.swift */,
+				FBB08DA4663EFCE3F793A31CD3A98FD4 /* WhatsNew.swift */,
+				90FA4309999E58B67ACC6304AB3CF65E /* WhatsNew+Item.swift */,
+				90D0011435DEB83C1461FF7BE8A72A55 /* WhatsNew+Version.swift */,
+				78C5C6F760852354B4B1075D249B3149 /* WhatsNewButtonViewController.swift */,
+				3ECB0F81B4CBFFA2B9CDF870875000CF /* WhatsNewButtonViewController+CompletionButton.swift */,
+				B476C745D8DC27F37D4F89D0C93ECD8D /* WhatsNewButtonViewController+DetailButton.swift */,
+				0A74066824E7253787393F525D21348F /* WhatsNewItemsViewController.swift */,
+				39CFCF4B066AEFADC2B3D0F783512F6B /* WhatsNewItemsViewController+Cell.swift */,
+				0EE074B4B7D589953EA54BEDC4B29C0C /* WhatsNewTitleViewController.swift */,
+				64E02F9098617A4AE359D61E9D1BC9E8 /* WhatsNewVersionStore.swift */,
+				57F966F10915DB69AC07FD6666235E85 /* WhatsNewViewController.swift */,
+				AA885AC9C0A2CC737F03795C9A1D5931 /* WhatsNewViewController+Animation.swift */,
+				301571F200384C6570EA26EB72735E1C /* WhatsNewViewController+CompletionButton.swift */,
+				2809240A05BEB1043C346652A9118463 /* WhatsNewViewController+Configuration.swift */,
+				5A589A3F13C36938E010B8A2C89E1759 /* WhatsNewViewController+DetailButton.swift */,
+				57D9505AFD3D67DA20DC813581823031 /* WhatsNewViewController+HapticFeedback.swift */,
+				7473425267D7FE1358EAD3853C2C389D /* WhatsNewViewController+ItemsView.swift */,
+				820CB474CCB592E36AE7ABB314631414 /* WhatsNewViewController+Theme.swift */,
+				62DE22DBA933193D5EB33303F61DB36D /* WhatsNewViewController+TitleView.swift */,
+				A3DD9956C0DA5CFC7F7095CEC680AC83 /* Support Files */,
 			);
+			name = WhatsNewKit;
+			path = WhatsNewKit;
+			sourceTree = "<group>";
+		};
+		89C9E84249E76DA1B380621BB416D1DE /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				9C184D50FA778365BBEB6BD9FA4B9E28 /* Frameworks */,
+				DE9FC52D370BAC50A63048E25ADFA3DC /* Support Files */,
+			);
+			name = OneSignal;
 			path = OneSignal;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		9C184D50FA778365BBEB6BD9FA4B9E28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				163C1AA213F9E51F616BCDC33BBF4ED8 /* OneSignal.framework */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C81A2313A219B17DAF3AA3E06FB91359 /* Products */ = {
+		A2DC629C2F0465F5E41D5F16023A45DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */,
-				9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */,
+				89C9E84249E76DA1B380621BB416D1DE /* OneSignal */,
+				7DBE8BA1312A734259539B541CF435C3 /* WhatsNewKit */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		C88DC154B0B695CBE20B9A012BB20061 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */ = {
+		A3DD9956C0DA5CFC7F7095CEC680AC83 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B8191FF276EE19A9B64A9BCA56C99ED2 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap */,
-				004FAA70CFA2545B4ADFB4CF4A60FCB0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.markdown */,
-				99B490E74E1B99C47F8F1D24E2584776 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-acknowledgements.plist */,
-				3E764701DF0059E37769AAE0B2D670CF /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m */,
-				4A7C8FBDE3D29556BD181F32BF7D6D65 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist */,
-				9933646A224577E7BE6DBD2901645BFD /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h */,
-				0E4ABDF43843B60C82A621CEE8A51EE5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				8C0D836239BAA0266654E24C7C3A854F /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */,
+				F75B2A159585A60D1A5F7749B05C7CB9 /* WhatsNewKit.modulemap */,
+				8F8AC3EA025E01D4B63F8438B08E1326 /* WhatsNewKit-dummy.m */,
+				62355309EBCD367AA96A88E9591D3397 /* WhatsNewKit-Info.plist */,
+				4BB8F7EF9BC0CA08E4098CCF1870F542 /* WhatsNewKit-prefix.pch */,
+				60EF49E50E958CC6BA8C741D43340442 /* WhatsNewKit-umbrella.h */,
+				026018A4474D98563547F7CF1EC32AFD /* WhatsNewKit.debug.xcconfig */,
+				4E64572F27DF22B47BE0F5C844D72137 /* WhatsNewKit.release.xcconfig */,
 			);
-			name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
-			path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension";
+			name = "Support Files";
+			path = "../Target Support Files/WhatsNewKit";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1D40C0AE1924259957A7C76C1386542E /* Pods */,
-				C81A2313A219B17DAF3AA3E06FB91359 /* Products */,
-				00DB587292DA2B1546BCD3D5F84E9594 /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				A2DC629C2F0465F5E41D5F16023A45DD /* Pods */,
+				D89A905A55521ECBA22E828E86724D56 /* Products */,
+				2477ECFF692835EA7A484602768C3E4F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CFE090658AE1E3252BAA8610D3A558D4 /* Frameworks */ = {
+		D89A905A55521ECBA22E828E86724D56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE970C2B67E152876EBCB1DA43AB863F /* OneSignal.framework */,
+				A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */,
+				9B410B40E4C61DD66F8562D65E6C3534 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */,
+				7A9485D5005ACFF057A3BFFBD0387F65 /* WhatsNewKit.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DE9FC52D370BAC50A63048E25ADFA3DC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				7FF505A9586CE464FF2808D1F9E4089E /* OneSignal.debug.xcconfig */,
+				2AA4F585867A96506FEDD400870A0CEE /* OneSignal.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/OneSignal";
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BD886E9B6A154732B214BA15905A478 /* Headers */ = {
+		19783FFAF414F947A7E742625526737A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0F8107CFBA7AEDB30AAD909EE2225B /* Pods-RadioRasclat-umbrella.h in Headers */,
+				70F82F331B19164DDB91B939F14B3624 /* Pods-RadioRasclat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCEA307372FE8EA31998DC80BA5DBBF1 /* Headers */ = {
+		6C23DCEC5FEB248FE1903978BAB84D25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				102591ED6E12FFA23E2F193F08E0FAFB /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h in Headers */,
+				7D16802E323ECF2E5CD496E692813B50 /* WhatsNewKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EACC4E20ECCF818B40B4C8B43FC2BA60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFAED413C77521632FE85B0F8378963 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,36 +372,56 @@
 /* Begin PBXNativeTarget section */
 		43E8FDAF39A57DCCBC0EC5F801A28B4E /* Pods-RadioRasclat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D85524619BD008D21DABDDF505055F05 /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat" */;
+			buildConfigurationList = 0DB4BFDFA956754454CC0D05BE0D29E8 /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat" */;
 			buildPhases = (
-				1BD886E9B6A154732B214BA15905A478 /* Headers */,
-				CE7DD81EF40569B2BBCE7FECF140E2AF /* Sources */,
-				C26DAE1E598E2C33A6A01AE0FF9A3872 /* Frameworks */,
-				A8521A3E86B12FB9F228B7E96EFDE8AD /* Resources */,
+				19783FFAF414F947A7E742625526737A /* Headers */,
+				48EFCFDA6276334CBB46484C24650A23 /* Sources */,
+				F88A0627C8FB3A99420B49DD412A94E6 /* Frameworks */,
+				1F9C2A14C8E51DFCD5A6168B816901EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A43EB1DDD3F6F4FA0A121E7345511FB5 /* PBXTargetDependency */,
+				941507532DC702BCAAA4676259EA04EA /* PBXTargetDependency */,
+				E86417C5B86D0A61936ED0D7160D8F2B /* PBXTargetDependency */,
 			);
 			name = "Pods-RadioRasclat";
 			productName = "Pods-RadioRasclat";
 			productReference = A8F94A8047657824A06743E1684EA0D6 /* Pods_RadioRasclat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E6C029DEE6E194140138EBF646B60D88 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */ = {
+		9704B189A5639F0B7534EC8872960E23 /* WhatsNewKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C42BD5CF9741E184394062047683E6F /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat-OneSignalNotificationServiceExtension" */;
+			buildConfigurationList = 3A55C541CF902FFB1253F26F4EE9A5D7 /* Build configuration list for PBXNativeTarget "WhatsNewKit" */;
 			buildPhases = (
-				DCEA307372FE8EA31998DC80BA5DBBF1 /* Headers */,
-				A333A8850E992843F0E8A9531B5D0A0D /* Sources */,
-				AEA94A8204D1CF2B09AE2E4B9B0B1D32 /* Frameworks */,
-				F970FC89C8828F9A1C92A3E6CAAE4F6F /* Resources */,
+				6C23DCEC5FEB248FE1903978BAB84D25 /* Headers */,
+				5D226502F46EB249CACBCE63D00E03D8 /* Sources */,
+				B640DC6E1D207042BD8216EC761F75F9 /* Frameworks */,
+				0D3669D43F6EB11F287473CC522FA53B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2480411B9D4A724628C1BCA9E2B1342C /* PBXTargetDependency */,
+			);
+			name = WhatsNewKit;
+			productName = WhatsNewKit;
+			productReference = 7A9485D5005ACFF057A3BFFBD0387F65 /* WhatsNewKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6C029DEE6E194140138EBF646B60D88 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2654031E90FD7D1515C3AF2BEB47BF7D /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat-OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				EACC4E20ECCF818B40B4C8B43FC2BA60 /* Headers */,
+				E8161AE1AC91162243AD66F6F754388B /* Sources */,
+				B13447531C2E7BEC50B4C2E9EC513585 /* Frameworks */,
+				7D25534E7349797E185E3C354A66168B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B3DB4F8524F59F45B7D4176948B705 /* PBXTargetDependency */,
+				2FDC9ADB8F9D1706A753DA5EEEEA7AE8 /* PBXTargetDependency */,
 			);
 			name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
 			productName = "Pods-RadioRasclat-OneSignalNotificationServiceExtension";
@@ -281,26 +446,34 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C81A2313A219B17DAF3AA3E06FB91359 /* Products */;
+			productRefGroup = D89A905A55521ECBA22E828E86724D56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */,
 				43E8FDAF39A57DCCBC0EC5F801A28B4E /* Pods-RadioRasclat */,
 				E6C029DEE6E194140138EBF646B60D88 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension */,
+				9704B189A5639F0B7534EC8872960E23 /* WhatsNewKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A8521A3E86B12FB9F228B7E96EFDE8AD /* Resources */ = {
+		0D3669D43F6EB11F287473CC522FA53B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F970FC89C8828F9A1C92A3E6CAAE4F6F /* Resources */ = {
+		1F9C2A14C8E51DFCD5A6168B816901EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D25534E7349797E185E3C354A66168B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,43 +483,185 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A333A8850E992843F0E8A9531B5D0A0D /* Sources */ = {
+		48EFCFDA6276334CBB46484C24650A23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FB56B9C04926F7EF64ECA6B1FA43C49 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m in Sources */,
+				8B861AC7AE697A9A4CAE60371F883399 /* Pods-RadioRasclat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE7DD81EF40569B2BBCE7FECF140E2AF /* Sources */ = {
+		5D226502F46EB249CACBCE63D00E03D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D1DB31AA11471FAFC28AA5C69EDF9F /* Pods-RadioRasclat-dummy.m in Sources */,
+				2153E67600F1B493D658A13371FFFE73 /* Anchor.swift in Sources */,
+				2EE45E86A416F33B422FD18E8D14D06F /* InMemoryWhatsNewVersionStore.swift in Sources */,
+				C3D1CECF1CC2AB92B141A417CD725870 /* KeyValueWhatsNewVersionStore.swift in Sources */,
+				1D34744199255BB8C9950B8DC61B47B9 /* UIColor+Defaults.swift in Sources */,
+				8D7DF75D8F09457EF4B3B56BCC797264 /* UIView+MakeConstraints.swift in Sources */,
+				96B6AD640CD6C7EA382954F09F832D35 /* WhatsNew+Item.swift in Sources */,
+				2729AF82673099FB4FAD7F68B86D0610 /* WhatsNew+Version.swift in Sources */,
+				E1E8500019AEE73013DBEA8956FDD41F /* WhatsNew.swift in Sources */,
+				B71393D8EE8C272F9CCC352FE8C17D99 /* WhatsNewButtonViewController+CompletionButton.swift in Sources */,
+				15343CB47FFBB0752355C2388481FE36 /* WhatsNewButtonViewController+DetailButton.swift in Sources */,
+				30B583EDA3F98BD8D47BC4BFA5C80383 /* WhatsNewButtonViewController.swift in Sources */,
+				0BE3E98C1CB0BCDD448F18CBA561B4E5 /* WhatsNewItemsViewController+Cell.swift in Sources */,
+				30455E0017F945465D91268E24CC93DB /* WhatsNewItemsViewController.swift in Sources */,
+				95F27623EB740A15CFB04C1C8E6052AD /* WhatsNewKit-dummy.m in Sources */,
+				575CE7E6D9E87305D6A9CD367C7475C7 /* WhatsNewTitleViewController.swift in Sources */,
+				1EBF95B39A517FB60C32154A17A4E3EE /* WhatsNewVersionStore.swift in Sources */,
+				7CB5E5115ACC97A044E3115376C8D2FA /* WhatsNewViewController+Animation.swift in Sources */,
+				CA4B746E44E30E24E219B979305220B2 /* WhatsNewViewController+CompletionButton.swift in Sources */,
+				A9C3F8449C359B062DD460A18B41B3FB /* WhatsNewViewController+Configuration.swift in Sources */,
+				E51B887B812715507ED5DF218CBACBF2 /* WhatsNewViewController+DetailButton.swift in Sources */,
+				AC4AAE0600260145FC2ADCA9BF478AFC /* WhatsNewViewController+HapticFeedback.swift in Sources */,
+				52892E5AD9C85CF79AB36703A2D2824F /* WhatsNewViewController+ItemsView.swift in Sources */,
+				49C8993D1F51145FF20FC34B9695961E /* WhatsNewViewController+Theme.swift in Sources */,
+				9CB41EC206D193644344058FD550703D /* WhatsNewViewController+TitleView.swift in Sources */,
+				CF9CDE647C30949EDA7EB61106983A60 /* WhatsNewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8161AE1AC91162243AD66F6F754388B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E1E581366DA66B9377EFE36F0FE08B5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2480411B9D4A724628C1BCA9E2B1342C /* PBXTargetDependency */ = {
+		23B3DB4F8524F59F45B7D4176948B705 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OneSignal;
 			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
-			targetProxy = 196E34E451081EFBEDE1D7338050684C /* PBXContainerItemProxy */;
+			targetProxy = FF051313BF88E04B06C237D81CD9635D /* PBXContainerItemProxy */;
 		};
-		A43EB1DDD3F6F4FA0A121E7345511FB5 /* PBXTargetDependency */ = {
+		2FDC9ADB8F9D1706A753DA5EEEEA7AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhatsNewKit;
+			target = 9704B189A5639F0B7534EC8872960E23 /* WhatsNewKit */;
+			targetProxy = 7489A1EF270C078126E47AC1447DF539 /* PBXContainerItemProxy */;
+		};
+		941507532DC702BCAAA4676259EA04EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OneSignal;
 			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
-			targetProxy = B44C9F86DF7A048C89EA4B1B854A3405 /* PBXContainerItemProxy */;
+			targetProxy = 8217303646BE10BDF8578901E831690D /* PBXContainerItemProxy */;
+		};
+		E86417C5B86D0A61936ED0D7160D8F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhatsNewKit;
+			target = 9704B189A5639F0B7534EC8872960E23 /* WhatsNewKit */;
+			targetProxy = 47465F0BBFAEC652614D3D08E2A31105 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0EF0A11828143DCC371390DB898ED911 /* Release */ = {
+		1356A84ACA4AEF8553ADEEB50B58F887 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F730F581794A842470A6F08C5F857D8 /* Pods-RadioRasclat.release.xcconfig */;
+			baseConfigurationReference = C5F63DB94AB92F72860BC3311C941986 /* Pods-RadioRasclat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		671A3786FF6AB29CA10EB859C0A0FB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9DFEC0E1BD3A6BDCA15961E4EBB27D /* Pods-RadioRasclat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -383,85 +698,9 @@
 			};
 			name = Release;
 		};
-		153A0DCEEDFE2D23CD4493FF591F9F0E /* Debug */ = {
+		7D6D7B29A6EC928566AC1696A0113997 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4ABDF43843B60C82A621CEE8A51EE5 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		42044E5CE7F55CEBCD06C816882D924F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17AA4BA429DA8EBBA16E41B71BE68040 /* Pods-RadioRasclat.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6722DB8F96E88932A237EA9E346D8AD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C0D836239BAA0266654E24C7C3A854F /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 7C9B471C4162ECB67BF2E7E49E8DE6C6 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -498,7 +737,59 @@
 			};
 			name = Release;
 		};
-		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+		A878C3D55F709CAD45EF8ECE52195E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA4F585867A96506FEDD400870A0CEE /* OneSignal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C87D7884FD30C8E9D0A1F0B2B0F2F3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026018A4474D98563547F7CF1EC32AFD /* WhatsNewKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WhatsNewKit/WhatsNewKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WhatsNewKit/WhatsNewKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WhatsNewKit/WhatsNewKit.modulemap";
+				PRODUCT_MODULE_NAME = WhatsNewKit;
+				PRODUCT_NAME = WhatsNewKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -562,86 +853,9 @@
 			};
 			name = Debug;
 		};
-		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A878C3D55F709CAD45EF8ECE52195E7F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB8C2A5F2DDBF831C0AA4A938F63A708 /* OneSignal.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		F3E9F9E9585F98343983C0CCCCB54092 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 902E93CF36123E61715248B4BAD22E33 /* OneSignal.debug.xcconfig */;
+			baseConfigurationReference = 7FF505A9586CE464FF2808D1F9E4089E /* OneSignal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -652,6 +866,80 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7A7F079FC21C233B5EB56F812066666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E64572F27DF22B47BE0F5C844D72137 /* WhatsNewKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WhatsNewKit/WhatsNewKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WhatsNewKit/WhatsNewKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WhatsNewKit/WhatsNewKit.modulemap";
+				PRODUCT_MODULE_NAME = WhatsNewKit;
+				PRODUCT_NAME = WhatsNewKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD0E24EDCD399B3FAE5CF8CCDBD0CECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5584B95A9C40C5119385B110DB59D6DC /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -667,11 +955,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C42BD5CF9741E184394062047683E6F /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat-OneSignalNotificationServiceExtension" */ = {
+		0DB4BFDFA956754454CC0D05BE0D29E8 /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				153A0DCEEDFE2D23CD4493FF591F9F0E /* Debug */,
-				6722DB8F96E88932A237EA9E346D8AD2 /* Release */,
+				1356A84ACA4AEF8553ADEEB50B58F887 /* Debug */,
+				671A3786FF6AB29CA10EB859C0A0FB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2654031E90FD7D1515C3AF2BEB47BF7D /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat-OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0E24EDCD399B3FAE5CF8CCDBD0CECF /* Debug */,
+				7D6D7B29A6EC928566AC1696A0113997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A55C541CF902FFB1253F26F4EE9A5D7 /* Build configuration list for PBXNativeTarget "WhatsNewKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C87D7884FD30C8E9D0A1F0B2B0F2F3B4 /* Debug */,
+				F7A7F079FC21C233B5EB56F812066666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -679,17 +985,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
-				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D85524619BD008D21DABDDF505055F05 /* Build configuration list for PBXNativeTarget "Pods-RadioRasclat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42044E5CE7F55CEBCD06C816882D924F /* Debug */,
-				0EF0A11828143DCC371390DB898ED911 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

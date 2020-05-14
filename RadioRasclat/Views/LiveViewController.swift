@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import FRadioPlayer
 import AVKit
+import WhatsNewKit
 
 class LiveViewController: UIViewController {
     
@@ -34,6 +35,51 @@ class LiveViewController: UIViewController {
         // Set the delegate for the radio player
         player.delegate = self
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
+        
+        // Initialize WhatsNew
+        let whatsNew = WhatsNew(
+            // The Title
+            title: "What's new?",
+            // The features you want to showcase
+            items: [
+                WhatsNew.Item(
+                    title: "Listen to Broadcasts",
+                    subtitle: "You can install WhatsNewKit via CocoaPods or Carthage",
+                    image: UIImage(named: "btn-play")
+                ),
+                WhatsNew.Item(
+                    title: "Push Notifications",
+                    subtitle: "We'll be happy to inform you from time to time about upcoming live programs.",
+                    image: UIImage(named: "btn-play")
+                )
+            ]
+        )
+        
+        // Initialize default Configuration
+        var configuration = WhatsNewViewController.Configuration()
+
+        // Customize Configuration to your needs
+        configuration.apply(theme: .red)
+        
+        // Initialize WhatsNewVersionStore
+        let versionStore: WhatsNewVersionStore = KeyValueWhatsNewVersionStore()
+
+        // Passing a WhatsNewVersionStore to the initializer
+        // will give you an optional WhatsNewViewController
+        let whatsNewViewController: WhatsNewViewController? = WhatsNewViewController(
+            whatsNew: whatsNew,
+            configuration: configuration,
+            versionStore: versionStore
+        )
+
+        // Verify WhatsNewViewController is available
+        guard let viewController = whatsNewViewController else {
+            // The user has already seen the WhatsNew-Screen for the current Version of your app
+            return
+        }
+
+        // Present WhatsNewViewController
+        self.present(viewController, animated: true)
         
         setupRemoteTransportControls()
     }

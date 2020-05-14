@@ -7,6 +7,7 @@ target 'RadioRasclat' do
 
   # Pods for RadioRasclat
   pod 'OneSignal', '>= 2.11.2', '< 3.0'
+  pod 'WhatsNewKit'
 
   target 'OneSignalNotificationServiceExtension' do
     pod 'OneSignal', '>= 2.11.2', '< 3.0'

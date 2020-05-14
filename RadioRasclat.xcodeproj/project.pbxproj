@@ -18,7 +18,7 @@
 		B2C450972469CDBB000AB7AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C450952469CDBB000AB7AE /* Main.storyboard */; };
 		B2C450992469CDBC000AB7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C450982469CDBC000AB7AE /* Assets.xcassets */; };
 		B2C4509C2469CDBC000AB7AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C4509A2469CDBC000AB7AE /* LaunchScreen.storyboard */; };
-		B2CCD1BB2469EAFD00387D50 /* FRadioPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */; };
+		B2CCD1BB2469EAFD00387D50 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B2CCD1BA2469EAFD00387D50 /* SwiftPackageProductDependency */; };
 		B2CCD1C32469FB4000387D50 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCD1C22469FB4000387D50 /* NotificationService.swift */; };
 		B2CCD1C72469FB4000387D50 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3A1E07CD413C758EF79E9CE /* Pods_RadioRasclat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CCD1BB2469EAFD00387D50 /* FRadioPlayer in Frameworks */,
+				B2CCD1BB2469EAFD00387D50 /* BuildFile in Frameworks */,
 				C3A1E07CD413C758EF79E9CE /* Pods_RadioRasclat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +234,7 @@
 				B2C450892469CDBB000AB7AE /* Frameworks */,
 				B2C4508A2469CDBB000AB7AE /* Resources */,
 				B2CCD1CB2469FB4000387D50 /* Embed App Extensions */,
+				C55BABED88A48DC85689D052 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,7 +243,7 @@
 			);
 			name = RadioRasclat;
 			packageProductDependencies = (
-				B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */,
+				B2CCD1BA2469EAFD00387D50 /* SwiftPackageProductDependency */,
 			);
 			productName = RadioRasclat;
 			productReference = B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */;
@@ -298,7 +299,7 @@
 			);
 			mainGroup = B2C450832469CDBB000AB7AE;
 			packageReferences = (
-				B2CCD1B92469EAFD00387D50 /* XCRemoteSwiftPackageReference "FRadioPlayer" */,
+				B2CCD1B92469EAFD00387D50 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = B2C4508D2469CDBB000AB7AE /* Products */;
 			projectDirPath = "";
@@ -359,6 +360,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55BABED88A48DC85689D052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9431E51A6F161D8C69E1628 /* [CP] Check Pods Manifest.lock */ = {
@@ -742,7 +760,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B2CCD1B92469EAFD00387D50 /* XCRemoteSwiftPackageReference "FRadioPlayer" */ = {
+		B2CCD1B92469EAFD00387D50 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fethica/FRadioPlayer.git";
 			requirement = {
@@ -753,9 +771,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */ = {
+		B2CCD1BA2469EAFD00387D50 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B2CCD1B92469EAFD00387D50 /* XCRemoteSwiftPackageReference "FRadioPlayer" */;
+			package = B2CCD1B92469EAFD00387D50 /* RemoteSwiftPackageReference */;
 			productName = FRadioPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */

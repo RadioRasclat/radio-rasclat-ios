@@ -1,16 +1,20 @@
 PODS:
   - OneSignal (2.13.1)
+  - WhatsNewKit (1.3.3)
 
 DEPENDENCIES:
   - OneSignal (< 3.0, >= 2.11.2)
+  - WhatsNewKit
 
 SPEC REPOS:
   trunk:
     - OneSignal
+    - WhatsNewKit
 
 SPEC CHECKSUMS:
   OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
+  WhatsNewKit: 3cbe30a202cc387086a977deba52af50f61c656f
 
-PODFILE CHECKSUM: c6663ef1b2e97b41a8e40dc87395ae51b9f9cc33
+PODFILE CHECKSUM: 9e593dc8c4be86b4dc2483c11d79fbe0527616ae
 
 COCOAPODS: 1.9.1
