@@ -11,7 +11,9 @@
 		84AE56DE246C3F2300548A09 /* Radio_RasclatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE56DD246C3F2300548A09 /* Radio_RasclatUITests.swift */; };
 		B209E56C2469CF3C003C8672 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56B2469CF3C003C8672 /* Track.swift */; };
 		B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56E2469CF85003C8672 /* LiveViewController.swift */; };
-		B23D74712469D60800F22B24 /* BroadcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D74702469D60800F22B24 /* BroadcastsViewController.swift */; };
+		B23D74712469D60800F22B24 /* BroadcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D74702469D60800F22B24 /* BroadcastListViewController.swift */; };
+		B26EA2FC246E08650016501A /* BroadcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26EA2FB246E08650016501A /* BroadcastDetailViewController.swift */; };
+		B2878630246E12FD00C2212B /* Broadcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287862E246E0B7300C2212B /* Broadcasts.swift */; };
 		B2C450902469CDBB000AB7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */; };
 		B2C450922469CDBB000AB7AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C450912469CDBB000AB7AE /* SceneDelegate.swift */; };
 		B2C450942469CDBB000AB7AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C450932469CDBB000AB7AE /* ViewController.swift */; };
@@ -66,7 +68,9 @@
 		B209E56B2469CF3C003C8672 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B209E56E2469CF85003C8672 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
-		B23D74702469D60800F22B24 /* BroadcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastsViewController.swift; sourceTree = "<group>"; };
+		B23D74702469D60800F22B24 /* BroadcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastListViewController.swift; sourceTree = "<group>"; };
+		B26EA2FB246E08650016501A /* BroadcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastDetailViewController.swift; sourceTree = "<group>"; };
+		B287862E246E0B7300C2212B /* Broadcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broadcasts.swift; sourceTree = "<group>"; };
 		B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Rasclat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C450912469CDBB000AB7AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		B209E56A2469CF2B003C8672 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B287862E246E0B7300C2212B /* Broadcasts.swift */,
 				B209E56B2469CF3C003C8672 /* Track.swift */,
 			);
 			path = Models;
@@ -141,10 +146,27 @@
 		B209E56D2469CF72003C8672 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B209E56E2469CF85003C8672 /* LiveViewController.swift */,
-				B23D74702469D60800F22B24 /* BroadcastsViewController.swift */,
+				B26EA2FE246E08BE0016501A /* Broadcasts */,
+				B26EA2FD246E08B10016501A /* Live */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B26EA2FD246E08B10016501A /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				B209E56E2469CF85003C8672 /* LiveViewController.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		B26EA2FE246E08BE0016501A /* Broadcasts */ = {
+			isa = PBXGroup;
+			children = (
+				B23D74702469D60800F22B24 /* BroadcastListViewController.swift */,
+				B26EA2FB246E08650016501A /* BroadcastDetailViewController.swift */,
+			);
+			path = Broadcasts;
 			sourceTree = "<group>";
 		};
 		B27A672F4825801320165B54 /* Frameworks */ = {
@@ -154,6 +176,13 @@
 				319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B287862D246E0B5800C2212B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B2C450832469CDBB000AB7AE = {
@@ -181,6 +210,7 @@
 		B2C4508E2469CDBB000AB7AE /* RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
+				B287862D246E0B5800C2212B /* Controller */,
 				B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */,
 				B209E56D2469CF72003C8672 /* Views */,
 				B209E56A2469CF2B003C8672 /* Models */,
@@ -398,9 +428,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26EA2FC246E08650016501A /* BroadcastDetailViewController.swift in Sources */,
+				B2878630246E12FD00C2212B /* Broadcasts.swift in Sources */,
 				B2C450942469CDBB000AB7AE /* ViewController.swift in Sources */,
 				B2C450902469CDBB000AB7AE /* AppDelegate.swift in Sources */,
-				B23D74712469D60800F22B24 /* BroadcastsViewController.swift in Sources */,
+				B23D74712469D60800F22B24 /* BroadcastListViewController.swift in Sources */,
 				B2C450922469CDBB000AB7AE /* SceneDelegate.swift in Sources */,
 				B209E56C2469CF3C003C8672 /* Track.swift in Sources */,
 				B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */,
