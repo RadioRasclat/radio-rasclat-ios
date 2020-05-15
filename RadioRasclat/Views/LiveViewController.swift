@@ -33,8 +33,6 @@ class LiveViewController: UIViewController {
         
         // Set the delegate for the radio player
         player.delegate = self
-        player.isAutoPlay = false
-        player.artworkSize = 300
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
         
         setupRemoteTransportControls()
