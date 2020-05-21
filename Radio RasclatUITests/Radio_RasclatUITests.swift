@@ -23,7 +23,13 @@ class Radio_RasclatUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testAppLaunch() {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+    }
+    
+    func testLiveButtons() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
@@ -33,6 +39,21 @@ class Radio_RasclatUITests: XCTestCase {
         
         app.buttons["btn play"].tap()
         app.buttons["btn pause"].tap()
+    }
+    
+    func testBroadcasts() {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        app.tabBars.buttons["Broadcasts"].tap()
+        
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["AMP//R FM w/ Ergo Proxy • 12.05.2020"]/*[[".cells.staticTexts[\"AMP\/\/R FM w\/ Ergo Proxy • 12.05.2020\"]",".staticTexts[\"AMP\/\/R FM w\/ Ergo Proxy • 12.05.2020\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["Play"]/*[[".buttons[\"Play\"].staticTexts[\"Play\"]",".staticTexts[\"Play\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["AMP//R FM w/ Ergo Proxy • 12.05.2020"].buttons["Broadcasts"].tap()
         
     }
 
