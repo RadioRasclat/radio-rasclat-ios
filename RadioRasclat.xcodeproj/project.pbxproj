@@ -70,6 +70,7 @@
 		B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
 		B23D74702469D60800F22B24 /* BroadcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastListViewController.swift; sourceTree = "<group>"; };
 		B26EA2FB246E08650016501A /* BroadcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastDetailViewController.swift; sourceTree = "<group>"; };
+		B283730C247659F400CBB6ED /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		B287862E246E0B7300C2212B /* Broadcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broadcasts.swift; sourceTree = "<group>"; };
 		B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Rasclat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +229,7 @@
 		B2CCD1C12469FB4000387D50 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B283730C247659F400CBB6ED /* OneSignalNotificationServiceExtension.entitlements */,
 				B2CCD1C22469FB4000387D50 /* NotificationService.swift */,
 				B2CCD1C42469FB4000387D50 /* Info.plist */,
 			);
@@ -690,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 294CF6FDC342CD41BAE59B94 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
@@ -713,6 +716,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
