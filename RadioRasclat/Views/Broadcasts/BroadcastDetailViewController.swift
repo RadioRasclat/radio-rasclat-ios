@@ -28,6 +28,7 @@ extension UIImageView {
 class BroadcastDetailViewController: UIViewController {
     
     var player = AVPlayer()
+    var playerItem: AVPlayerItem!
     
     var broadcast:Broadcasts?
 
@@ -35,12 +36,7 @@ class BroadcastDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func playBroadcastButton(_ sender: Any) {
-        let urlAudioString = broadcast?.audio
-        
-        let playerItem = AVPlayerItem(url: URL(string: urlAudioString!)!)
-        player = AVPlayer(playerItem: playerItem)
         player.play()
-        
         setupAVAudioSession()
     }
     
@@ -57,7 +53,18 @@ class BroadcastDetailViewController: UIViewController {
     }
     
     private func setupCommandCenter() {
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = [MPMediaItemPropertyTitle: broadcast?.title ?? "Radio Rasclat"]
+        
+        // Meta
+        var nowPlayingInfo = [String : Any]()
+        
+        nowPlayingInfo[MPMediaItemPropertyTitle] = broadcast?.title ?? "Radio Rasclat"
+        nowPlayingInfo[MPMediaItemPropertyArtist] = "Radio Rasclat"
+        nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = "Stimulating the gun-finger."
+        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem.currentTime().seconds
+        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem.asset.duration.seconds
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
 
         let commandCenter = MPRemoteCommandCenter.shared()
         commandCenter.playCommand.isEnabled = true
@@ -70,10 +77,23 @@ class BroadcastDetailViewController: UIViewController {
             self?.player.pause()
             return .success
         }
+        
+        // Scrubber
+        commandCenter.changePlaybackPositionCommand.addTarget { event in
+            let seconds = (event as? MPChangePlaybackPositionCommandEvent)?.positionTime ?? 0
+            let time = CMTime(seconds: seconds, preferredTimescale: 1)
+            self.player.seek(to: time)
+            return .success
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let urlAudioString = broadcast?.audio
+        
+        playerItem = AVPlayerItem(url: URL(string: urlAudioString!)!)
+        player = AVPlayer(playerItem: playerItem)
         
         title = broadcast?.title
         
