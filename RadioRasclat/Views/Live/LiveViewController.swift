@@ -27,6 +27,8 @@ class LiveViewController: UIViewController {
             updateNowPlaying(with: track)
         }
     }
+    
+    // Get live meta data from Radio Rasclat API
 
     override func viewDidLoad() {
         super.viewDidLoad()
