@@ -34,6 +34,7 @@ class LiveViewController: UIViewController {
         // Set the delegate for the radio player
         player.delegate = self
         player.isAutoPlay = false
+        player.enableArtwork = false
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
         
         setupRemoteTransportControls()
@@ -49,6 +50,7 @@ class LiveViewController: UIViewController {
     
     @IBAction func pauseButtonPressed(_ sender: Any) {
         player.pause()
+        track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
     }
     
 }
@@ -66,7 +68,7 @@ extension LiveViewController: FRadioPlayerDelegate {
     }
     
     func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?) {
-        track = nil
+        track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
     }
     
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {
