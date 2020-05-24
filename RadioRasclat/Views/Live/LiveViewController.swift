@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import FRadioPlayer
 import AVKit
+import Alamofire
 
 class LiveViewController: UIViewController {
     
@@ -38,6 +39,10 @@ class LiveViewController: UIViewController {
         player.isAutoPlay = false
         player.enableArtwork = false
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
+        
+        AF.request("https://api.radio-rasclat.com/meta/live-info").response { response in
+            debugPrint(response)
+        }
         
         setupRemoteTransportControls()
     }
