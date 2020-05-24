@@ -68,11 +68,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-tY-7D4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="iel-yY-MyG" userLabel="AlbumArt">
                                 <rect key="frame" x="70" y="119" width="274" height="274"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iel-yY-MyG" secondAttribute="height" multiplier="1:1" id="AV9-WT-aMu"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="126" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-NN-4sD" userLabel="Controls Stack View">
                                 <rect key="frame" x="99" y="423" width="216" height="45"/>
@@ -94,6 +102,7 @@
                                             <constraint firstAttribute="width" constant="45" id="0yj-ls-H3e"/>
                                             <constraint firstAttribute="height" constant="45" id="CsF-hd-Eyg"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="btn-pause"/>
                                         <connections>
                                             <action selector="pauseButtonPressed:" destination="Plm-ji-a8Y" eventType="touchUpInside" id="toQ-Jy-oNe"/>
@@ -107,13 +116,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RBT-PY-bjk">
                                         <rect key="frame" x="124.5" y="0.0" width="141" height="33.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="inV-wr-k9f">
                                         <rect key="frame" x="143.5" y="41.5" width="103" height="24"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -123,12 +132,16 @@
                         <constraints>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="centerX" secondItem="P7a-Td-KxV" secondAttribute="centerX" id="1E0-e3-WA4"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="top" secondItem="wzQ-NN-4sD" secondAttribute="bottom" constant="30" id="1SU-yq-G1I"/>
+                            <constraint firstAttribute="bottom" secondItem="kG0-tY-7D4" secondAttribute="bottom" id="6ku-Qq-Bvs"/>
+                            <constraint firstItem="kG0-tY-7D4" firstAttribute="top" secondItem="P7a-Td-KxV" secondAttribute="top" id="FAG-Xp-bPb"/>
                             <constraint firstItem="wzQ-NN-4sD" firstAttribute="top" secondItem="iel-yY-MyG" secondAttribute="bottom" constant="30" id="He7-UZ-oYC"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="centerX" secondItem="wzQ-NN-4sD" secondAttribute="centerX" id="S7m-Vc-a4a"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="top" secondItem="wk6-BP-cNM" secondAttribute="top" constant="31" id="WFj-JR-898"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" constant="70" id="Xos-kf-vDe"/>
+                            <constraint firstItem="kG0-tY-7D4" firstAttribute="trailing" secondItem="wk6-BP-cNM" secondAttribute="trailing" id="g6U-C9-0J7"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="trailing" secondItem="wk6-BP-cNM" secondAttribute="trailing" constant="-12" id="heL-GZ-l8h"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" constant="12" id="mPV-v3-U82"/>
+                            <constraint firstItem="kG0-tY-7D4" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" id="xU4-GH-iBZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wk6-BP-cNM"/>
                     </view>
@@ -141,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M69-uL-j5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1046" y="1384"/>
+            <point key="canvasLocation" x="-1046.376811594203" y="1383.4821428571429"/>
         </scene>
         <!--Broadcasts-->
         <scene sceneID="mHL-bB-yXt">
@@ -226,6 +239,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="414" height="896"/>
         <image name="broadcasts" width="44" height="44"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
