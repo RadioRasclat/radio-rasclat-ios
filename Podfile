@@ -7,6 +7,8 @@ target 'RadioRasclat' do
 
   # Pods for RadioRasclat
   pod 'OneSignal', '>= 2.11.2', '< 3.0'
+  pod 'Alamofire', '~> 5.2'
+  pod 'FRadioPlayer'
 
   target 'OneSignalNotificationServiceExtension' do
     pod 'OneSignal', '>= 2.11.2', '< 3.0'
