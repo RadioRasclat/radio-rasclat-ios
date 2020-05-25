@@ -40,11 +40,19 @@ class LiveViewController: UIViewController {
         player.enableArtwork = false
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
         
-        AF.request("https://api.radio-rasclat.com/meta/live-info").response { response in
-            debugPrint(response)
-        }
-        
         setupRemoteTransportControls()
+        
+        track = Track(artist: "Radio Rasclat", name: "Off-Air")
+        
+        getLiveIndicator()
+        getLiveMeta()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        getLiveIndicator()
+        getLiveMeta()
     }
     
     //*****************************************************************
@@ -60,6 +68,42 @@ class LiveViewController: UIViewController {
         track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
     }
     
+    func getLiveIndicator() {
+        AF.request("https://api.radio-rasclat.com/meta/live-info", method: .get)
+            .responseJSON { (response) in
+                switch response.result {
+                case .success(let value):
+                    if let JSON = value as? [String: Any] {
+                        let status = JSON["source_enabled"] as! String
+                        if status == "Master" {
+                            self.tabBarController?.tabBar.items?[0].badgeValue = "Live"
+                        } else {
+                            self.tabBarController?.tabBar.items?[0].badgeValue = nil
+                        }
+                    }
+                case .failure(let error): break
+                // error handling
+            }
+        }
+    }
+    
+    func getLiveMeta() {
+        AF.request("https://api.radio-rasclat.com/meta/shows/current", method: .get)
+            .responseJSON { (response) in
+                switch response.result {
+                case .success(let value):
+                    if let JSON = value as? [String: Any] {
+                        let data = JSON[""] as! String
+                        print("hi")
+                    } else {
+                        self.track = Track(artist: "Radio Rasclat", name: "Off-Air")
+                    }
+                case .failure(let error): break
+                // error handling
+            }
+        }
+    }
+    
 }
 
 extension LiveViewController: FRadioPlayerDelegate {
@@ -71,11 +115,10 @@ extension LiveViewController: FRadioPlayerDelegate {
     }
     
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
-        track = Track(artist: artistName, name: trackName)
+        
     }
     
     func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?) {
-        track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
     }
     
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {

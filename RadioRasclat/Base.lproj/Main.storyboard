@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DrukTextWide-Medium.ttf">
+            <string>DrukTextWide-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="Wik-8X-JUL">
@@ -26,11 +31,11 @@
             </objects>
             <point key="canvasLocation" x="-1045" y="-147"/>
         </scene>
-        <!--Live-->
+        <!--Stream-->
         <scene sceneID="uuP-al-Ppd">
             <objects>
                 <navigationController id="sEz-Vg-ZgR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Live" image="live" id="F7s-YJ-YaI"/>
+                    <tabBarItem key="tabBarItem" title="Stream" image="radiowaves.right" catalog="system" id="F7s-YJ-YaI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LLr-BA-0VX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -47,7 +52,7 @@
         <scene sceneID="yPX-Fv-UXD">
             <objects>
                 <navigationController id="sFV-CK-G1q" userLabel="Broadcasts" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Broadcasts" image="broadcasts" id="AFF-jP-dYk"/>
+                    <tabBarItem key="tabBarItem" title="Broadcasts" image="tray.full" catalog="system" id="AFF-jP-dYk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GaL-ea-e7P">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -60,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="-264" y="615"/>
         </scene>
-        <!--Live-->
+        <!--Stream-->
         <scene sceneID="6zX-fy-5V6">
             <objects>
                 <viewController id="Plm-ji-a8Y" customClass="LiveViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,17 +116,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-2C-HDy" userLabel="Labels Stack View">
-                                <rect key="frame" x="12" y="498" width="390" height="65.5"/>
+                                <rect key="frame" x="12" y="498" width="390" height="53"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Rasclat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RBT-PY-bjk">
-                                        <rect key="frame" x="113.5" y="0.0" width="163.5" height="33.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off-Air" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RBT-PY-bjk">
+                                        <rect key="frame" x="133.5" y="0.0" width="123.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press play button to start stream." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="inV-wr-k9f">
-                                        <rect key="frame" x="52.5" y="41.5" width="285" height="24"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Rasclat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="inV-wr-k9f">
+                                        <rect key="frame" x="113.5" y="35" width="163" height="18"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -145,7 +150,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wk6-BP-cNM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Live" id="ATr-GY-Pes"/>
+                    <navigationItem key="navigationItem" title="Stream" id="ATr-GY-Pes"/>
                     <connections>
                         <outlet property="artistLabel" destination="inV-wr-k9f" id="jVj-Uk-nzs"/>
                         <outlet property="artworkImageView" destination="iel-yY-MyG" id="t0Z-cl-kLQ"/>
@@ -240,10 +245,10 @@
     </scenes>
     <resources>
         <image name="background" width="414" height="896"/>
-        <image name="broadcasts" width="44" height="44"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
-        <image name="live" width="44" height="44"/>
         <image name="placeholderImage" width="333.33334350585938" height="333.33334350585938"/>
+        <image name="radiowaves.right" catalog="system" width="90" height="128"/>
+        <image name="tray.full" catalog="system" width="128" height="88"/>
     </resources>
 </document>
