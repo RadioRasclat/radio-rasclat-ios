@@ -21,6 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="sEz-Vg-ZgR" kind="relationship" relationship="viewControllers" id="bba-Kp-FGH"/>
@@ -39,6 +40,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LLr-BA-0VX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Plm-ji-a8Y" kind="relationship" relationship="rootViewController" id="wn5-3d-T0i"/>
@@ -56,6 +60,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GaL-ea-e7P">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="17"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="30"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="O3S-ss-5ws" kind="relationship" relationship="rootViewController" id="kxN-F2-T2b"/>
@@ -132,6 +142,10 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplayaudio" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZFZ-Yg-UZb">
+                                <rect key="frame" x="197" y="611" width="20" height="19"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -140,11 +154,13 @@
                             <constraint firstAttribute="bottom" secondItem="kG0-tY-7D4" secondAttribute="bottom" id="6ku-Qq-Bvs"/>
                             <constraint firstItem="kG0-tY-7D4" firstAttribute="top" secondItem="P7a-Td-KxV" secondAttribute="top" id="FAG-Xp-bPb"/>
                             <constraint firstItem="wzQ-NN-4sD" firstAttribute="top" secondItem="iel-yY-MyG" secondAttribute="bottom" constant="30" id="He7-UZ-oYC"/>
+                            <constraint firstItem="ZFZ-Yg-UZb" firstAttribute="centerX" secondItem="kG0-tY-7D4" secondAttribute="centerX" id="MW7-uC-mlU"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="centerX" secondItem="wzQ-NN-4sD" secondAttribute="centerX" id="S7m-Vc-a4a"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="top" secondItem="wk6-BP-cNM" secondAttribute="top" constant="31" id="WFj-JR-898"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" constant="70" id="Xos-kf-vDe"/>
                             <constraint firstItem="kG0-tY-7D4" firstAttribute="trailing" secondItem="wk6-BP-cNM" secondAttribute="trailing" id="g6U-C9-0J7"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="trailing" secondItem="wk6-BP-cNM" secondAttribute="trailing" constant="-12" id="heL-GZ-l8h"/>
+                            <constraint firstItem="ZFZ-Yg-UZb" firstAttribute="top" secondItem="8dt-2C-HDy" secondAttribute="bottom" constant="60" id="k8V-nQ-l3Z"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" constant="12" id="mPV-v3-U82"/>
                             <constraint firstItem="kG0-tY-7D4" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" id="xU4-GH-iBZ"/>
                         </constraints>
@@ -244,6 +260,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="airplayaudio" catalog="system" width="128" height="121"/>
         <image name="background" width="414" height="896"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
