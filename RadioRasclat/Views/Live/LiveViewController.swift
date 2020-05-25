@@ -81,8 +81,9 @@ class LiveViewController: UIViewController {
                             self.tabBarController?.tabBar.items?[0].badgeValue = nil
                         }
                     }
-                case .failure(let error): break
+                case .failure(let error):
                 // error handling
+                    print(error)
             }
         }
     }
@@ -95,11 +96,13 @@ class LiveViewController: UIViewController {
                     if let JSON = value as? [String: Any] {
                         let data = JSON[""] as! String
                         print("hi")
+                        print(data)
                     } else {
                         self.track = Track(artist: "Radio Rasclat", name: "Off-Air")
                     }
-                case .failure(let error): break
+                case .failure(let error):
                 // error handling
+                    print(error)
             }
         }
     }
