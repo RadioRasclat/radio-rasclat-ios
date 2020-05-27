@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import FRadioPlayer
 import AVKit
+import Alamofire
 
 class LiveViewController: UIViewController {
     
@@ -27,6 +28,8 @@ class LiveViewController: UIViewController {
             updateNowPlaying(with: track)
         }
     }
+    
+    // Get live meta data from Radio Rasclat API
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,18 @@ class LiveViewController: UIViewController {
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
         
         setupRemoteTransportControls()
+        
+        track = Track(artist: "Radio Rasclat", name: "Off-Air")
+        
+        getLiveIndicator()
+        getLiveMeta()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        getLiveIndicator()
+        getLiveMeta()
     }
     
     //*****************************************************************
@@ -53,6 +68,45 @@ class LiveViewController: UIViewController {
         track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
     }
     
+    func getLiveIndicator() {
+        AF.request("https://api.radio-rasclat.com/meta/live-info", method: .get)
+            .responseJSON { (response) in
+                switch response.result {
+                case .success(let value):
+                    if let JSON = value as? [String: Any] {
+                        let status = JSON["source_enabled"] as! String
+                        if status == "Master" {
+                            self.tabBarController?.tabBar.items?[0].badgeValue = "Live"
+                        } else {
+                            self.tabBarController?.tabBar.items?[0].badgeValue = nil
+                        }
+                    }
+                case .failure(let error):
+                // error handling
+                    print(error)
+            }
+        }
+    }
+    
+    func getLiveMeta() {
+        AF.request("https://api.radio-rasclat.com/meta/shows/current", method: .get)
+            .responseJSON { (response) in
+                switch response.result {
+                case .success(let value):
+                    if let JSON = value as? [String: Any] {
+                        let data = JSON[""] as! String
+                        print("hi")
+                        print(data)
+                    } else {
+                        self.track = Track(artist: "Radio Rasclat", name: "Off-Air")
+                    }
+                case .failure(let error):
+                // error handling
+                    print(error)
+            }
+        }
+    }
+    
 }
 
 extension LiveViewController: FRadioPlayerDelegate {
@@ -64,11 +118,10 @@ extension LiveViewController: FRadioPlayerDelegate {
     }
     
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
-        track = Track(artist: artistName, name: trackName)
+        
     }
     
     func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?) {
-        track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
     }
     
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {

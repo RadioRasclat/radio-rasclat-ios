@@ -23,6 +23,8 @@
 		B2CCD1BB2469EAFD00387D50 /* FRadioPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = B2CCD1BA2469EAFD00387D50 /* FRadioPlayer */; };
 		B2CCD1C32469FB4000387D50 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCD1C22469FB4000387D50 /* NotificationService.swift */; };
 		B2CCD1C72469FB4000387D50 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2DBE72A247B4B2F00D885A5 /* DrukTextWide-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2DBE728247B4B2F00D885A5 /* DrukTextWide-Medium.ttf */; };
+		B2DBE72B247B4B2F00D885A5 /* DrukTextWide-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2DBE729247B4B2F00D885A5 /* DrukTextWide-Bold.ttf */; };
 		C3A1E07CD413C758EF79E9CE /* Pods_RadioRasclat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CCD1C22469FB4000387D50 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		B2CCD1C42469FB4000387D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DBE728247B4B2F00D885A5 /* DrukTextWide-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DrukTextWide-Medium.ttf"; sourceTree = "<group>"; };
+		B2DBE729247B4B2F00D885A5 /* DrukTextWide-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DrukTextWide-Bold.ttf"; sourceTree = "<group>"; };
 		C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E9CAC34CE2974CAFC25A81C9 /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.debug.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +217,7 @@
 			children = (
 				B287862D246E0B5800C2212B /* Controller */,
 				B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */,
+				B2DBE727247B4B2F00D885A5 /* Fonts */,
 				B209E56D2469CF72003C8672 /* Views */,
 				B209E56A2469CF2B003C8672 /* Models */,
 				B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */,
@@ -234,6 +239,15 @@
 				B2CCD1C42469FB4000387D50 /* Info.plist */,
 			);
 			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		B2DBE727247B4B2F00D885A5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBE728247B4B2F00D885A5 /* DrukTextWide-Medium.ttf */,
+				B2DBE729247B4B2F00D885A5 /* DrukTextWide-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +280,7 @@
 				B2C450892469CDBB000AB7AE /* Frameworks */,
 				B2C4508A2469CDBB000AB7AE /* Resources */,
 				B2CCD1CB2469FB4000387D50 /* Embed App Extensions */,
+				5037DAB6ED180E40298DF19C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +371,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C4509C2469CDBC000AB7AE /* LaunchScreen.storyboard in Resources */,
+				B2DBE72A247B4B2F00D885A5 /* DrukTextWide-Medium.ttf in Resources */,
+				B2DBE72B247B4B2F00D885A5 /* DrukTextWide-Bold.ttf in Resources */,
 				B2C450992469CDBC000AB7AE /* Assets.xcassets in Resources */,
 				B2C450972469CDBB000AB7AE /* Main.storyboard in Resources */,
 			);
@@ -391,6 +408,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5037DAB6ED180E40298DF19C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9431E51A6F161D8C69E1628 /* [CP] Check Pods Manifest.lock */ = {

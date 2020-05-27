@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (5.2.0)
   - OneSignal (2.13.1)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - OneSignal (< 3.0, >= 2.11.2)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - OneSignal
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
   OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: c6663ef1b2e97b41a8e40dc87395ae51b9f9cc33
+PODFILE CHECKSUM: ddb9e47c900358185800cd885bece237aad27d75
 
 COCOAPODS: 1.9.1
