@@ -61,11 +61,12 @@ class LiveViewController: UIViewController {
 
     @IBAction func playButtonPressed(_ sender: Any) {
         player.play()
+        getLiveMeta()
     }
     
     @IBAction func pauseButtonPressed(_ sender: Any) {
         player.pause()
-        track = Track(artist: "Press play button to start stream.", name: "Radio Rasclat")
+        track = Track(artist: "Radio Rasclat", name: "Paused...")
     }
     
     func getLiveIndicator() {
@@ -77,12 +78,9 @@ class LiveViewController: UIViewController {
                         let status = JSON["source_enabled"] as! String
                         if status == "Master" {
                             self.tabBarController?.tabBar.items?[0].badgeValue = "Live"
-                        } else {
-                            self.tabBarController?.tabBar.items?[0].badgeValue = nil
                         }
                     }
                 case .failure(let error):
-                // error handling
                     print(error)
             }
         }
@@ -94,14 +92,18 @@ class LiveViewController: UIViewController {
                 switch response.result {
                 case .success(let value):
                     if let JSON = value as? [String: Any] {
-                        let data = JSON[""] as! String
-                        print("hi")
-                        print(data)
+                        let showTitle = JSON["name"] as! String
+                        let showImage = JSON["image_path"] as! String
+                        
+                        let urlImageString = showImage
+                        let urlImage = URL(string: urlImageString)
+                        
+                        self.artworkImageView.load(url: urlImage!)
+                        self.track = Track(artist: "Radio Rasclat", name: showTitle)
                     } else {
                         self.track = Track(artist: "Radio Rasclat", name: "Off-Air")
                     }
                 case .failure(let error):
-                // error handling
                     print(error)
             }
         }
@@ -118,7 +120,7 @@ extension LiveViewController: FRadioPlayerDelegate {
     }
     
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
-        
+        getLiveMeta()
     }
     
     func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?) {
@@ -151,6 +153,7 @@ extension LiveViewController {
         commandCenter.playCommand.addTarget { [unowned self] event in
             if self.player.rate == 0.0 {
                 self.player.play()
+                self.getLiveMeta()
                 return .success
             }
             return .commandFailed
@@ -160,6 +163,7 @@ extension LiveViewController {
         commandCenter.pauseCommand.addTarget { [unowned self] event in
             if self.player.rate == 1.0 {
                 self.player.pause()
+                self.track = Track(artist: "Radio Rasclat", name: "Paused...")
                 return .success
             }
             return .commandFailed

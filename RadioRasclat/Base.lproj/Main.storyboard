@@ -17,7 +17,8 @@
         <scene sceneID="Wik-8X-JUL">
             <objects>
                 <tabBarController id="7SC-Ng-bzV" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JP3-GT-exU">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="JP3-GT-exU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -25,7 +26,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="sEz-Vg-ZgR" kind="relationship" relationship="viewControllers" id="bba-Kp-FGH"/>
-                        <segue destination="sFV-CK-G1q" kind="relationship" relationship="viewControllers" id="D5Q-V9-E5U"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISg-gD-1qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -37,7 +37,8 @@
             <objects>
                 <navigationController id="sEz-Vg-ZgR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stream" image="radiowaves.right" catalog="system" id="F7s-YJ-YaI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LLr-BA-0VX">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="LLr-BA-0VX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -80,11 +81,11 @@
             <objects>
                 <viewController id="Plm-ji-a8Y" customClass="LiveViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P7a-Td-KxV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-tY-7D4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="iel-yY-MyG" userLabel="AlbumArt">
                                 <rect key="frame" x="70" y="119" width="274" height="274"/>
@@ -142,10 +143,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplayaudio" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZFZ-Yg-UZb">
-                                <rect key="frame" x="197" y="611" width="20" height="19"/>
-                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -154,13 +151,11 @@
                             <constraint firstAttribute="bottom" secondItem="kG0-tY-7D4" secondAttribute="bottom" id="6ku-Qq-Bvs"/>
                             <constraint firstItem="kG0-tY-7D4" firstAttribute="top" secondItem="P7a-Td-KxV" secondAttribute="top" id="FAG-Xp-bPb"/>
                             <constraint firstItem="wzQ-NN-4sD" firstAttribute="top" secondItem="iel-yY-MyG" secondAttribute="bottom" constant="30" id="He7-UZ-oYC"/>
-                            <constraint firstItem="ZFZ-Yg-UZb" firstAttribute="centerX" secondItem="kG0-tY-7D4" secondAttribute="centerX" id="MW7-uC-mlU"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="centerX" secondItem="wzQ-NN-4sD" secondAttribute="centerX" id="S7m-Vc-a4a"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="top" secondItem="wk6-BP-cNM" secondAttribute="top" constant="31" id="WFj-JR-898"/>
                             <constraint firstItem="iel-yY-MyG" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" constant="70" id="Xos-kf-vDe"/>
                             <constraint firstItem="kG0-tY-7D4" firstAttribute="trailing" secondItem="wk6-BP-cNM" secondAttribute="trailing" id="g6U-C9-0J7"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="trailing" secondItem="wk6-BP-cNM" secondAttribute="trailing" constant="-12" id="heL-GZ-l8h"/>
-                            <constraint firstItem="ZFZ-Yg-UZb" firstAttribute="top" secondItem="8dt-2C-HDy" secondAttribute="bottom" constant="60" id="k8V-nQ-l3Z"/>
                             <constraint firstItem="8dt-2C-HDy" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" constant="12" id="mPV-v3-U82"/>
                             <constraint firstItem="kG0-tY-7D4" firstAttribute="leading" secondItem="wk6-BP-cNM" secondAttribute="leading" id="xU4-GH-iBZ"/>
                         </constraints>
@@ -260,7 +255,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="airplayaudio" catalog="system" width="128" height="121"/>
         <image name="background" width="414" height="896"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
