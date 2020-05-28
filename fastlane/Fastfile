@@ -16,6 +16,19 @@
 default_platform(:ios)
 
 platform :ios do
+
+  desc "Run Radio Rasclat Tests"
+  lane :tests do
+    scan
+  end
+
+  desc "Create a new beta build"
+  lane :beta do
+    get_certificates
+    get_provisioning_profile
+    build_app(scheme: "RadioRasclat")
+  end
+  
   desc "Description of what the lane does"
   lane :custom_lane do
     scan(
@@ -27,4 +40,9 @@ platform :ios do
       merge_commit_filtering: "exclude_merges"
     )
   end
+
+  lane :screenshots do
+    capture_screenshots
+  end
+
 end
