@@ -18,6 +18,9 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
+    scan(
+      scheme: "RadioRasclat"
+    )
     changelog_from_git_commits(
       pretty: "- (%ae) %s",
       date_format: "short",
