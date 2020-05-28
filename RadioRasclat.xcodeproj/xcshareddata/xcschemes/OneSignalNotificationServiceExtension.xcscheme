@@ -53,6 +53,16 @@
                ReferencedContainer = "container:RadioRasclat.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B2DCB5F824805EE300658353"
+               BuildableName = "ScreenshotsUITests.xctest"
+               BlueprintName = "ScreenshotsUITests"
+               ReferencedContainer = "container:RadioRasclat.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

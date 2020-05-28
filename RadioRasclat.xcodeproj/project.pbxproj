@@ -25,6 +25,8 @@
 		B2CCD1C72469FB4000387D50 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B2DBE72A247B4B2F00D885A5 /* DrukTextWide-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2DBE728247B4B2F00D885A5 /* DrukTextWide-Medium.ttf */; };
 		B2DBE72B247B4B2F00D885A5 /* DrukTextWide-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2DBE729247B4B2F00D885A5 /* DrukTextWide-Bold.ttf */; };
+		B2DCB5FC24805EE300658353 /* ScreenshotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DCB5FB24805EE300658353 /* ScreenshotsUITests.swift */; };
+		B2DCB60424805F0900658353 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DCB60324805F0900658353 /* SnapshotHelper.swift */; };
 		C3A1E07CD413C758EF79E9CE /* Pods_RadioRasclat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B2CCD1BF2469FB4000387D50;
 			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+		B2DCB5FE24805EE300658353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C450842469CDBB000AB7AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C4508B2469CDBB000AB7AE;
+			remoteInfo = RadioRasclat;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,6 +96,10 @@
 		B2CCD1C42469FB4000387D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DBE728247B4B2F00D885A5 /* DrukTextWide-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DrukTextWide-Medium.ttf"; sourceTree = "<group>"; };
 		B2DBE729247B4B2F00D885A5 /* DrukTextWide-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DrukTextWide-Bold.ttf"; sourceTree = "<group>"; };
+		B2DCB5F924805EE300658353 /* ScreenshotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenshotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DCB5FB24805EE300658353 /* ScreenshotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotsUITests.swift; sourceTree = "<group>"; };
+		B2DCB5FD24805EE300658353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DCB60324805F0900658353 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		C276B1A6EC7440436CCB06F0 /* Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-RadioRasclat-OneSignalNotificationServiceExtension/Pods-RadioRasclat-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E9CAC34CE2974CAFC25A81C9 /* Pods-RadioRasclat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.debug.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +126,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7596ECFF685CF5608ADF9234 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DCB5F624805EE300658353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +216,7 @@
 				B2C4508E2469CDBB000AB7AE /* RadioRasclat */,
 				B2CCD1C12469FB4000387D50 /* OneSignalNotificationServiceExtension */,
 				84AE56DC246C3F2300548A09 /* Radio RasclatUITests */,
+				B2DCB5FA24805EE300658353 /* ScreenshotsUITests */,
 				B2C4508D2469CDBB000AB7AE /* Products */,
 				05C8E162E200FB81C20AEAFC /* Pods */,
 				B27A672F4825801320165B54 /* Frameworks */,
@@ -208,6 +229,7 @@
 				B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */,
 				B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */,
 				84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */,
+				B2DCB5F924805EE300658353 /* ScreenshotsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +270,16 @@
 				B2DBE729247B4B2F00D885A5 /* DrukTextWide-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B2DCB5FA24805EE300658353 /* ScreenshotsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2DCB60324805F0900658353 /* SnapshotHelper.swift */,
+				B2DCB5FB24805EE300658353 /* ScreenshotsUITests.swift */,
+				B2DCB5FD24805EE300658353 /* Info.plist */,
+			);
+			path = ScreenshotsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,13 +345,31 @@
 			productReference = B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		B2DCB5F824805EE300658353 /* ScreenshotsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DCB60224805EE300658353 /* Build configuration list for PBXNativeTarget "ScreenshotsUITests" */;
+			buildPhases = (
+				B2DCB5F524805EE300658353 /* Sources */,
+				B2DCB5F624805EE300658353 /* Frameworks */,
+				B2DCB5F724805EE300658353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DCB5FF24805EE300658353 /* PBXTargetDependency */,
+			);
+			name = ScreenshotsUITests;
+			productName = ScreenshotsUITests;
+			productReference = B2DCB5F924805EE300658353 /* ScreenshotsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B2C450842469CDBB000AB7AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Domenik Toefflinger";
 				TargetAttributes = {
@@ -332,6 +382,10 @@
 					};
 					B2CCD1BF2469FB4000387D50 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					B2DCB5F824805EE300658353 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = B2C4508B2469CDBB000AB7AE;
 					};
 				};
 			};
@@ -354,6 +408,7 @@
 				B2C4508B2469CDBB000AB7AE /* RadioRasclat */,
 				B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */,
 				84AE56DA246C3F2300548A09 /* Radio RasclatUITests */,
+				B2DCB5F824805EE300658353 /* ScreenshotsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +434,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B2CCD1BE2469FB4000387D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DCB5F724805EE300658353 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,6 +545,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DCB5F524805EE300658353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DCB5FC24805EE300658353 /* ScreenshotsUITests.swift in Sources */,
+				B2DCB60424805F0900658353 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -495,6 +566,11 @@
 			isa = PBXTargetDependency;
 			target = B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */;
 			targetProxy = B2CCD1C52469FB4000387D50 /* PBXContainerItemProxy */;
+		};
+		B2DCB5FF24805EE300658353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2C4508B2469CDBB000AB7AE /* RadioRasclat */;
+			targetProxy = B2DCB5FE24805EE300658353 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -770,6 +846,46 @@
 			};
 			name = Release;
 		};
+		B2DCB60024805EE300658353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = ScreenshotsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmnktoe.ScreenshotsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioRasclat;
+			};
+			name = Debug;
+		};
+		B2DCB60124805EE300658353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = ScreenshotsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmnktoe.ScreenshotsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioRasclat;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -805,6 +921,15 @@
 			buildConfigurations = (
 				B2CCD1C92469FB4000387D50 /* Debug */,
 				B2CCD1CA2469FB4000387D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DCB60224805EE300658353 /* Build configuration list for PBXNativeTarget "ScreenshotsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DCB60024805EE300658353 /* Debug */,
+				B2DCB60124805EE300658353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
