@@ -1,0 +1,5 @@
+Liebe Zuhörer, dies ist das erste Update als Teil unserer neuen App für iOS, die in naher Zukunft einige nette neue Funktionen einführen wird!
+
+Neu in dieser Version:
+- Die gesamte App wurde von Grund auf neu geschrieben, so dass wir nicht mehr auf bestehende Vorlagen angewiesen sind.
+- Push-Benachrichtigungen: Wir informieren euch gerne von Zeit zu Zeit über bevorstehende Live-Programme.
