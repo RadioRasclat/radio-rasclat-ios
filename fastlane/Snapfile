@@ -1,0 +1,23 @@
+# Uncomment the lines below you want to change by removing the # in the beginning
+
+# A list of devices you want to take the screenshots from
+devices([
+    "iPhone 11"
+])
+
+languages([
+    "en-US",
+    "de-DE"
+])
+
+# The name of the scheme which contains the UI Tests
+scheme("Screenshots")
+
+# Where should the resulting screenshots be stored?
+output_directory("./fastlane/screenshots")
+
+# remove the '#' to clear all previously generated screenshots before creating new ones
+clear_previous_screenshots(true)
+
+# Remove the '#' to set the status bar to 9:41 AM, and show full battery and reception.
+override_status_bar(true)
