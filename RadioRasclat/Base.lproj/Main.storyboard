@@ -17,8 +17,8 @@
         <scene sceneID="Wik-8X-JUL">
             <objects>
                 <tabBarController id="7SC-Ng-bzV" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="JP3-GT-exU">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JP3-GT-exU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,8 +38,7 @@
             <objects>
                 <navigationController id="sEz-Vg-ZgR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stream" image="streamIcon" id="F7s-YJ-YaI"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="LLr-BA-0VX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LLr-BA-0VX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -82,11 +81,11 @@
             <objects>
                 <viewController id="Plm-ji-a8Y" customClass="LiveViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P7a-Td-KxV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-tY-7D4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="iel-yY-MyG" userLabel="AlbumArt">
                                 <rect key="frame" x="70" y="119" width="274" height="274"/>
@@ -178,11 +177,11 @@
             <objects>
                 <viewController id="O3S-ss-5ws" customClass="BroadcastListViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezB-Op-bjp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="18P-Yj-O6O">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -210,11 +209,15 @@
             <objects>
                 <viewController id="zhA-iA-7sD" customClass="BroadcastDetailViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B9Q-LE-zGd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jbx-dS-WoF">
                                 <rect key="frame" x="72" y="107" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="MAs-Je-Yl2"/>
+                                    <constraint firstAttribute="height" constant="270" id="oox-5W-cho"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxn-Or-q6z">
                                 <rect key="frame" x="20" y="415" width="374" height="24"/>
@@ -223,9 +226,8 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-Vb-asO" userLabel="playButton">
-                                <rect key="frame" x="192" y="507" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-Vb-asO" userLabel="playButton">
+                                <rect key="frame" x="0.0" y="499" width="414" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playBroadcastButton:" destination="zhA-iA-7sD" eventType="touchUpInside" id="q3R-a7-cNO"/>
@@ -237,7 +239,9 @@
                             <constraint firstItem="Yxn-Or-q6z" firstAttribute="trailing" secondItem="B9Q-LE-zGd" secondAttribute="trailingMargin" id="4Fg-ZX-Ikl"/>
                             <constraint firstItem="Yxn-Or-q6z" firstAttribute="top" secondItem="Jbx-dS-WoF" secondAttribute="bottom" constant="38" id="BtE-ib-VAi"/>
                             <constraint firstItem="Yxn-Or-q6z" firstAttribute="leading" secondItem="B9Q-LE-zGd" secondAttribute="leadingMargin" id="FWV-ZV-Qvh"/>
-                            <constraint firstItem="Yxn-Or-q6z" firstAttribute="centerX" secondItem="Jbx-dS-WoF" secondAttribute="centerX" id="Q0g-gg-gpf"/>
+                            <constraint firstItem="rDS-Vb-asO" firstAttribute="leading" secondItem="R09-Pu-Qz8" secondAttribute="leading" id="GnX-49-CAL"/>
+                            <constraint firstItem="R09-Pu-Qz8" firstAttribute="trailing" secondItem="rDS-Vb-asO" secondAttribute="trailing" id="KyH-sn-muQ"/>
+                            <constraint firstItem="rDS-Vb-asO" firstAttribute="top" secondItem="Yxn-Or-q6z" secondAttribute="bottom" constant="60" id="WLn-sE-89L"/>
                             <constraint firstItem="Yxn-Or-q6z" firstAttribute="top" secondItem="B9Q-LE-zGd" secondAttribute="top" constant="415" id="Wrz-Fp-wsz"/>
                             <constraint firstItem="Jbx-dS-WoF" firstAttribute="leading" secondItem="R09-Pu-Qz8" secondAttribute="leading" constant="72" id="h0Q-Ng-5BB"/>
                             <constraint firstItem="Jbx-dS-WoF" firstAttribute="top" secondItem="R09-Pu-Qz8" secondAttribute="top" constant="19" id="krg-3O-EE5"/>
