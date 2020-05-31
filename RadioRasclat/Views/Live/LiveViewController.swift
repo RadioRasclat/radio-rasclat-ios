@@ -93,12 +93,6 @@ class LiveViewController: UIViewController {
                 case .success(let value):
                     if let JSON = value as? [String: Any] {
                         let showTitle = JSON["name"] as! String
-                        let showImage = JSON["image_path"] as! String
-                        
-                        let urlImageString = showImage
-                        let urlImage = URL(string: urlImageString)
-                        
-                        self.artworkImageView.load(url: urlImage!)
                         self.track = Track(artist: "Radio Rasclat", name: showTitle)
                     } else {
                         self.track = Track(artist: "Radio Rasclat", name: "Off-Air")
