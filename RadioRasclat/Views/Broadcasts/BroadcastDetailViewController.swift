@@ -103,4 +103,10 @@ class BroadcastDetailViewController: UIViewController {
         titleLabel.text = broadcast?.title
         imageView.load(url: urlImage!)
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        player.pause()
+        player.cancelPendingPrerolls() // stops network requests
+        player.replaceCurrentItem(with: nil)
+    }
 }
