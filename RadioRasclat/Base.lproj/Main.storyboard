@@ -26,6 +26,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="sEz-Vg-ZgR" kind="relationship" relationship="viewControllers" id="bba-Kp-FGH"/>
+                        <segue destination="sFV-CK-G1q" kind="relationship" relationship="viewControllers" id="9eL-mG-F8p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISg-gD-1qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,11 +178,11 @@
             <objects>
                 <viewController id="O3S-ss-5ws" customClass="BroadcastListViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezB-Op-bjp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="18P-Yj-O6O">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -209,7 +210,7 @@
             <objects>
                 <viewController id="zhA-iA-7sD" customClass="BroadcastDetailViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B9Q-LE-zGd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jbx-dS-WoF">
