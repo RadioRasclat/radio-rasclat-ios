@@ -40,6 +40,10 @@ class BroadcastDetailViewController: UIViewController {
         setupAVAudioSession()
     }
     
+    @IBAction func pauseBroadcastButton(_ sender: Any) {
+        player.pause()
+    }
+    
     private func setupAVAudioSession() {
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
