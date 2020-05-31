@@ -57,7 +57,7 @@
         <scene sceneID="yPX-Fv-UXD">
             <objects>
                 <navigationController id="sFV-CK-G1q" userLabel="Broadcasts" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Broadcasts" id="AFF-jP-dYk"/>
+                    <tabBarItem key="tabBarItem" title="Broadcasts" image="broadcastsIcon" id="AFF-jP-dYk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GaL-ea-e7P">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -261,6 +261,7 @@
     </scenes>
     <resources>
         <image name="background" width="414" height="896"/>
+        <image name="broadcastsIcon" width="44" height="44"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
         <image name="placeholderImage" width="333.33334350585938" height="333.33334350585938"/>
