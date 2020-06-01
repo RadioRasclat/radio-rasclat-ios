@@ -48,8 +48,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84AE56DA246C3F2300548A09"
-               BuildableName = "Radio RasclatUITests.xctest"
-               BlueprintName = "Radio RasclatUITests"
+               BuildableName = "RadioRasclatUITests.xctest"
+               BlueprintName = "RadioRasclatUITests"
                ReferencedContainer = "container:RadioRasclat.xcodeproj">
             </BuildableReference>
          </TestableReference>
