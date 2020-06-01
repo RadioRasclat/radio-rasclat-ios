@@ -25,6 +25,13 @@ platform :ios do
     )
   end
 
+  desc "Push a new beta build to Testflight"
+  lane :beta do
+    increment_build_number(xcodeproj: "RadioRasclat.xcodeproj")
+    build_app(workspace: "RadioRasclat.xcworkspace", scheme: "RadioRasclat")
+    upload_to_testflight
+  end
+
   desc "Push a new release build to the App Store"
   lane :release do
     increment_build_number(xcodeproj: "RadioRasclat.xcodeproj")
