@@ -1,6 +1,6 @@
 //
-//  Radio_RasclatUITests.swift
-//  Radio RasclatUITests
+//  RadioRasclatUITests.swift
+//  RadioRasclatUITests
 //
 //  Created by Domenik printmedia on 13.05.20.
 //  Copyright © 2020 Domenik Toefflinger. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Radio_RasclatUITests: XCTestCase {
+class RadioRasclatUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
