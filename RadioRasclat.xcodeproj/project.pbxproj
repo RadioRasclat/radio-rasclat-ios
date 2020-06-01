@@ -281,6 +281,7 @@
 				B2C4508A2469CDBB000AB7AE /* Resources */,
 				B2CCD1CB2469FB4000387D50 /* Embed App Extensions */,
 				5037DAB6ED180E40298DF19C /* [CP] Embed Pods Frameworks */,
+				B2257A4324848367000393A2 /* Set build number */,
 			);
 			buildRules = (
 			);
@@ -426,6 +427,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B2257A4324848367000393A2 /* Set build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$SRCROOT/Scripts/set_build_number.sh\n";
 		};
 		C9431E51A6F161D8C69E1628 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
