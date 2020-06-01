@@ -36,7 +36,7 @@ class ScreenshotsUITests: XCTestCase {
         }
         snapshot("0Stream")
     }
-    
+
     func testBroadcastsScreenshots() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
@@ -52,7 +52,7 @@ class ScreenshotsUITests: XCTestCase {
         app.tabBars.buttons["Broadcasts"].tap()
         snapshot("0Broadcasts")
     }
-    
+
     func testBroadcastsDetailScreenshots() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
@@ -65,8 +65,9 @@ class ScreenshotsUITests: XCTestCase {
         if systemAlerts.buttons["Allow"].exists {
             systemAlerts.buttons["Allow"].tap()
         }
+        
         app.tabBars.buttons["Broadcasts"].tap()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["AMP//R FM w/ Ergo Proxy • 12.05.2020"]/*[[".cells.staticTexts[\"AMP\/\/R FM w\/ Ergo Proxy • 12.05.2020\"]",".staticTexts[\"AMP\/\/R FM w\/ Ergo Proxy • 12.05.2020\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)"]/*[[".cells.staticTexts[\"Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)\"]",".staticTexts[\"Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         snapshot("0BroadcastsDetail")
     }
 }
