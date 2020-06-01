@@ -56,7 +56,7 @@ platform :ios do
 
   desc "Run tests, take screenshots, upload deliver file, upload app"
   lane :release do
-    # ensure_git_status_clean
+    ensure_git_status_clean
     test
     # match(type: "appstore")
     screenshots
