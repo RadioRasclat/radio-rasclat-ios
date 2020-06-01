@@ -16,26 +16,51 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Tests the whole application"
-  lane :tests do
-    run_tests(
-      workspace: "RadioRasclat.xcworkspace",
-      devices: ["iPhone 5s", "iPhone 8", "iPhone 11"],
+
+  desc "Run tests"
+  lane :test do
+    scan(scheme: "RadioRasclat")
+  end
+
+  desc "Take screenshots"
+  lane :screenshots do
+    snapshot
+  end
+
+  desc "Build application"
+  lane :build do
+    build_number = number_of_commits
+    increment_build_number(
+      xcodeproj: "RadioRasclat.xcodeproj",
+      build_number: build_number
+    )
+    build_ios_app(
       scheme: "RadioRasclat"
+    )
+  end
+
+  desc "Upload metadata, screenshots and binary"
+  lane :upload do
+    deliver(
+      force: true,
+      automatic_release: true
     )
   end
 
   desc "Push a new beta build to Testflight"
   lane :beta do
-    increment_build_number(xcodeproj: "RadioRasclat.xcodeproj")
-    build_app(workspace: "RadioRasclat.xcworkspace", scheme: "RadioRasclat")
+    test
+    build
     upload_to_testflight
   end
 
-  desc "Push a new release build to the App Store"
+  desc "Run tests, take screenshots, upload deliver file, upload app"
   lane :release do
-    increment_build_number(xcodeproj: "RadioRasclat.xcodeproj")
-    build_app(workspace: "RadioRasclat.xcworkspace", scheme: "RadioRasclat")
-    upload_to_app_store
+    ensure_git_status_clean
+    test
+    match(type: "appstore")
+    screenshots
+    build
+    upload 
   end
 end
