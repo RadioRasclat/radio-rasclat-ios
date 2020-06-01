@@ -9,47 +9,45 @@
 import UIKit
 
 class BroadcastListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet var tableView: UITableView!
+
     var broadcasts = [Broadcasts]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         downloadJSON {
             self.tableView.reloadData()
         }
-        
+
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return broadcasts.count
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text = broadcasts[indexPath.row].title
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
         performSegue(withIdentifier: "showBroadcastDetails", sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
         if let destination = segue.destination as? BroadcastDetailViewController {
             destination.broadcast = broadcasts[(tableView.indexPathForSelectedRow?.row)!]
         }
     }
-    
-    func downloadJSON(completed: @escaping () -> ()) {
-        
+
+    func downloadJSON(completed: @escaping () -> Void) {
         let url = URL(string: "https://api.radio-rasclat.com/recordings")
-        
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+
+        URLSession.shared.dataTask(with: url!) { data, _, error in
             if error == nil {
                 do {
                     self.broadcasts = try JSONDecoder().decode([Broadcasts].self, from: data!)
@@ -60,7 +58,7 @@ class BroadcastListViewController: UIViewController, UITableViewDelegate, UITabl
                     print("JSON Error")
                 }
             }
-            
+
         }.resume()
     }
 }

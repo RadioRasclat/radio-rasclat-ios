@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Broadcasts:Decodable {
+struct Broadcasts: Decodable {
     let title: String
     let image: String
     let audio: String

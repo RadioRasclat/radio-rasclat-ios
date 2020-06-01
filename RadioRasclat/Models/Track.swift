@@ -11,9 +11,9 @@ import UIKit
 struct Track {
     var artist: String?
     var name: String?
-    
+
     var image: UIImage?
-    
+
     init(artist: String? = nil, name: String? = nil, image: UIImage? = nil) {
         self.name = name
         self.artist = artist

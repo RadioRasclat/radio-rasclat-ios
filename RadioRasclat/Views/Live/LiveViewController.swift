@@ -6,21 +6,20 @@
 //  Copyright © 2020 Domenik Toefflinger. All rights reserved.
 //
 
-import UIKit
-import MediaPlayer
-import FRadioPlayer
-import AVKit
 import Alamofire
+import AVKit
+import FRadioPlayer
+import MediaPlayer
+import UIKit
 
 class LiveViewController: UIViewController {
-    
-    @IBOutlet weak var trackLabel: UILabel!
-    @IBOutlet weak var artistLabel: UILabel!
-    @IBOutlet weak var artworkImageView: UIImageView!
-        
+    @IBOutlet var trackLabel: UILabel!
+    @IBOutlet var artistLabel: UILabel!
+    @IBOutlet var artworkImageView: UIImageView!
+
     // Singleton ref to player
     let player: FRadioPlayer = FRadioPlayer.shared
-    
+
     var track: Track? {
         didSet {
             artistLabel.text = track?.artist
@@ -28,115 +27,108 @@ class LiveViewController: UIViewController {
             updateNowPlaying(with: track)
         }
     }
-    
+
     // Get live meta data from Radio Rasclat API
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Set the delegate for the radio player
         player.delegate = self
         player.isAutoPlay = false
         player.enableArtwork = false
         player.radioURL = URL(string: "https://station.radio-rasclat.com/live")
-        
+
         setupRemoteTransportControls()
-        
+
         track = Track(artist: "Radio Rasclat", name: "Off-Air")
-        
+
         getLiveIndicator()
         getLiveMeta()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         getLiveIndicator()
         getLiveMeta()
     }
-    
-    //*****************************************************************
-    // MARK: - Setup
-    //*****************************************************************
 
-    @IBAction func playButtonPressed(_ sender: Any) {
+    // *****************************************************************
+
+    // MARK: - Setup
+
+    // *****************************************************************
+
+    @IBAction func playButtonPressed(_: Any) {
         player.play()
         getLiveMeta()
     }
-    
-    @IBAction func pauseButtonPressed(_ sender: Any) {
+
+    @IBAction func pauseButtonPressed(_: Any) {
         player.pause()
         track = Track(artist: "Radio Rasclat", name: "Paused...")
     }
-    
+
     func getLiveIndicator() {
         AF.request("https://api.radio-rasclat.com/meta/live-info", method: .get)
-            .responseJSON { (response) in
+            .responseJSON { response in
                 switch response.result {
-                case .success(let value):
+                case let .success(value):
                     if let JSON = value as? [String: Any] {
                         let status = JSON["source_enabled"] as! String
                         if status == "Master" {
                             self.tabBarController?.tabBar.items?[0].badgeValue = "Live"
                         }
                     }
-                case .failure(let error):
+                case let .failure(error):
                     print(error)
+                }
             }
-        }
     }
-    
+
     func getLiveMeta() {
         AF.request("https://api.radio-rasclat.com/meta/shows/current", method: .get)
-            .responseJSON { (response) in
+            .responseJSON { response in
                 switch response.result {
-                case .success(let value):
+                case let .success(value):
                     if let JSON = value as? [String: Any] {
                         let showTitle = JSON["name"] as! String
                         let showImage = JSON["image_path"] as! String
-                        if (showImage.count > 5) {
+                        if showImage.count > 5 {
                             let urlImageString = showImage
                             let urlImage = URL(string: urlImageString)
-                            
+
                             self.artworkImageView.load(url: urlImage!)
                         } else {
                             self.artworkImageView.image = UIImage(named: "placeholderImage")
                         }
-                        
-                        
-                        
+
                         self.track = Track(artist: "Radio Rasclat", name: showTitle)
                     } else {
                         self.track = Track(artist: "Radio Rasclat", name: "Off-Air")
                     }
-                case .failure(let error):
+                case let .failure(error):
                     print(error)
+                }
             }
-        }
     }
-    
 }
 
 extension LiveViewController: FRadioPlayerDelegate {
+    func radioPlayer(_: FRadioPlayer, playerStateDidChange _: FRadioPlayerState) {}
 
-    func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
-    }
-    
-    func radioPlayer(_ player: FRadioPlayer, playbackStateDidChange state: FRadioPlaybackState) {
-    }
-    
-    func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
+    func radioPlayer(_: FRadioPlayer, playbackStateDidChange _: FRadioPlaybackState) {}
+
+    func radioPlayer(_: FRadioPlayer, metadataDidChange _: String?, trackName _: String?) {
         getLiveMeta()
     }
-    
-    func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?) {
-    }
-    
-    func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {
-    }
-    
-    func radioPlayer(_ player: FRadioPlayer, artworkDidChange artworkURL: URL?) {
-        
+
+    func radioPlayer(_: FRadioPlayer, itemDidChange _: URL?) {}
+
+    func radioPlayer(_: FRadioPlayer, metadataDidChange _: String?) {}
+
+    func radioPlayer(_: FRadioPlayer, artworkDidChange artworkURL: URL?) {
         // Please note that the following example is for demonstration purposes only, consider using asynchronous network calls to set the image from a URL.
         guard let artworkURL = artworkURL, let data = try? Data(contentsOf: artworkURL) else {
             return
@@ -150,13 +142,12 @@ extension LiveViewController: FRadioPlayerDelegate {
 // MARK: - Remote Controls / Lock screen
 
 extension LiveViewController {
-    
     func setupRemoteTransportControls() {
         // Get the shared MPRemoteCommandCenter
         let commandCenter = MPRemoteCommandCenter.shared()
-        
+
         // Add handler for Play Command
-        commandCenter.playCommand.addTarget { [unowned self] event in
+        commandCenter.playCommand.addTarget { [unowned self] _ in
             if self.player.rate == 0.0 {
                 self.player.play()
                 self.getLiveMeta()
@@ -164,9 +155,9 @@ extension LiveViewController {
             }
             return .commandFailed
         }
-        
+
         // Add handler for Pause Command
-        commandCenter.pauseCommand.addTarget { [unowned self] event in
+        commandCenter.pauseCommand.addTarget { [unowned self] _ in
             if self.player.rate == 1.0 {
                 self.player.pause()
                 self.track = Track(artist: "Radio Rasclat", name: "Paused...")
@@ -175,24 +166,23 @@ extension LiveViewController {
             return .commandFailed
         }
     }
-    
+
     func updateNowPlaying(with track: Track?) {
-    
         // Define Now Playing Info
-        var nowPlayingInfo = [String : Any]()
-        
+        var nowPlayingInfo = [String: Any]()
+
         if let artist = track?.artist {
             nowPlayingInfo[MPMediaItemPropertyArtist] = artist
         }
-        
+
         nowPlayingInfo[MPMediaItemPropertyTitle] = track?.name
-        
+
         if let image = track?.image {
             nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: image.size, requestHandler: { _ -> UIImage in
-                return image
+                image
             })
         }
-        
+
         // Set the metadata
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }

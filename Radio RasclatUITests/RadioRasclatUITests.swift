@@ -9,7 +9,6 @@
 import XCTest
 
 class Radio_RasclatUITests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -28,7 +27,7 @@ class Radio_RasclatUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
     }
-    
+
     func testLiveButtons() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
@@ -36,11 +35,11 @@ class Radio_RasclatUITests: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+
         app.buttons["btn play"].tap()
         app.buttons["btn pause"].tap()
     }
-    
+
     func testBroadcasts() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
@@ -48,7 +47,6 @@ class Radio_RasclatUITests: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-
     }
 
     func testLaunchPerformance() {
