@@ -42,8 +42,8 @@ platform :ios do
   desc "Upload metadata, screenshots and binary"
   lane :upload do
     deliver(
-      force: true,
-      automatic_release: true
+      force: false,
+      automatic_release: false
     )
   end
 
