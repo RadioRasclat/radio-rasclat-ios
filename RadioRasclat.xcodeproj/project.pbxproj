@@ -64,7 +64,7 @@
 		319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6886BC0C249B4D468248A1 /* Pods-RadioRasclat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioRasclat.release.xcconfig"; path = "Target Support Files/Pods-RadioRasclat/Pods-RadioRasclat.release.xcconfig"; sourceTree = "<group>"; };
 		74E19F385973D6CE0BA72727 /* Pods_RadioRasclat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioRasclat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Radio RasclatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AE56DB246C3F2300548A09 /* RadioRasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AE56DD246C3F2300548A09 /* RadioRasclatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatUITests.swift; sourceTree = "<group>"; };
 		84AE56DF246C3F2300548A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B209E56B2469CF3C003C8672 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -130,13 +130,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		84AE56DC246C3F2300548A09 /* Radio RasclatUITests */ = {
+		84AE56DC246C3F2300548A09 /* RadioRasclatUITests */ = {
 			isa = PBXGroup;
 			children = (
 				84AE56DD246C3F2300548A09 /* RadioRasclatUITests.swift */,
 				84AE56DF246C3F2300548A09 /* Info.plist */,
 			);
-			path = "Radio RasclatUITests";
+			path = RadioRasclatUITests;
 			sourceTree = "<group>";
 		};
 		B209E56A2469CF2B003C8672 /* Models */ = {
@@ -195,7 +195,7 @@
 			children = (
 				B2C4508E2469CDBB000AB7AE /* RadioRasclat */,
 				B2CCD1C12469FB4000387D50 /* OneSignalNotificationServiceExtension */,
-				84AE56DC246C3F2300548A09 /* Radio RasclatUITests */,
+				84AE56DC246C3F2300548A09 /* RadioRasclatUITests */,
 				B2C4508D2469CDBB000AB7AE /* Products */,
 				05C8E162E200FB81C20AEAFC /* Pods */,
 				B27A672F4825801320165B54 /* Frameworks */,
@@ -207,7 +207,7 @@
 			children = (
 				B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */,
 				B2CCD1C02469FB4000387D50 /* OneSignalNotificationServiceExtension.appex */,
-				84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */,
+				84AE56DB246C3F2300548A09 /* RadioRasclatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,9 +253,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84AE56DA246C3F2300548A09 /* Radio RasclatUITests */ = {
+		84AE56DA246C3F2300548A09 /* RadioRasclatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84AE56E4246C3F2300548A09 /* Build configuration list for PBXNativeTarget "Radio RasclatUITests" */;
+			buildConfigurationList = 84AE56E4246C3F2300548A09 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */;
 			buildPhases = (
 				84AE56D7246C3F2300548A09 /* Sources */,
 				84AE56D8246C3F2300548A09 /* Frameworks */,
@@ -266,9 +266,9 @@
 			dependencies = (
 				84AE56E1246C3F2300548A09 /* PBXTargetDependency */,
 			);
-			name = "Radio RasclatUITests";
+			name = RadioRasclatUITests;
 			productName = "Radio RasclatUITests";
-			productReference = 84AE56DB246C3F2300548A09 /* Radio RasclatUITests.xctest */;
+			productReference = 84AE56DB246C3F2300548A09 /* RadioRasclatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B2C4508B2469CDBB000AB7AE /* RadioRasclat */ = {
@@ -353,7 +353,7 @@
 			targets = (
 				B2C4508B2469CDBB000AB7AE /* RadioRasclat */,
 				B2CCD1BF2469FB4000387D50 /* OneSignalNotificationServiceExtension */,
-				84AE56DA246C3F2300548A09 /* Radio RasclatUITests */,
+				84AE56DA246C3F2300548A09 /* RadioRasclatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -523,14 +523,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
-				INFOPLIST_FILE = "Radio RasclatUITests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = RadioRasclatUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dmnktoe.Radio-RasclatUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,14 +543,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
-				INFOPLIST_FILE = "Radio RasclatUITests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = RadioRasclatUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dmnktoe.Radio-RasclatUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -682,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "RadioRasclat/Radio Rasclat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 151;
+				CURRENT_PROJECT_VERSION = 160;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -690,7 +690,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat;
 				PRODUCT_NAME = "Radio Rasclat";
 				SWIFT_VERSION = 5.0;
@@ -706,7 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "RadioRasclat/Radio Rasclat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 151;
+				CURRENT_PROJECT_VERSION = 160;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -714,7 +714,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat;
 				PRODUCT_NAME = "Radio Rasclat";
 				SWIFT_VERSION = 5.0;
@@ -728,7 +728,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 160;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -737,7 +737,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -752,7 +752,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 160;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -761,7 +761,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmnktoe.RadioRasclat.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -773,7 +773,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84AE56E4246C3F2300548A09 /* Build configuration list for PBXNativeTarget "Radio RasclatUITests" */ = {
+		84AE56E4246C3F2300548A09 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84AE56E2246C3F2300548A09 /* Debug */,
