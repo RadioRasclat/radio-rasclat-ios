@@ -8,10 +8,10 @@
 
 import AVFoundation
 import AVKit
-import MediaPlayer
-import UIKit
-import SwiftSoup
 import Kingfisher
+import MediaPlayer
+import SwiftSoup
+import UIKit
 
 extension UIImageView {
     func load(url: URL) {
@@ -35,8 +35,8 @@ class BroadcastDetailViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    
+    @IBOutlet var descriptionLabel: UILabel!
+
     @IBAction func playBroadcastButton(_: Any) {
         player.play()
         setupAVAudioSession()
@@ -62,9 +62,15 @@ class BroadcastDetailViewController: UIViewController {
         // Meta
         var nowPlayingInfo = [String: Any]()
 
+        let image = imageView.image
+        let artwork = MPMediaItemArtwork(boundsSize: image!.size, requestHandler: { (_) -> UIImage in
+            image!
+        })
+
         nowPlayingInfo[MPMediaItemPropertyTitle] = broadcast?.title ?? "Radio Rasclat"
         nowPlayingInfo[MPMediaItemPropertyArtist] = "Radio Rasclat"
         nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = "Stimulating the gun-finger."
+        nowPlayingInfo[MPMediaItemPropertyArtwork] = artwork
         nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem.currentTime().seconds
         nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem.asset.duration.seconds
         nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate
@@ -104,38 +110,40 @@ class BroadcastDetailViewController: UIViewController {
 
         let urlImageString = broadcast?.image
         let urlImage = URL(string: urlImageString!)
-        
+
         imageView.kf.indicatorType = .activity
+
         imageView.kf.setImage(
             with: urlImage,
             placeholder: UIImage(named: "placeholderImage"),
             options: [
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(0.2)),
-                .cacheOriginalImage
-            ])
+                .cacheOriginalImage,
+            ]
+        )
         {
             result in
             switch result {
-            case .success(let value):
+            case let .success(value):
                 print("Task done for: \(value.source.url?.absoluteString ?? "")")
-            case .failure(let error):
+            case let .failure(error):
                 print("Job failed: \(error.localizedDescription)")
             }
         }
 
         titleLabel.text = broadcast?.title
-        
+
         do {
             let html = (broadcast?.description)!
             let doc: Document = try SwiftSoup.parse(html)
             descriptionLabel.text = try doc.text()
-        } catch Exception.Error(let type, let message) {
+        } catch let Exception.Error(type, message) {
             print(type, message)
         } catch {
             print("message")
         }
-        
+
         descriptionLabel.sizeToFit()
     }
 
