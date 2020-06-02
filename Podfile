@@ -10,6 +10,7 @@ target 'RadioRasclat' do
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Kingfisher'
+  pod 'SwiftSoup'
 
   target 'OneSignalNotificationServiceExtension' do
     pod 'OneSignal', '>= 2.11.2', '< 3.0'
