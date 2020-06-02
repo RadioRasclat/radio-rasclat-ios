@@ -11,6 +11,7 @@ import AVKit
 import MediaPlayer
 import UIKit
 import SwiftSoup
+import Kingfisher
 
 extension UIImageView {
     func load(url: URL) {
@@ -103,6 +104,25 @@ class BroadcastDetailViewController: UIViewController {
 
         let urlImageString = broadcast?.image
         let urlImage = URL(string: urlImageString!)
+        
+        imageView.kf.indicatorType = .activity
+        imageView.kf.setImage(
+            with: urlImage,
+            placeholder: UIImage(named: "placeholderImage"),
+            options: [
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(0.2)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
+        }
 
         titleLabel.text = broadcast?.title
         
@@ -116,7 +136,6 @@ class BroadcastDetailViewController: UIViewController {
             print("message")
         }
         
-        imageView.load(url: urlImage!)
         descriptionLabel.sizeToFit()
     }
 
