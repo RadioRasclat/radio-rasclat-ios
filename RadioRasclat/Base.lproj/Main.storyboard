@@ -223,8 +223,8 @@
                                             <constraint firstAttribute="width" secondItem="Jbx-dS-WoF" secondAttribute="height" multiplier="1:1" id="Kg6-mL-pVj"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="M5S-yw-XvS" userLabel="Controls Stack View">
-                                        <rect key="frame" x="10" y="431" width="394" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="M5S-yw-XvS" userLabel="Controls Stack View">
+                                        <rect key="frame" x="15" y="431" width="384" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffp-Xf-bmQ" userLabel="PlayButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -241,15 +241,15 @@
                                                     <action selector="playBroadcastButton:" destination="zhA-iA-7sD" eventType="touchUpInside" id="XSc-Sh-997"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxn-Or-q6z">
-                                                <rect key="frame" x="70" y="0.0" width="324" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCESS DENIED Vol.9 w/ DJ Schwippschwager, OGGY OG, Snitcher &amp; Hasse" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxn-Or-q6z">
+                                                <rect key="frame" x="70" y="0.0" width="314" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="SIM-Nh-idY"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
-                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -257,11 +257,11 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-9g-i9A">
-                                        <rect key="frame" x="10" y="491" width="394" height="264"/>
+                                        <rect key="frame" x="15" y="491" width="384" height="101.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Jm5-wA-w8k"/>
                                         </constraints>
-                                        <mutableString key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -272,12 +272,12 @@
                                     <constraint firstAttribute="bottom" secondItem="gK2-9g-i9A" secondAttribute="bottom" constant="40" id="18O-KU-BmE"/>
                                     <constraint firstItem="Jbx-dS-WoF" firstAttribute="centerX" secondItem="Nc1-2Q-ED5" secondAttribute="centerX" id="8Z7-m1-8q2"/>
                                     <constraint firstItem="Jbx-dS-WoF" firstAttribute="top" secondItem="Nc1-2Q-ED5" secondAttribute="top" id="9BP-9t-Sm7"/>
-                                    <constraint firstAttribute="trailing" secondItem="gK2-9g-i9A" secondAttribute="trailing" constant="10" id="DSj-iy-x3I"/>
+                                    <constraint firstAttribute="trailing" secondItem="gK2-9g-i9A" secondAttribute="trailing" constant="15" id="DSj-iy-x3I"/>
                                     <constraint firstItem="Jbx-dS-WoF" firstAttribute="leading" secondItem="Nc1-2Q-ED5" secondAttribute="leading" id="X5J-rC-vSh"/>
                                     <constraint firstItem="M5S-yw-XvS" firstAttribute="top" secondItem="Jbx-dS-WoF" secondAttribute="bottom" constant="17" id="heK-5j-9Xk"/>
-                                    <constraint firstAttribute="trailing" secondItem="M5S-yw-XvS" secondAttribute="trailing" constant="10" id="kfc-2Q-ydj"/>
-                                    <constraint firstItem="gK2-9g-i9A" firstAttribute="leading" secondItem="Nc1-2Q-ED5" secondAttribute="leading" constant="10" id="kg9-Vc-eT5"/>
-                                    <constraint firstItem="M5S-yw-XvS" firstAttribute="leading" secondItem="Nc1-2Q-ED5" secondAttribute="leading" constant="10" id="m8Q-Xq-mp2"/>
+                                    <constraint firstAttribute="trailing" secondItem="M5S-yw-XvS" secondAttribute="trailing" constant="15" id="kfc-2Q-ydj"/>
+                                    <constraint firstItem="gK2-9g-i9A" firstAttribute="leading" secondItem="Nc1-2Q-ED5" secondAttribute="leading" constant="15" id="kg9-Vc-eT5"/>
+                                    <constraint firstItem="M5S-yw-XvS" firstAttribute="leading" secondItem="Nc1-2Q-ED5" secondAttribute="leading" constant="15" id="m8Q-Xq-mp2"/>
                                     <constraint firstAttribute="trailing" secondItem="Jbx-dS-WoF" secondAttribute="trailing" id="t3I-xu-v2F"/>
                                     <constraint firstItem="gK2-9g-i9A" firstAttribute="top" secondItem="M5S-yw-XvS" secondAttribute="bottom" constant="10" id="xoE-IA-Z3P"/>
                                 </constraints>
