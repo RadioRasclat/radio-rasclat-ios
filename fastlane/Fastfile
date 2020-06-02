@@ -44,7 +44,7 @@ platform :ios do
     deliver(
       force: true,
       automatic_release: false,
-      submit_for_review: true
+      submit_for_review: false
     )
   end
 
@@ -65,6 +65,9 @@ platform :ios do
     # ensure that master branch is clean
     ensure_git_status_clean
 
+    # clean pod install
+    cocoapods(clean_install: true)
+    
     # check the semantic parameter entered
     if !lane[:bump]
       raise "No bump type defined! Use one of: patch | minor | major".red
