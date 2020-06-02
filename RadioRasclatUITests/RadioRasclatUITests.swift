@@ -47,9 +47,9 @@ class RadioRasclatUITests: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+
         app.tabBars.buttons["Broadcasts"].tap()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)"]/*[[".cells.staticTexts[\"Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)\"]",".staticTexts[\"Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables/*@START_MENU_TOKEN@*/ .staticTexts["Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)"]/*[[".cells.staticTexts[\"Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)\"]",".staticTexts[\"Radio Rasclat presents: Fruity Loup • Vol.2 (24.04.2020)\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
         app.buttons["btn play"].tap()
     }
 
