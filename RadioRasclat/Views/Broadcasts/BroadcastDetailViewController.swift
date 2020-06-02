@@ -10,6 +10,7 @@ import AVFoundation
 import AVKit
 import MediaPlayer
 import UIKit
+import SwiftSoup
 
 extension UIImageView {
     func load(url: URL) {
@@ -33,7 +34,8 @@ class BroadcastDetailViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
-
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     @IBAction func playBroadcastButton(_: Any) {
         player.play()
         setupAVAudioSession()
@@ -103,7 +105,19 @@ class BroadcastDetailViewController: UIViewController {
         let urlImage = URL(string: urlImageString!)
 
         titleLabel.text = broadcast?.title
+        
+        do {
+            let html = (broadcast?.description)!
+            let doc: Document = try SwiftSoup.parse(html)
+            descriptionLabel.text = try doc.text()
+        } catch Exception.Error(let type, let message) {
+            print(type, message)
+        } catch {
+            print("message")
+        }
+        
         imageView.load(url: urlImage!)
+        descriptionLabel.sizeToFit()
     }
 
     override func viewDidDisappear(_: Bool) {

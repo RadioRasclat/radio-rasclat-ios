@@ -10,6 +10,7 @@ import Foundation
 
 struct Broadcasts: Decodable {
     let title: String
+    let description: String
     let image: String
     let audio: String
 }
