@@ -42,8 +42,9 @@ platform :ios do
   desc "Upload metadata, screenshots and binary"
   lane :upload do
     deliver(
-      force: false,
-      automatic_release: false
+      force: true,
+      automatic_release: false,
+      submit_for_review: true
     )
   end
 
@@ -56,11 +57,76 @@ platform :ios do
   end
 
   desc "Run tests, take screenshots, upload deliver file, upload app"
-  lane :release do
+  lane :release do |lane|
+
+    # ensure you are in master branch
+    ensure_git_branch
+
+    # ensure that master branch is clean
     ensure_git_status_clean
+
+    # check the semantic parameter entered
+    if !lane[:bump]
+        raise "No bump type defined! Use one of: patch | minor | major".red
+    end
+
+    # get the last commit comments from Git history
+    # and creates our changelog
+    comments = changelog_from_git_commits(
+        between: [last_git_tag, "HEAD"],
+        pretty: "- %s",
+        date_format: "short",
+        match_lightweight_tag: false, 
+        merge_commit_filtering: "exclude_merges" 
+    ) 
+
+    # calculates the new version according to
+    # the semantic version added
+    type = lane[:bump]
+    old = last_git_tag
+    version = old
+
+    oldArr = old.split('.').map{|v| v.to_i}    
+
+    if type == "patch"
+        version = "#{oldArr[0]}.#{oldArr[1]}.#{oldArr[2] + 1}"
+    elsif type == "minor"
+        version = "#{oldArr[0]}.#{oldArr[1] + 1}.0"
+    elsif type == "major"
+        version = "#{oldArr[0] + 1}.0.0"
+    end   
+
+    if version == old
+        UI.user_error!("Wrong release type parameter. Enter: patch | minor | major")
+    end
+
+    # set the new version number
+    increment_version_number(
+        version_number: version
+    )
+
+    # test app
     test
+
+    # take screenshots
     screenshots
+
+    # build app and increment build number
     build
-    upload 
-  end
+
+    # creates a bump version commit 
+    commit_version_bump(message: "Version bumped to v#{version}", xcodeproj: "RadioRasclat.xcodeproj")
+
+    # push bump commit
+    # push_to_git_remote(tags: false)
+
+    # create a local tag with the new version
+    # add_git_tag(message: comments, tag: "v#{version}", prefix: "v", build_number: version)    
+
+    # publish a new release into Github
+
+    # Finally, publish the .ipa on App Store Connect
+    # upload
+
+end
 end
