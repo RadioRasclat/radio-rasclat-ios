@@ -146,3 +146,4 @@ platform :ios do
     # Finally, publish the .ipa on App Store Connect
     # upload
   end
+end
