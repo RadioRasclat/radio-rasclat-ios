@@ -49,6 +49,7 @@ platform :ios do
 
   desc "Push a new beta build to Testflight"
   lane :beta do
+    ensure_git_status_clean
     test
     build
     upload_to_testflight
@@ -56,11 +57,10 @@ platform :ios do
 
   desc "Run tests, take screenshots, upload deliver file, upload app"
   lane :release do
-    # ensure_git_status_clean
+    ensure_git_status_clean
     test
-    # match(type: "appstore")
     screenshots
     build
-    # upload 
+    upload 
   end
 end

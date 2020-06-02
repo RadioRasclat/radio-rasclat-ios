@@ -107,6 +107,7 @@
                                             <constraint firstAttribute="width" constant="45" id="At3-tO-z7G"/>
                                             <constraint firstAttribute="height" constant="45" id="oyF-LB-iVj"/>
                                         </constraints>
+                                        <color key="tintColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="btn-play"/>
                                         <connections>
                                             <action selector="playButtonPressed:" destination="Plm-ji-a8Y" eventType="touchUpInside" id="3yw-h7-2p2"/>
@@ -118,7 +119,7 @@
                                             <constraint firstAttribute="width" constant="45" id="0yj-ls-H3e"/>
                                             <constraint firstAttribute="height" constant="45" id="CsF-hd-Eyg"/>
                                         </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="btn-pause"/>
                                         <connections>
                                             <action selector="pauseButtonPressed:" destination="Plm-ji-a8Y" eventType="touchUpInside" id="toQ-Jy-oNe"/>
@@ -233,25 +234,29 @@
                                 <rect key="frame" x="94" y="482" width="226" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffp-Xf-bmQ" userLabel="PlayButton">
-                                        <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="0Bo-qp-hsj"/>
                                             <constraint firstAttribute="height" constant="50" id="FJA-3Q-pQn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="tintColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" backgroundImage="play.circle" catalog="system"/>
+                                        <state key="normal" image="btn-play">
+                                            <color key="titleColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="playBroadcastButton:" destination="zhA-iA-7sD" eventType="touchUpInside" id="XSc-Sh-997"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-S5-Hve" userLabel="PauseButton">
-                                        <rect key="frame" x="176" y="0.5" width="50" height="49"/>
+                                        <rect key="frame" x="176" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2n5-yP-ewX"/>
                                             <constraint firstAttribute="width" constant="50" id="VDy-8c-Vqb"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="pause.circle" catalog="system"/>
+                                        <state key="normal" image="btn-pause">
+                                            <color key="titleColor" red="1" green="0.50980392159999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="pauseBroadcastButton:" destination="zhA-iA-7sD" eventType="touchUpInside" id="5yS-Ko-GZB"/>
                                         </connections>
@@ -290,9 +295,7 @@
         <image name="broadcastsIcon" width="44" height="44"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
-        <image name="pause.circle" catalog="system" width="128" height="121"/>
         <image name="placeholderImage" width="333.33334350585938" height="333.33334350585938"/>
-        <image name="play.circle" catalog="system" width="128" height="121"/>
         <image name="streamIcon" width="44" height="44"/>
     </resources>
 </document>

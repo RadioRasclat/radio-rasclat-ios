@@ -6,10 +6,10 @@
 //  Copyright © 2020 Domenik Toefflinger. All rights reserved.
 //
 
-import UIKit
-import AVKit
 import AVFoundation
+import AVKit
 import MediaPlayer
+import UIKit
 
 extension UIImageView {
     func load(url: URL) {
@@ -26,24 +26,23 @@ extension UIImageView {
 }
 
 class BroadcastDetailViewController: UIViewController {
-    
     var player = AVPlayer()
     var playerItem: AVPlayerItem!
-    
-    var broadcast:Broadcasts?
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBAction func playBroadcastButton(_ sender: Any) {
+    var broadcast: Broadcasts?
+
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+
+    @IBAction func playBroadcastButton(_: Any) {
         player.play()
         setupAVAudioSession()
     }
-    
-    @IBAction func pauseBroadcastButton(_ sender: Any) {
+
+    @IBAction func pauseBroadcastButton(_: Any) {
         player.pause()
     }
-    
+
     private func setupAVAudioSession() {
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
@@ -55,33 +54,32 @@ class BroadcastDetailViewController: UIViewController {
             debugPrint("Error: \(error)")
         }
     }
-    
+
     private func setupCommandCenter() {
-        
         // Meta
-        var nowPlayingInfo = [String : Any]()
-        
+        var nowPlayingInfo = [String: Any]()
+
         nowPlayingInfo[MPMediaItemPropertyTitle] = broadcast?.title ?? "Radio Rasclat"
         nowPlayingInfo[MPMediaItemPropertyArtist] = "Radio Rasclat"
         nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = "Stimulating the gun-finger."
         nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem.currentTime().seconds
         nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem.asset.duration.seconds
         nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate
-        
+
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
 
         let commandCenter = MPRemoteCommandCenter.shared()
         commandCenter.playCommand.isEnabled = true
         commandCenter.pauseCommand.isEnabled = true
-        commandCenter.playCommand.addTarget { [weak self] (event) -> MPRemoteCommandHandlerStatus in
+        commandCenter.playCommand.addTarget { [weak self] (_) -> MPRemoteCommandHandlerStatus in
             self?.player.play()
             return .success
         }
-        commandCenter.pauseCommand.addTarget { [weak self] (event) -> MPRemoteCommandHandlerStatus in
+        commandCenter.pauseCommand.addTarget { [weak self] (_) -> MPRemoteCommandHandlerStatus in
             self?.player.pause()
             return .success
         }
-        
+
         // Scrubber
         commandCenter.changePlaybackPositionCommand.addTarget { event in
             let seconds = (event as? MPChangePlaybackPositionCommandEvent)?.positionTime ?? 0
@@ -90,25 +88,25 @@ class BroadcastDetailViewController: UIViewController {
             return .success
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let urlAudioString = broadcast?.audio
-        
+
         playerItem = AVPlayerItem(url: URL(string: urlAudioString!)!)
         player = AVPlayer(playerItem: playerItem)
-        
+
         title = broadcast?.title
-        
+
         let urlImageString = broadcast?.image
         let urlImage = URL(string: urlImageString!)
-        
+
         titleLabel.text = broadcast?.title
         imageView.load(url: urlImage!)
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
+
+    override func viewDidDisappear(_: Bool) {
         player.pause()
         player.cancelPendingPrerolls() // stops network requests
         player.replaceCurrentItem(with: nil)
