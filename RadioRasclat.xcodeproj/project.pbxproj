@@ -13,6 +13,8 @@
 		B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209E56E2469CF85003C8672 /* LiveViewController.swift */; };
 		B23D74712469D60800F22B24 /* BroadcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D74702469D60800F22B24 /* BroadcastListViewController.swift */; };
 		B26EA2FC246E08650016501A /* BroadcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26EA2FB246E08650016501A /* BroadcastDetailViewController.swift */; };
+		B27DE56D2486C48C00698DCD /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DE56C2486C48C00698DCD /* ScheduleViewController.swift */; };
+		B27DE56F2486C57B00698DCD /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DE56E2486C57B00698DCD /* Schedule.swift */; };
 		B2878630246E12FD00C2212B /* Broadcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287862E246E0B7300C2212B /* Broadcasts.swift */; };
 		B2C450902469CDBB000AB7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4508F2469CDBB000AB7AE /* AppDelegate.swift */; };
 		B2C450922469CDBB000AB7AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C450912469CDBB000AB7AE /* SceneDelegate.swift */; };
@@ -81,6 +83,8 @@
 		B23D746F2469D1DA00F22B24 /* Radio Rasclat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Rasclat.entitlements"; sourceTree = "<group>"; };
 		B23D74702469D60800F22B24 /* BroadcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastListViewController.swift; sourceTree = "<group>"; };
 		B26EA2FB246E08650016501A /* BroadcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastDetailViewController.swift; sourceTree = "<group>"; };
+		B27DE56C2486C48C00698DCD /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		B27DE56E2486C57B00698DCD /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		B283730C247659F400CBB6ED /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		B287862E246E0B7300C2212B /* Broadcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broadcasts.swift; sourceTree = "<group>"; };
 		B2C4508C2469CDBB000AB7AE /* Radio Rasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Rasclat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +168,7 @@
 			children = (
 				B287862E246E0B7300C2212B /* Broadcasts.swift */,
 				B209E56B2469CF3C003C8672 /* Track.swift */,
+				B27DE56E2486C57B00698DCD /* Schedule.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				B26EA2FE246E08BE0016501A /* Broadcasts */,
 				B26EA2FD246E08B10016501A /* Live */,
+				B27DE56B2486BD9E00698DCD /* Schedule */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +207,14 @@
 				319ED058549CFE1C776D9499 /* Pods_RadioRasclat_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B27DE56B2486BD9E00698DCD /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				B27DE56C2486C48C00698DCD /* ScheduleViewController.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		B287862D246E0B5800C2212B /* Controller */ = {
@@ -529,10 +543,12 @@
 				B26EA2FC246E08650016501A /* BroadcastDetailViewController.swift in Sources */,
 				B2878630246E12FD00C2212B /* Broadcasts.swift in Sources */,
 				B2C450942469CDBB000AB7AE /* ViewController.swift in Sources */,
+				B27DE56D2486C48C00698DCD /* ScheduleViewController.swift in Sources */,
 				B2C450902469CDBB000AB7AE /* AppDelegate.swift in Sources */,
 				B23D74712469D60800F22B24 /* BroadcastListViewController.swift in Sources */,
 				B2C450922469CDBB000AB7AE /* SceneDelegate.swift in Sources */,
 				B209E56C2469CF3C003C8672 /* Track.swift in Sources */,
+				B27DE56F2486C57B00698DCD /* Schedule.swift in Sources */,
 				B209E56F2469CF85003C8672 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
