@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Sentry
         SentrySDK.start(options: [
             "dsn": "https://0a350daf343b460fb164a57e32fe3579@o183412.ingest.sentry.io/5262272",
-            "enableAutoSessionTracking": true
+            "enableAutoSessionTracking": true,
             "debug": false // Enabled debug when first installing is always helpful
         ])
         
