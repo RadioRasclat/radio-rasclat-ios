@@ -27,6 +27,7 @@
                     <connections>
                         <segue destination="sEz-Vg-ZgR" kind="relationship" relationship="viewControllers" id="bba-Kp-FGH"/>
                         <segue destination="sFV-CK-G1q" kind="relationship" relationship="viewControllers" id="9eL-mG-F8p"/>
+                        <segue destination="iVh-WO-86F" kind="relationship" relationship="viewControllers" id="toX-2K-saM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISg-gD-1qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -75,6 +76,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAu-2l-rWI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-264" y="615"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="9Ff-Ou-sKT">
+            <objects>
+                <navigationController id="iVh-WO-86F" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar" catalog="system" id="K6P-Jr-cj9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Oed-YV-yRE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="17"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gyx-AB-dqX" kind="relationship" relationship="rootViewController" id="j3k-Wf-Rnl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymf-eQ-Kr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="615"/>
         </scene>
         <!--Stream-->
         <scene sceneID="6zX-fy-5V6">
@@ -206,6 +230,98 @@
             </objects>
             <point key="canvasLocation" x="-265.21739130434787" y="1383.4821428571429"/>
         </scene>
+        <!--Schedule-->
+        <scene sceneID="XFN-kU-e09">
+            <objects>
+                <viewController id="Gyx-AB-dqX" customClass="ScheduleViewController" customModule="Radio_Rasclat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1Z-G3-XbV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="127-IO-c05">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdn-Jg-vvM">
+                                        <rect key="frame" x="20" y="20" width="104.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-hV-XxX">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="NM5-Je-ma7"/>
+                                            <constraint firstAttribute="height" constant="180" id="j7T-E6-hhc"/>
+                                        </constraints>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoF-NN-iRV">
+                                        <rect key="frame" x="20" y="250" width="112" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="DBb-FE-qCi">
+                                        <rect key="frame" x="0.0" y="280" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="5ZE-vV-AdC"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="Qsw-2e-t7u"/>
+                                        </constraints>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbg-1r-JTf">
+                                        <rect key="frame" x="20" y="480" width="154" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="0Sj-cZ-6sc" userLabel="Wednesday Table View">
+                                        <rect key="frame" x="0.0" y="510" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="H0k-Y4-wC7"/>
+                                            <constraint firstAttribute="height" constant="180" id="ya2-hV-wlk"/>
+                                        </constraints>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0Sj-cZ-6sc" secondAttribute="bottom" constant="66" id="6de-Bd-9jI"/>
+                                    <constraint firstItem="DBb-FE-qCi" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" id="8Fz-V8-Z54"/>
+                                    <constraint firstItem="sbg-1r-JTf" firstAttribute="top" secondItem="DBb-FE-qCi" secondAttribute="bottom" constant="20" id="Boo-ep-e34"/>
+                                    <constraint firstAttribute="trailing" secondItem="DBb-FE-qCi" secondAttribute="trailing" id="GeR-CQ-aiB"/>
+                                    <constraint firstItem="0Sj-cZ-6sc" firstAttribute="top" secondItem="sbg-1r-JTf" secondAttribute="bottom" constant="10" id="QSi-ET-2GS"/>
+                                    <constraint firstItem="pdn-Jg-vvM" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="QUe-0v-2P5"/>
+                                    <constraint firstItem="DBb-FE-qCi" firstAttribute="top" secondItem="IoF-NN-iRV" secondAttribute="bottom" constant="10" id="ViF-uP-LUx"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Sj-cZ-6sc" secondAttribute="trailing" id="Xmb-4x-CXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="tEk-hV-XxX" secondAttribute="trailing" id="Yef-wF-9zj"/>
+                                    <constraint firstItem="pdn-Jg-vvM" firstAttribute="top" secondItem="127-IO-c05" secondAttribute="top" constant="20" id="c1Y-aU-KZz"/>
+                                    <constraint firstItem="0Sj-cZ-6sc" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" id="e2l-o0-zaV"/>
+                                    <constraint firstItem="tEk-hV-XxX" firstAttribute="centerX" secondItem="127-IO-c05" secondAttribute="centerX" id="ecb-I4-0sR"/>
+                                    <constraint firstItem="tEk-hV-XxX" firstAttribute="top" secondItem="pdn-Jg-vvM" secondAttribute="bottom" constant="10" id="rWU-su-Tqq"/>
+                                    <constraint firstItem="tEk-hV-XxX" firstAttribute="leading" secondItem="DBb-FE-qCi" secondAttribute="leading" id="rhT-Yd-lKu"/>
+                                    <constraint firstItem="tEk-hV-XxX" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" id="u5L-El-LYh"/>
+                                    <constraint firstItem="sbg-1r-JTf" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="vBc-yt-ppW"/>
+                                    <constraint firstItem="IoF-NN-iRV" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="xpZ-8J-PEP"/>
+                                    <constraint firstItem="IoF-NN-iRV" firstAttribute="top" secondItem="tEk-hV-XxX" secondAttribute="bottom" constant="20" id="zjt-gj-XlC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="127-IO-c05" firstAttribute="leading" secondItem="4aD-vf-snc" secondAttribute="leading" id="Oup-eH-BuI"/>
+                            <constraint firstAttribute="bottom" secondItem="127-IO-c05" secondAttribute="bottom" id="P6e-0b-A6E"/>
+                            <constraint firstItem="127-IO-c05" firstAttribute="trailing" secondItem="4aD-vf-snc" secondAttribute="trailing" id="fnE-yo-Cl7"/>
+                            <constraint firstItem="127-IO-c05" firstAttribute="top" secondItem="P1Z-G3-XbV" secondAttribute="top" id="t5b-Em-O1M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4aD-vf-snc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Schedule" id="Vav-Vh-2Uv"/>
+                    <connections>
+                        <outlet property="mondayTableView" destination="tEk-hV-XxX" id="Zmw-Ca-qZE"/>
+                        <outlet property="tuesdayTableView" destination="DBb-FE-qCi" id="TfA-Ob-Lle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUZ-bj-8SS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508.69565217391306" y="1382.8125"/>
+        </scene>
         <!--Broadcast Detail View Controller-->
         <scene sceneID="ShF-d7-EZ0">
             <objects>
@@ -287,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkS-Ii-z1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502.89855072463774" y="1383.4821428571429"/>
+            <point key="canvasLocation" x="-265" y="2145"/>
         </scene>
     </scenes>
     <resources>
@@ -295,6 +411,7 @@
         <image name="broadcastsIcon" width="44" height="44"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="placeholderImage" width="333.33334350585938" height="333.33334350585938"/>
         <image name="streamIcon" width="44" height="44"/>
     </resources>
