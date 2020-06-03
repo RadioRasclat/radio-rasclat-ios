@@ -7,11 +7,19 @@
 //
 
 import OneSignal
+import Sentry
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // Sentry
+        SentrySDK.start(options: [
+            "dsn": "https://0a350daf343b460fb164a57e32fe3579@o183412.ingest.sentry.io/5262272",
+            "debug": true // Enabled debug when first installing is always helpful
+        ])
+        
         // START OneSignal initialization code
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
 
