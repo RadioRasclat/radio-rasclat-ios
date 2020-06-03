@@ -12,11 +12,13 @@ class BroadcastListViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet var tableView: UITableView!
 
     var broadcasts = [Broadcasts]()
+    
+    let activityIndicator = UIActivityIndicatorView(style: .gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        downloadJSON {
+        downloadBroadcasts {
             self.tableView.reloadData()
         }
 
@@ -44,8 +46,12 @@ class BroadcastListViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
 
-    func downloadJSON(completed: @escaping () -> Void) {
+    func downloadBroadcasts(completed: @escaping () -> Void) {
         let url = URL(string: "https://api.radio-rasclat.com/recordings")
+        
+        view.addSubview(activityIndicator)
+        activityIndicator.frame = view.bounds
+        activityIndicator.startAnimating()
 
         URLSession.shared.dataTask(with: url!) { data, _, error in
             if error == nil {
@@ -53,9 +59,10 @@ class BroadcastListViewController: UIViewController, UITableViewDelegate, UITabl
                     self.broadcasts = try JSONDecoder().decode([Broadcasts].self, from: data!)
                     DispatchQueue.main.async {
                         completed()
+                        self.activityIndicator.stopAnimating()
                     }
                 } catch {
-                    print("JSON Error")
+                    print(error)
                 }
             }
 
