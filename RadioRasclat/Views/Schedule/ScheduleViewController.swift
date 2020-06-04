@@ -84,7 +84,6 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
                 let data = data {
                 do {
                     self.schedule = try JSONDecoder().decode(Schedule.self, from: data)
-                    print("JSON \(self.schedule?.monday)")
                 } catch {
                     print("JSON Error")
                 }
