@@ -16,15 +16,12 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     var schedule: Schedule?
     
-    let activityIndicator = UIActivityIndicatorView(style: .gray)
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         downloadSchedule {
             self.mondayTableView.reloadData()
             self.tuesdayTableView.reloadData()
-            self.activityIndicator.stopAnimating()
         }
 
         mondayTableView.delegate = self
@@ -40,21 +37,21 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // Return the number of items in the sample data structure.
         
         var count:Int?
-                
+
         if tableView == self.mondayTableView {
             count = schedule?.monday.count
         }
-        
+
         if tableView == self.tuesdayTableView {
-            count =  schedule?.tuesday.count
+            count = schedule?.tuesday.count
         }
-        
+
         return count!
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         var cell:UITableViewCell?
         
         if tableView == self.mondayTableView {
@@ -62,48 +59,36 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
             let mondayScheduleDetail = schedule?.monday[indexPath.row]
             cell!.textLabel!.text = mondayScheduleDetail?.name
             cell!.imageView!.image = UIImage(contentsOfFile: "placeholderImage")
-            
+
         }
-        
+
         if tableView == self.tuesdayTableView {
             cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath as IndexPath)
             let tuesdayScheduleDetail = schedule?.tuesday[indexPath.row]
             cell!.textLabel!.text = tuesdayScheduleDetail?.name
             cell!.imageView!.image = UIImage(contentsOfFile: "placeholderImage")
-            
+
         }
-        
+
         return cell!
     }
 
     func downloadSchedule(completed: @escaping () -> Void) {
-        
-        view.addSubview(activityIndicator)
-        activityIndicator.frame = view.bounds
-        activityIndicator.startAnimating()
-        
-        let session = URLSession.shared
-        let url = URL(string: "https://api.radio-rasclat.com/meta/schedule")!
-        let task = session.dataTask(with: url, completionHandler: { data, response, error in
-            
-            if error != nil {
-                print(error!)
-                self.activityIndicator.stopAnimating()
-                return
+        let url = URL(string: "https://api.radio-rasclat.com/meta/schedule")
+
+        URLSession.shared.dataTask(with: url!) { data, _, error in
+            if error == nil {
+                do {
+                    self.schedule = try JSONDecoder().decode(Schedule.self, from: data!)
+                    print(self.schedule?.monday)
+                    DispatchQueue.main.async {
+                        completed()
+                    }
+                } catch {
+                    print("JSON Error")
+                }
             }
-            
-            // Serialize the data into an object
-            do {
-                let json = try JSONDecoder().decode(Schedule.self, from: data!)
-                
-                print(json)
-                
-            } catch {
-                print("Error during JSON serialization: \(error.localizedDescription)")
-                self.activityIndicator.stopAnimating()
-            }
-            
-        })
-        task.resume()
+
+        }.resume()
     }
 }
