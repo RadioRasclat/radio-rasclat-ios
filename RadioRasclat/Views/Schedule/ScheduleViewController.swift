@@ -19,11 +19,6 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        downloadSchedule {
-            self.mondayTableView.reloadData()
-            self.tuesdayTableView.reloadData()
-        }
-
         mondayTableView.delegate = self
         mondayTableView.dataSource = self
         mondayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -31,23 +26,31 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         tuesdayTableView.delegate = self
         tuesdayTableView.dataSource = self
         tuesdayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell1")
+        
+        downloadSchedule {
+            self.mondayTableView.reloadData()
+            self.tuesdayTableView.reloadData()
+        }
+
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of items in the sample data structure.
-        
-        var count:Int?
+
+        guard let schedule = schedule else { return 0 }
+
+        var count:Int = 0
 
         if tableView == self.mondayTableView {
-            count = schedule?.monday.count
+            count = schedule.monday.count
         }
 
         if tableView == self.tuesdayTableView {
-            count = schedule?.tuesday.count
+            count = schedule.tuesday.count
         }
 
-        return count!
-        
+        return count
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,18 +80,18 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         let url = URL(string: "https://api.radio-rasclat.com/meta/schedule")
 
         URLSession.shared.dataTask(with: url!) { data, _, error in
-            if error == nil {
+            if error == nil,
+                let data = data {
                 do {
-                    self.schedule = try JSONDecoder().decode(Schedule.self, from: data!)
-                    print(self.schedule?.monday)
-                    DispatchQueue.main.async {
-                        completed()
-                    }
+                    self.schedule = try JSONDecoder().decode(Schedule.self, from: data)
+                    print("JSON \(self.schedule?.monday)")
                 } catch {
                     print("JSON Error")
                 }
             }
-
+            DispatchQueue.main.async {
+                completed()
+            }
         }.resume()
     }
 }
