@@ -24,30 +24,37 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        mondayTableView.tableFooterView = UIView()
         mondayTableView.delegate = self
         mondayTableView.dataSource = self
         mondayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "mondayCells")
         
+        tuesdayTableView.tableFooterView = UIView()
         tuesdayTableView.delegate = self
         tuesdayTableView.dataSource = self
         tuesdayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "tuesdayCells")
         
+        wednesdayTableView.tableFooterView = UIView()
         wednesdayTableView.delegate = self
         wednesdayTableView.dataSource = self
         wednesdayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "wednesdayCells")
         
+        thursdayTableView.tableFooterView = UIView()
         thursdayTableView.delegate = self
         thursdayTableView.dataSource = self
         thursdayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "thursdayCells")
         
+        fridayTableView.tableFooterView = UIView()
         fridayTableView.delegate = self
         fridayTableView.dataSource = self
         fridayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "fridayCells")
         
+        saturdayTableView.tableFooterView = UIView()
         saturdayTableView.delegate = self
         saturdayTableView.dataSource = self
         saturdayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "saturdayCells")
         
+        sundayTableView.tableFooterView = UIView()
         sundayTableView.delegate = self
         sundayTableView.dataSource = self
         sundayTableView.register(UITableViewCell.self, forCellReuseIdentifier: "sundayCells")
