@@ -55,6 +55,11 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         downloadSchedule {
             self.mondayTableView.reloadData()
             self.tuesdayTableView.reloadData()
+            self.wednesdayTableView.reloadData()
+            self.thursdayTableView.reloadData()
+            self.fridayTableView.reloadData()
+            self.saturdayTableView.reloadData()
+            self.sundayTableView.reloadData()
         }
 
     }
