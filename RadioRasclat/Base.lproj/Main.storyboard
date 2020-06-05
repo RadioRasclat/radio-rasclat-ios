@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7SC-Ng-bzV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7SC-Ng-bzV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -280,25 +280,101 @@
                                             <constraint firstAttribute="height" constant="180" id="ya2-hV-wlk"/>
                                         </constraints>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYD-Dt-NMh" userLabel="Thursday">
+                                        <rect key="frame" x="20" y="710" width="154" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="v3U-iy-FBa" userLabel="Thursday Table View">
+                                        <rect key="frame" x="0.0" y="740" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="a6v-RV-2tl"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="b6J-KT-eeE"/>
+                                        </constraints>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWp-9o-RRw">
+                                        <rect key="frame" x="20" y="940" width="154" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4LD-6H-bBZ" userLabel="Friday Table View">
+                                        <rect key="frame" x="0.0" y="970" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="6Hq-Ty-i8E"/>
+                                            <constraint firstAttribute="height" constant="180" id="hbk-43-2e6"/>
+                                        </constraints>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDR-Wj-qz0">
+                                        <rect key="frame" x="20" y="1170" width="154" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HA0-qy-JFp" userLabel="Saturday Table View">
+                                        <rect key="frame" x="0.0" y="1200" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="YTF-gw-3AY"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="ngx-ep-oiR"/>
+                                        </constraints>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKX-Tm-aq0">
+                                        <rect key="frame" x="20" y="1400" width="154" height="20"/>
+                                        <fontDescription key="fontDescription" name="DrukTextWide-Medium" family="Druk Text Wide" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QNf-jg-0K5" userLabel="Sunday Table View">
+                                        <rect key="frame" x="0.0" y="1430" width="414" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Da6-9e-99W"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="JQ5-vp-mQt"/>
+                                        </constraints>
+                                    </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="0Sj-cZ-6sc" secondAttribute="bottom" constant="66" id="6de-Bd-9jI"/>
+                                    <constraint firstItem="4LD-6H-bBZ" firstAttribute="top" secondItem="kWp-9o-RRw" secondAttribute="bottom" constant="10" id="1aM-je-7UC"/>
+                                    <constraint firstAttribute="trailing" secondItem="rYD-Dt-NMh" secondAttribute="trailing" constant="240" id="23v-LK-37c"/>
+                                    <constraint firstItem="HA0-qy-JFp" firstAttribute="leading" secondItem="4LD-6H-bBZ" secondAttribute="leading" id="4Z4-pb-uIC"/>
+                                    <constraint firstItem="HA0-qy-JFp" firstAttribute="top" secondItem="nDR-Wj-qz0" secondAttribute="bottom" constant="10" id="4pQ-tL-utP"/>
                                     <constraint firstItem="DBb-FE-qCi" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" id="8Fz-V8-Z54"/>
+                                    <constraint firstItem="RKX-Tm-aq0" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="9I8-pd-8xb"/>
+                                    <constraint firstItem="rYD-Dt-NMh" firstAttribute="top" secondItem="0Sj-cZ-6sc" secondAttribute="bottom" constant="20" id="9O6-0H-Dit"/>
                                     <constraint firstItem="sbg-1r-JTf" firstAttribute="top" secondItem="DBb-FE-qCi" secondAttribute="bottom" constant="20" id="Boo-ep-e34"/>
+                                    <constraint firstItem="kWp-9o-RRw" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="CxF-zv-OWy"/>
                                     <constraint firstAttribute="trailing" secondItem="DBb-FE-qCi" secondAttribute="trailing" id="GeR-CQ-aiB"/>
+                                    <constraint firstItem="HA0-qy-JFp" firstAttribute="trailing" secondItem="4LD-6H-bBZ" secondAttribute="trailing" id="Kfl-J2-InF"/>
+                                    <constraint firstItem="QNf-jg-0K5" firstAttribute="top" secondItem="RKX-Tm-aq0" secondAttribute="bottom" constant="10" id="Lil-vg-Lkv"/>
+                                    <constraint firstItem="v3U-iy-FBa" firstAttribute="top" secondItem="rYD-Dt-NMh" secondAttribute="bottom" constant="10" id="Mxs-Ng-gBB"/>
+                                    <constraint firstItem="v3U-iy-FBa" firstAttribute="leading" secondItem="0Sj-cZ-6sc" secondAttribute="leading" id="Na8-2c-HT7"/>
+                                    <constraint firstItem="QNf-jg-0K5" firstAttribute="trailing" secondItem="HA0-qy-JFp" secondAttribute="trailing" id="PI3-NM-KDm"/>
                                     <constraint firstItem="0Sj-cZ-6sc" firstAttribute="top" secondItem="sbg-1r-JTf" secondAttribute="bottom" constant="10" id="QSi-ET-2GS"/>
                                     <constraint firstItem="pdn-Jg-vvM" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="QUe-0v-2P5"/>
+                                    <constraint firstItem="nDR-Wj-qz0" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="RCb-ll-tNS"/>
+                                    <constraint firstAttribute="trailing" secondItem="kWp-9o-RRw" secondAttribute="trailing" constant="240" id="Tbv-ZG-bbG"/>
+                                    <constraint firstAttribute="bottom" secondItem="QNf-jg-0K5" secondAttribute="bottom" constant="10" id="Ug4-vA-WGw"/>
                                     <constraint firstItem="DBb-FE-qCi" firstAttribute="top" secondItem="IoF-NN-iRV" secondAttribute="bottom" constant="10" id="ViF-uP-LUx"/>
                                     <constraint firstAttribute="trailing" secondItem="0Sj-cZ-6sc" secondAttribute="trailing" id="Xmb-4x-CXd"/>
                                     <constraint firstAttribute="trailing" secondItem="tEk-hV-XxX" secondAttribute="trailing" id="Yef-wF-9zj"/>
                                     <constraint firstItem="pdn-Jg-vvM" firstAttribute="top" secondItem="127-IO-c05" secondAttribute="top" constant="20" id="c1Y-aU-KZz"/>
+                                    <constraint firstItem="RKX-Tm-aq0" firstAttribute="top" secondItem="HA0-qy-JFp" secondAttribute="bottom" constant="20" id="e0Z-PO-beX"/>
                                     <constraint firstItem="0Sj-cZ-6sc" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" id="e2l-o0-zaV"/>
                                     <constraint firstItem="tEk-hV-XxX" firstAttribute="centerX" secondItem="127-IO-c05" secondAttribute="centerX" id="ecb-I4-0sR"/>
+                                    <constraint firstItem="QNf-jg-0K5" firstAttribute="leading" secondItem="HA0-qy-JFp" secondAttribute="leading" id="jLP-MD-nYC"/>
+                                    <constraint firstItem="4LD-6H-bBZ" firstAttribute="trailing" secondItem="v3U-iy-FBa" secondAttribute="trailing" id="pHz-lK-egR"/>
                                     <constraint firstItem="tEk-hV-XxX" firstAttribute="top" secondItem="pdn-Jg-vvM" secondAttribute="bottom" constant="10" id="rWU-su-Tqq"/>
                                     <constraint firstItem="tEk-hV-XxX" firstAttribute="leading" secondItem="DBb-FE-qCi" secondAttribute="leading" id="rhT-Yd-lKu"/>
+                                    <constraint firstItem="v3U-iy-FBa" firstAttribute="trailing" secondItem="0Sj-cZ-6sc" secondAttribute="trailing" id="t6H-Yz-GjQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="RKX-Tm-aq0" secondAttribute="trailing" constant="240" id="tNp-eD-GFB"/>
                                     <constraint firstItem="tEk-hV-XxX" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" id="u5L-El-LYh"/>
+                                    <constraint firstAttribute="trailing" secondItem="nDR-Wj-qz0" secondAttribute="trailing" constant="240" id="uFx-bl-AKE"/>
                                     <constraint firstItem="sbg-1r-JTf" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="vBc-yt-ppW"/>
                                     <constraint firstItem="IoF-NN-iRV" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="xpZ-8J-PEP"/>
+                                    <constraint firstItem="4LD-6H-bBZ" firstAttribute="leading" secondItem="v3U-iy-FBa" secondAttribute="leading" id="yTg-SX-UT7"/>
+                                    <constraint firstItem="kWp-9o-RRw" firstAttribute="top" secondItem="v3U-iy-FBa" secondAttribute="bottom" constant="20" id="yWL-Qc-zRj"/>
+                                    <constraint firstItem="rYD-Dt-NMh" firstAttribute="leading" secondItem="127-IO-c05" secondAttribute="leading" constant="20" id="ylk-4Q-y7q"/>
+                                    <constraint firstItem="nDR-Wj-qz0" firstAttribute="top" secondItem="4LD-6H-bBZ" secondAttribute="bottom" constant="20" id="zMA-tK-ai4"/>
                                     <constraint firstItem="IoF-NN-iRV" firstAttribute="top" secondItem="tEk-hV-XxX" secondAttribute="bottom" constant="20" id="zjt-gj-XlC"/>
                                 </constraints>
                             </scrollView>
@@ -314,8 +390,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Schedule" id="Vav-Vh-2Uv"/>
                     <connections>
-                        <outlet property="mondayTableView" destination="tEk-hV-XxX" id="Zmw-Ca-qZE"/>
-                        <outlet property="tuesdayTableView" destination="DBb-FE-qCi" id="TfA-Ob-Lle"/>
+                        <outlet property="fridayTableView" destination="4LD-6H-bBZ" id="8r1-Iz-HMs"/>
+                        <outlet property="mondayTableView" destination="tEk-hV-XxX" id="uIf-nM-Zde"/>
+                        <outlet property="saturdayTableView" destination="HA0-qy-JFp" id="8Kr-iy-7yU"/>
+                        <outlet property="sundayTableView" destination="QNf-jg-0K5" id="pC7-2k-DIX"/>
+                        <outlet property="thursdayTableView" destination="v3U-iy-FBa" id="I8M-rw-LPk"/>
+                        <outlet property="tuesdayTableView" destination="DBb-FE-qCi" id="oFk-Mh-ZQR"/>
+                        <outlet property="wednesdayTableView" destination="0Sj-cZ-6sc" id="Ari-Ya-Ifx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUZ-bj-8SS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
