@@ -42,8 +42,8 @@ We do too, wanna [participate](https://www.radio-rasclat.com/about)?
 
 ## Contributors
 
-<a href="https://github.com/dmnktoe/radio-rasclat-web/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=dmnktoe/radio-rasclat-web" />
+<a href="https://github.com/dmnktoe/radio-rasclat-ios/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=dmnktoe/radio-rasclat-ios" />
 </a>
 
 ## License
