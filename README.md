@@ -10,6 +10,7 @@ Welcome to Radio Rasclat it's open source iOS app!
 
 1. Install Xcode.
 1. Clone this repository.
+1. Run `pod install`
 
 ## Contributing
 
@@ -38,6 +39,12 @@ We do too, wanna [participate](https://www.radio-rasclat.com/about)?
 ## Demo / Download
 
 [![Travis CI](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-02-17&amp;kind=iossoftware&amp;bubble=ios_apps)](https://apps.apple.com/de/app/radio-rasclat/id1499269866)
+
+## Contributors
+
+<a href="https://github.com/dmnktoe/radio-rasclat-web/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=dmnktoe/radio-rasclat-web" />
+</a>
 
 ## License
 
