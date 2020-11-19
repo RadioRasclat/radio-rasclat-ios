@@ -1,8 +1,0 @@
-app_identifier("com.dmnktoe.RadioRasclat") # The bundle identifier of your app
-apple_id("domenikt96@yahoo.de") # Your Apple email address
-
-itc_team_id("121069891") # App Store Connect Team ID
-team_id("9WTRWY5M2A") # Developer Portal Team ID
-
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
