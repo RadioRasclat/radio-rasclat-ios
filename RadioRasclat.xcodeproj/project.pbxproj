@@ -7,66 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B277B024256705E00028BE97 /* RadioRasclatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B023256705E00028BE97 /* RadioRasclatApp.swift */; };
-		B277B026256705E00028BE97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B025256705E00028BE97 /* ContentView.swift */; };
-		B277B028256705E10028BE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B277B027256705E10028BE97 /* Assets.xcassets */; };
-		B277B02B256705E10028BE97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B277B02A256705E10028BE97 /* Preview Assets.xcassets */; };
-		B277B02D256705E10028BE97 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B02C256705E10028BE97 /* Persistence.swift */; };
-		B277B030256705E10028BE97 /* RadioRasclat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B277B02E256705E10028BE97 /* RadioRasclat.xcdatamodeld */; };
-		B277B03B256705E10028BE97 /* RadioRasclatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B03A256705E10028BE97 /* RadioRasclatTests.swift */; };
-		B277B046256705E10028BE97 /* RadioRasclatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B045256705E10028BE97 /* RadioRasclatUITests.swift */; };
+		B277B0662567072A0028BE97 /* RadioRasclatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0652567072A0028BE97 /* RadioRasclatApp.swift */; };
+		B277B0682567072A0028BE97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0672567072A0028BE97 /* ContentView.swift */; };
+		B277B06A2567072C0028BE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B277B0692567072C0028BE97 /* Assets.xcassets */; };
+		B277B06D2567072C0028BE97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B277B06C2567072C0028BE97 /* Preview Assets.xcassets */; };
+		B277B0782567072D0028BE97 /* RadioRasclatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0772567072D0028BE97 /* RadioRasclatTests.swift */; };
+		B277B0832567072D0028BE97 /* RadioRasclatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0822567072D0028BE97 /* RadioRasclatUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B277B037256705E10028BE97 /* PBXContainerItemProxy */ = {
+		B277B0742567072D0028BE97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B277B018256705E00028BE97 /* Project object */;
+			containerPortal = B277B05A2567072A0028BE97 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B277B01F256705E00028BE97;
+			remoteGlobalIDString = B277B0612567072A0028BE97;
 			remoteInfo = RadioRasclat;
 		};
-		B277B042256705E10028BE97 /* PBXContainerItemProxy */ = {
+		B277B07F2567072D0028BE97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B277B018256705E00028BE97 /* Project object */;
+			containerPortal = B277B05A2567072A0028BE97 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B277B01F256705E00028BE97;
+			remoteGlobalIDString = B277B0612567072A0028BE97;
 			remoteInfo = RadioRasclat;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B277B020256705E00028BE97 /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B277B023256705E00028BE97 /* RadioRasclatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatApp.swift; sourceTree = "<group>"; };
-		B277B025256705E00028BE97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B277B027256705E10028BE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B277B02A256705E10028BE97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B277B02C256705E10028BE97 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		B277B02F256705E10028BE97 /* RadioRasclat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadioRasclat.xcdatamodel; sourceTree = "<group>"; };
-		B277B031256705E10028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B277B036256705E10028BE97 /* RadioRasclatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B277B03A256705E10028BE97 /* RadioRasclatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatTests.swift; sourceTree = "<group>"; };
-		B277B03C256705E10028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B277B041256705E10028BE97 /* RadioRasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B277B045256705E10028BE97 /* RadioRasclatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatUITests.swift; sourceTree = "<group>"; };
-		B277B047256705E10028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B277B0622567072A0028BE97 /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B277B0652567072A0028BE97 /* RadioRasclatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatApp.swift; sourceTree = "<group>"; };
+		B277B0672567072A0028BE97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B277B0692567072C0028BE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B277B06C2567072C0028BE97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B277B06E2567072C0028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B277B0732567072D0028BE97 /* RadioRasclatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B277B0772567072D0028BE97 /* RadioRasclatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatTests.swift; sourceTree = "<group>"; };
+		B277B0792567072D0028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B277B07E2567072D0028BE97 /* RadioRasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B277B0822567072D0028BE97 /* RadioRasclatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatUITests.swift; sourceTree = "<group>"; };
+		B277B0842567072D0028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B277B01D256705E00028BE97 /* Frameworks */ = {
+		B277B05F2567072A0028BE97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B033256705E10028BE97 /* Frameworks */ = {
+		B277B0702567072D0028BE97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B03E256705E10028BE97 /* Frameworks */ = {
+		B277B07B2567072D0028BE97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,62 +72,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B277B017256705E00028BE97 = {
+		B277B0592567072A0028BE97 = {
 			isa = PBXGroup;
 			children = (
-				B277B022256705E00028BE97 /* RadioRasclat */,
-				B277B039256705E10028BE97 /* RadioRasclatTests */,
-				B277B044256705E10028BE97 /* RadioRasclatUITests */,
-				B277B021256705E00028BE97 /* Products */,
+				B277B0642567072A0028BE97 /* RadioRasclat */,
+				B277B0762567072D0028BE97 /* RadioRasclatTests */,
+				B277B0812567072D0028BE97 /* RadioRasclatUITests */,
+				B277B0632567072A0028BE97 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B277B021256705E00028BE97 /* Products */ = {
+		B277B0632567072A0028BE97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B277B020256705E00028BE97 /* RadioRasclat.app */,
-				B277B036256705E10028BE97 /* RadioRasclatTests.xctest */,
-				B277B041256705E10028BE97 /* RadioRasclatUITests.xctest */,
+				B277B0622567072A0028BE97 /* RadioRasclat.app */,
+				B277B0732567072D0028BE97 /* RadioRasclatTests.xctest */,
+				B277B07E2567072D0028BE97 /* RadioRasclatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B277B022256705E00028BE97 /* RadioRasclat */ = {
+		B277B0642567072A0028BE97 /* RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
-				B277B023256705E00028BE97 /* RadioRasclatApp.swift */,
-				B277B025256705E00028BE97 /* ContentView.swift */,
-				B277B027256705E10028BE97 /* Assets.xcassets */,
-				B277B02C256705E10028BE97 /* Persistence.swift */,
-				B277B031256705E10028BE97 /* Info.plist */,
-				B277B02E256705E10028BE97 /* RadioRasclat.xcdatamodeld */,
-				B277B029256705E10028BE97 /* Preview Content */,
+				B277B0652567072A0028BE97 /* RadioRasclatApp.swift */,
+				B277B0672567072A0028BE97 /* ContentView.swift */,
+				B277B0692567072C0028BE97 /* Assets.xcassets */,
+				B277B06E2567072C0028BE97 /* Info.plist */,
+				B277B06B2567072C0028BE97 /* Preview Content */,
 			);
 			path = RadioRasclat;
 			sourceTree = "<group>";
 		};
-		B277B029256705E10028BE97 /* Preview Content */ = {
+		B277B06B2567072C0028BE97 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B277B02A256705E10028BE97 /* Preview Assets.xcassets */,
+				B277B06C2567072C0028BE97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B277B039256705E10028BE97 /* RadioRasclatTests */ = {
+		B277B0762567072D0028BE97 /* RadioRasclatTests */ = {
 			isa = PBXGroup;
 			children = (
-				B277B03A256705E10028BE97 /* RadioRasclatTests.swift */,
-				B277B03C256705E10028BE97 /* Info.plist */,
+				B277B0772567072D0028BE97 /* RadioRasclatTests.swift */,
+				B277B0792567072D0028BE97 /* Info.plist */,
 			);
 			path = RadioRasclatTests;
 			sourceTree = "<group>";
 		};
-		B277B044256705E10028BE97 /* RadioRasclatUITests */ = {
+		B277B0812567072D0028BE97 /* RadioRasclatUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B277B045256705E10028BE97 /* RadioRasclatUITests.swift */,
-				B277B047256705E10028BE97 /* Info.plist */,
+				B277B0822567072D0028BE97 /* RadioRasclatUITests.swift */,
+				B277B0842567072D0028BE97 /* Info.plist */,
 			);
 			path = RadioRasclatUITests;
 			sourceTree = "<group>";
@@ -139,13 +133,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B277B01F256705E00028BE97 /* RadioRasclat */ = {
+		B277B0612567072A0028BE97 /* RadioRasclat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B277B04A256705E10028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclat" */;
+			buildConfigurationList = B277B0872567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclat" */;
 			buildPhases = (
-				B277B01C256705E00028BE97 /* Sources */,
-				B277B01D256705E00028BE97 /* Frameworks */,
-				B277B01E256705E00028BE97 /* Resources */,
+				B277B05E2567072A0028BE97 /* Sources */,
+				B277B05F2567072A0028BE97 /* Frameworks */,
+				B277B0602567072A0028BE97 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,68 +147,68 @@
 			);
 			name = RadioRasclat;
 			productName = RadioRasclat;
-			productReference = B277B020256705E00028BE97 /* RadioRasclat.app */;
+			productReference = B277B0622567072A0028BE97 /* RadioRasclat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B277B035256705E10028BE97 /* RadioRasclatTests */ = {
+		B277B0722567072D0028BE97 /* RadioRasclatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B277B04D256705E10028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */;
+			buildConfigurationList = B277B08A2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */;
 			buildPhases = (
-				B277B032256705E10028BE97 /* Sources */,
-				B277B033256705E10028BE97 /* Frameworks */,
-				B277B034256705E10028BE97 /* Resources */,
+				B277B06F2567072D0028BE97 /* Sources */,
+				B277B0702567072D0028BE97 /* Frameworks */,
+				B277B0712567072D0028BE97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B277B038256705E10028BE97 /* PBXTargetDependency */,
+				B277B0752567072D0028BE97 /* PBXTargetDependency */,
 			);
 			name = RadioRasclatTests;
 			productName = RadioRasclatTests;
-			productReference = B277B036256705E10028BE97 /* RadioRasclatTests.xctest */;
+			productReference = B277B0732567072D0028BE97 /* RadioRasclatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B277B040256705E10028BE97 /* RadioRasclatUITests */ = {
+		B277B07D2567072D0028BE97 /* RadioRasclatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B277B050256705E10028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */;
+			buildConfigurationList = B277B08D2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */;
 			buildPhases = (
-				B277B03D256705E10028BE97 /* Sources */,
-				B277B03E256705E10028BE97 /* Frameworks */,
-				B277B03F256705E10028BE97 /* Resources */,
+				B277B07A2567072D0028BE97 /* Sources */,
+				B277B07B2567072D0028BE97 /* Frameworks */,
+				B277B07C2567072D0028BE97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B277B043256705E10028BE97 /* PBXTargetDependency */,
+				B277B0802567072D0028BE97 /* PBXTargetDependency */,
 			);
 			name = RadioRasclatUITests;
 			productName = RadioRasclatUITests;
-			productReference = B277B041256705E10028BE97 /* RadioRasclatUITests.xctest */;
+			productReference = B277B07E2567072D0028BE97 /* RadioRasclatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B277B018256705E00028BE97 /* Project object */ = {
+		B277B05A2567072A0028BE97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					B277B01F256705E00028BE97 = {
+					B277B0612567072A0028BE97 = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					B277B035256705E10028BE97 = {
+					B277B0722567072D0028BE97 = {
 						CreatedOnToolsVersion = 12.2;
-						TestTargetID = B277B01F256705E00028BE97;
+						TestTargetID = B277B0612567072A0028BE97;
 					};
-					B277B040256705E10028BE97 = {
+					B277B07D2567072D0028BE97 = {
 						CreatedOnToolsVersion = 12.2;
-						TestTargetID = B277B01F256705E00028BE97;
+						TestTargetID = B277B0612567072A0028BE97;
 					};
 				};
 			};
-			buildConfigurationList = B277B01B256705E00028BE97 /* Build configuration list for PBXProject "RadioRasclat" */;
+			buildConfigurationList = B277B05D2567072A0028BE97 /* Build configuration list for PBXProject "RadioRasclat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,36 +216,36 @@
 				en,
 				Base,
 			);
-			mainGroup = B277B017256705E00028BE97;
-			productRefGroup = B277B021256705E00028BE97 /* Products */;
+			mainGroup = B277B0592567072A0028BE97;
+			productRefGroup = B277B0632567072A0028BE97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B277B01F256705E00028BE97 /* RadioRasclat */,
-				B277B035256705E10028BE97 /* RadioRasclatTests */,
-				B277B040256705E10028BE97 /* RadioRasclatUITests */,
+				B277B0612567072A0028BE97 /* RadioRasclat */,
+				B277B0722567072D0028BE97 /* RadioRasclatTests */,
+				B277B07D2567072D0028BE97 /* RadioRasclatUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B277B01E256705E00028BE97 /* Resources */ = {
+		B277B0602567072A0028BE97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B02B256705E10028BE97 /* Preview Assets.xcassets in Resources */,
-				B277B028256705E10028BE97 /* Assets.xcassets in Resources */,
+				B277B06D2567072C0028BE97 /* Preview Assets.xcassets in Resources */,
+				B277B06A2567072C0028BE97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B034256705E10028BE97 /* Resources */ = {
+		B277B0712567072D0028BE97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B03F256705E10028BE97 /* Resources */ = {
+		B277B07C2567072D0028BE97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,50 +255,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B277B01C256705E00028BE97 /* Sources */ = {
+		B277B05E2567072A0028BE97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B02D256705E10028BE97 /* Persistence.swift in Sources */,
-				B277B026256705E00028BE97 /* ContentView.swift in Sources */,
-				B277B030256705E10028BE97 /* RadioRasclat.xcdatamodeld in Sources */,
-				B277B024256705E00028BE97 /* RadioRasclatApp.swift in Sources */,
+				B277B0682567072A0028BE97 /* ContentView.swift in Sources */,
+				B277B0662567072A0028BE97 /* RadioRasclatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B032256705E10028BE97 /* Sources */ = {
+		B277B06F2567072D0028BE97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B03B256705E10028BE97 /* RadioRasclatTests.swift in Sources */,
+				B277B0782567072D0028BE97 /* RadioRasclatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B03D256705E10028BE97 /* Sources */ = {
+		B277B07A2567072D0028BE97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B046256705E10028BE97 /* RadioRasclatUITests.swift in Sources */,
+				B277B0832567072D0028BE97 /* RadioRasclatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B277B038256705E10028BE97 /* PBXTargetDependency */ = {
+		B277B0752567072D0028BE97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B277B01F256705E00028BE97 /* RadioRasclat */;
-			targetProxy = B277B037256705E10028BE97 /* PBXContainerItemProxy */;
+			target = B277B0612567072A0028BE97 /* RadioRasclat */;
+			targetProxy = B277B0742567072D0028BE97 /* PBXContainerItemProxy */;
 		};
-		B277B043256705E10028BE97 /* PBXTargetDependency */ = {
+		B277B0802567072D0028BE97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B277B01F256705E00028BE97 /* RadioRasclat */;
-			targetProxy = B277B042256705E10028BE97 /* PBXContainerItemProxy */;
+			target = B277B0612567072A0028BE97 /* RadioRasclat */;
+			targetProxy = B277B07F2567072D0028BE97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B277B048256705E10028BE97 /* Debug */ = {
+		B277B0852567072D0028BE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -365,7 +357,7 @@
 			};
 			name = Debug;
 		};
-		B277B049256705E10028BE97 /* Release */ = {
+		B277B0862567072D0028BE97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -420,7 +412,7 @@
 			};
 			name = Release;
 		};
-		B277B04B256705E10028BE97 /* Debug */ = {
+		B277B0882567072D0028BE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -442,7 +434,7 @@
 			};
 			name = Debug;
 		};
-		B277B04C256705E10028BE97 /* Release */ = {
+		B277B0892567072D0028BE97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -464,7 +456,7 @@
 			};
 			name = Release;
 		};
-		B277B04E256705E10028BE97 /* Debug */ = {
+		B277B08B2567072D0028BE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,7 +478,7 @@
 			};
 			name = Debug;
 		};
-		B277B04F256705E10028BE97 /* Release */ = {
+		B277B08C2567072D0028BE97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -508,7 +500,7 @@
 			};
 			name = Release;
 		};
-		B277B051256705E10028BE97 /* Debug */ = {
+		B277B08E2567072D0028BE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -528,7 +520,7 @@
 			};
 			name = Debug;
 		};
-		B277B052256705E10028BE97 /* Release */ = {
+		B277B08F2567072D0028BE97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -551,56 +543,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B277B01B256705E00028BE97 /* Build configuration list for PBXProject "RadioRasclat" */ = {
+		B277B05D2567072A0028BE97 /* Build configuration list for PBXProject "RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B048256705E10028BE97 /* Debug */,
-				B277B049256705E10028BE97 /* Release */,
+				B277B0852567072D0028BE97 /* Debug */,
+				B277B0862567072D0028BE97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B277B04A256705E10028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclat" */ = {
+		B277B0872567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B04B256705E10028BE97 /* Debug */,
-				B277B04C256705E10028BE97 /* Release */,
+				B277B0882567072D0028BE97 /* Debug */,
+				B277B0892567072D0028BE97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B277B04D256705E10028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */ = {
+		B277B08A2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B04E256705E10028BE97 /* Debug */,
-				B277B04F256705E10028BE97 /* Release */,
+				B277B08B2567072D0028BE97 /* Debug */,
+				B277B08C2567072D0028BE97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B277B050256705E10028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */ = {
+		B277B08D2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B051256705E10028BE97 /* Debug */,
-				B277B052256705E10028BE97 /* Release */,
+				B277B08E2567072D0028BE97 /* Debug */,
+				B277B08F2567072D0028BE97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B277B02E256705E10028BE97 /* RadioRasclat.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B277B02F256705E10028BE97 /* RadioRasclat.xcdatamodel */,
-			);
-			currentVersion = B277B02F256705E10028BE97 /* RadioRasclat.xcdatamodel */;
-			path = RadioRasclat.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = B277B018256705E00028BE97 /* Project object */;
+	rootObject = B277B05A2567072A0028BE97 /* Project object */;
 }
