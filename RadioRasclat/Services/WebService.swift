@@ -8,12 +8,10 @@
 import Foundation
 
 class WebService {
-    
-    private let apiKey = "e303edd4a30b167c236af3070b6fee33"
-    
-    func getRecordings(completion: @escaping (RecordingList?) -> ()) {
         
-        guard let url = URL(string: "http://api.radio-rasclat.com/recordings") else {
+    func getRecordings(completion: @escaping (RecordingList?) -> ()) {
+            
+        guard let url = URL(string: "https://api.radio-rasclat.com/recordings") else {
             fatalError("Invalid URL")
         }
         
