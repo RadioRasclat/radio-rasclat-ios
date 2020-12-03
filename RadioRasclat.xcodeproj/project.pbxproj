@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B210CD1A2579A3D90046B2F0 /* RecordingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD192579A3D90046B2F0 /* RecordingListViewModel.swift */; };
+		B210CD1F2579A3E90046B2F0 /* RecordingDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD1E2579A3E90046B2F0 /* RecordingDetailViewModel.swift */; };
+		B210CD252579A5AB0046B2F0 /* RecordingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD242579A5AB0046B2F0 /* RecordingListView.swift */; };
+		B210CD2D2579A6390046B2F0 /* RecordingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD2C2579A6390046B2F0 /* RecordingDetailView.swift */; };
+		B210CD322579A66B0046B2F0 /* RecordingGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD312579A66B0046B2F0 /* RecordingGridItemView.swift */; };
 		B2D254992578807B0055329D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254982578807B0055329D /* AppDelegate.swift */; };
 		B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549A2578807B0055329D /* SceneDelegate.swift */; };
 		B2D2549D2578807B0055329D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549C2578807B0055329D /* ContentView.swift */; };
@@ -42,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B210CD192579A3D90046B2F0 /* RecordingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingListViewModel.swift; sourceTree = "<group>"; };
+		B210CD1E2579A3E90046B2F0 /* RecordingDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailViewModel.swift; sourceTree = "<group>"; };
+		B210CD242579A5AB0046B2F0 /* RecordingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingListView.swift; sourceTree = "<group>"; };
+		B210CD2C2579A6390046B2F0 /* RecordingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailView.swift; sourceTree = "<group>"; };
+		B210CD312579A66B0046B2F0 /* RecordingGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingGridItemView.swift; sourceTree = "<group>"; };
 		B2D254952578807B0055329D /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D254982578807B0055329D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D2549A2578807B0055329D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B210CD182579A3010046B2F0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B210CD192579A3D90046B2F0 /* RecordingListViewModel.swift */,
+				B210CD1E2579A3E90046B2F0 /* RecordingDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B210CD232579A56C0046B2F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B210CD242579A5AB0046B2F0 /* RecordingListView.swift */,
+				B210CD2C2579A6390046B2F0 /* RecordingDetailView.swift */,
+				B210CD312579A66B0046B2F0 /* RecordingGridItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B2D2548C2578807B0055329D = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +146,8 @@
 				B2D2549A2578807B0055329D /* SceneDelegate.swift */,
 				B2D254CB2578808B0055329D /* Services */,
 				B2D254E12578839B0055329D /* Models */,
+				B210CD182579A3010046B2F0 /* ViewModels */,
+				B210CD232579A56C0046B2F0 /* Views */,
 				B2D2549C2578807B0055329D /* ContentView.swift */,
 				B2D2549E2578807D0055329D /* Assets.xcassets */,
 				B2D254A32578807D0055329D /* LaunchScreen.storyboard */,
@@ -303,14 +334,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B210CD252579A5AB0046B2F0 /* RecordingListView.swift in Sources */,
+				B210CD322579A66B0046B2F0 /* RecordingGridItemView.swift in Sources */,
 				B2D254992578807B0055329D /* AppDelegate.swift in Sources */,
 				B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */,
+				B210CD1A2579A3D90046B2F0 /* RecordingListViewModel.swift in Sources */,
 				B2D254D72578813A0055329D /* ImageLoader.swift in Sources */,
+				B210CD2D2579A6390046B2F0 /* RecordingDetailView.swift in Sources */,
 				B2D254E3257883B70055329D /* RecordingModel.swift in Sources */,
 				B2D254F825788B770055329D /* ShowModel.swift in Sources */,
 				B2D254ED25788A920055329D /* ArtistModel.swift in Sources */,
 				B2D254CD257880A50055329D /* WebService.swift in Sources */,
 				B2D254E8257888FA0055329D /* GenreModel.swift in Sources */,
+				B210CD1F2579A3E90046B2F0 /* RecordingDetailViewModel.swift in Sources */,
 				B2D254D2257881080055329D /* URLImage.swift in Sources */,
 				B2D2549D2578807B0055329D /* ContentView.swift in Sources */,
 			);
@@ -485,10 +521,12 @@
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dmnktoe.RadioRasclat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -506,10 +544,12 @@
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dmnktoe.RadioRasclat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -21,7 +21,7 @@ class WebService {
         
         let urlRequest = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 15.0)
         let task = session.dataTask(with: urlRequest) { data, response, error in
-            
+                        
             // Check for errors
             guard error == nil else {
                 print ("error: \(error!)")
