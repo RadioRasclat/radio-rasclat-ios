@@ -7,62 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B277B0662567072A0028BE97 /* RadioRasclatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0652567072A0028BE97 /* RadioRasclatApp.swift */; };
-		B277B0682567072A0028BE97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0672567072A0028BE97 /* ContentView.swift */; };
-		B277B06A2567072C0028BE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B277B0692567072C0028BE97 /* Assets.xcassets */; };
-		B277B06D2567072C0028BE97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B277B06C2567072C0028BE97 /* Preview Assets.xcassets */; };
-		B277B0782567072D0028BE97 /* RadioRasclatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0772567072D0028BE97 /* RadioRasclatTests.swift */; };
-		B277B0832567072D0028BE97 /* RadioRasclatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277B0822567072D0028BE97 /* RadioRasclatUITests.swift */; };
+		B2D254992578807B0055329D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254982578807B0055329D /* AppDelegate.swift */; };
+		B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549A2578807B0055329D /* SceneDelegate.swift */; };
+		B2D2549D2578807B0055329D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549C2578807B0055329D /* ContentView.swift */; };
+		B2D2549F2578807D0055329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D2549E2578807D0055329D /* Assets.xcassets */; };
+		B2D254A22578807D0055329D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D254A12578807D0055329D /* Preview Assets.xcassets */; };
+		B2D254A52578807D0055329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D254A32578807D0055329D /* LaunchScreen.storyboard */; };
+		B2D254B02578807E0055329D /* RadioRasclatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254AF2578807E0055329D /* RadioRasclatTests.swift */; };
+		B2D254BB2578807E0055329D /* RadioRasclatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254BA2578807E0055329D /* RadioRasclatUITests.swift */; };
+		B2D254CD257880A50055329D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254CC257880A50055329D /* WebService.swift */; };
+		B2D254D2257881080055329D /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254D1257881080055329D /* URLImage.swift */; };
+		B2D254D72578813A0055329D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254D62578813A0055329D /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B277B0742567072D0028BE97 /* PBXContainerItemProxy */ = {
+		B2D254AC2578807D0055329D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B277B05A2567072A0028BE97 /* Project object */;
+			containerPortal = B2D2548D2578807B0055329D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B277B0612567072A0028BE97;
+			remoteGlobalIDString = B2D254942578807B0055329D;
 			remoteInfo = RadioRasclat;
 		};
-		B277B07F2567072D0028BE97 /* PBXContainerItemProxy */ = {
+		B2D254B72578807E0055329D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B277B05A2567072A0028BE97 /* Project object */;
+			containerPortal = B2D2548D2578807B0055329D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B277B0612567072A0028BE97;
+			remoteGlobalIDString = B2D254942578807B0055329D;
 			remoteInfo = RadioRasclat;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B277B0622567072A0028BE97 /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B277B0652567072A0028BE97 /* RadioRasclatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatApp.swift; sourceTree = "<group>"; };
-		B277B0672567072A0028BE97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B277B0692567072C0028BE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B277B06C2567072C0028BE97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B277B06E2567072C0028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B277B0732567072D0028BE97 /* RadioRasclatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B277B0772567072D0028BE97 /* RadioRasclatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatTests.swift; sourceTree = "<group>"; };
-		B277B0792567072D0028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B277B07E2567072D0028BE97 /* RadioRasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B277B0822567072D0028BE97 /* RadioRasclatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatUITests.swift; sourceTree = "<group>"; };
-		B277B0842567072D0028BE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D254952578807B0055329D /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D254982578807B0055329D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2D2549A2578807B0055329D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B2D2549C2578807B0055329D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2D2549E2578807D0055329D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2D254A12578807D0055329D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2D254A42578807D0055329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2D254A62578807D0055329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D254AB2578807D0055329D /* RadioRasclatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D254AF2578807E0055329D /* RadioRasclatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatTests.swift; sourceTree = "<group>"; };
+		B2D254B12578807E0055329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D254B62578807E0055329D /* RadioRasclatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D254BA2578807E0055329D /* RadioRasclatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatUITests.swift; sourceTree = "<group>"; };
+		B2D254BC2578807E0055329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D254CC257880A50055329D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B2D254D1257881080055329D /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		B2D254D62578813A0055329D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B277B05F2567072A0028BE97 /* Frameworks */ = {
+		B2D254922578807B0055329D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B0702567072D0028BE97 /* Frameworks */ = {
+		B2D254A82578807D0055329D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B07B2567072D0028BE97 /* Frameworks */ = {
+		B2D254B32578807E0055329D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,74 +82,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B277B0592567072A0028BE97 = {
+		B2D2548C2578807B0055329D = {
 			isa = PBXGroup;
 			children = (
-				B277B0642567072A0028BE97 /* RadioRasclat */,
-				B277B0762567072D0028BE97 /* RadioRasclatTests */,
-				B277B0812567072D0028BE97 /* RadioRasclatUITests */,
-				B277B0632567072A0028BE97 /* Products */,
+				B2D254972578807B0055329D /* RadioRasclat */,
+				B2D254AE2578807E0055329D /* RadioRasclatTests */,
+				B2D254B92578807E0055329D /* RadioRasclatUITests */,
+				B2D254962578807B0055329D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B277B0632567072A0028BE97 /* Products */ = {
+		B2D254962578807B0055329D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B277B0622567072A0028BE97 /* RadioRasclat.app */,
-				B277B0732567072D0028BE97 /* RadioRasclatTests.xctest */,
-				B277B07E2567072D0028BE97 /* RadioRasclatUITests.xctest */,
+				B2D254952578807B0055329D /* RadioRasclat.app */,
+				B2D254AB2578807D0055329D /* RadioRasclatTests.xctest */,
+				B2D254B62578807E0055329D /* RadioRasclatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B277B0642567072A0028BE97 /* RadioRasclat */ = {
+		B2D254972578807B0055329D /* RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
-				B277B0652567072A0028BE97 /* RadioRasclatApp.swift */,
-				B277B0672567072A0028BE97 /* ContentView.swift */,
-				B277B0692567072C0028BE97 /* Assets.xcassets */,
-				B277B06E2567072C0028BE97 /* Info.plist */,
-				B277B06B2567072C0028BE97 /* Preview Content */,
+				B2D254CB2578808B0055329D /* Services */,
+				B2D254982578807B0055329D /* AppDelegate.swift */,
+				B2D2549A2578807B0055329D /* SceneDelegate.swift */,
+				B2D2549C2578807B0055329D /* ContentView.swift */,
+				B2D2549E2578807D0055329D /* Assets.xcassets */,
+				B2D254A32578807D0055329D /* LaunchScreen.storyboard */,
+				B2D254A62578807D0055329D /* Info.plist */,
+				B2D254A02578807D0055329D /* Preview Content */,
 			);
 			path = RadioRasclat;
 			sourceTree = "<group>";
 		};
-		B277B06B2567072C0028BE97 /* Preview Content */ = {
+		B2D254A02578807D0055329D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B277B06C2567072C0028BE97 /* Preview Assets.xcassets */,
+				B2D254A12578807D0055329D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B277B0762567072D0028BE97 /* RadioRasclatTests */ = {
+		B2D254AE2578807E0055329D /* RadioRasclatTests */ = {
 			isa = PBXGroup;
 			children = (
-				B277B0772567072D0028BE97 /* RadioRasclatTests.swift */,
-				B277B0792567072D0028BE97 /* Info.plist */,
+				B2D254AF2578807E0055329D /* RadioRasclatTests.swift */,
+				B2D254B12578807E0055329D /* Info.plist */,
 			);
 			path = RadioRasclatTests;
 			sourceTree = "<group>";
 		};
-		B277B0812567072D0028BE97 /* RadioRasclatUITests */ = {
+		B2D254B92578807E0055329D /* RadioRasclatUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B277B0822567072D0028BE97 /* RadioRasclatUITests.swift */,
-				B277B0842567072D0028BE97 /* Info.plist */,
+				B2D254BA2578807E0055329D /* RadioRasclatUITests.swift */,
+				B2D254BC2578807E0055329D /* Info.plist */,
 			);
 			path = RadioRasclatUITests;
+			sourceTree = "<group>";
+		};
+		B2D254CB2578808B0055329D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2D254CC257880A50055329D /* WebService.swift */,
+				B2D254D1257881080055329D /* URLImage.swift */,
+				B2D254D62578813A0055329D /* ImageLoader.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B277B0612567072A0028BE97 /* RadioRasclat */ = {
+		B2D254942578807B0055329D /* RadioRasclat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B277B0872567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclat" */;
+			buildConfigurationList = B2D254BF2578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclat" */;
 			buildPhases = (
-				B277B05E2567072A0028BE97 /* Sources */,
-				B277B05F2567072A0028BE97 /* Frameworks */,
-				B277B0602567072A0028BE97 /* Resources */,
+				B2D254912578807B0055329D /* Sources */,
+				B2D254922578807B0055329D /* Frameworks */,
+				B2D254932578807B0055329D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -147,68 +170,68 @@
 			);
 			name = RadioRasclat;
 			productName = RadioRasclat;
-			productReference = B277B0622567072A0028BE97 /* RadioRasclat.app */;
+			productReference = B2D254952578807B0055329D /* RadioRasclat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B277B0722567072D0028BE97 /* RadioRasclatTests */ = {
+		B2D254AA2578807D0055329D /* RadioRasclatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B277B08A2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */;
+			buildConfigurationList = B2D254C22578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */;
 			buildPhases = (
-				B277B06F2567072D0028BE97 /* Sources */,
-				B277B0702567072D0028BE97 /* Frameworks */,
-				B277B0712567072D0028BE97 /* Resources */,
+				B2D254A72578807D0055329D /* Sources */,
+				B2D254A82578807D0055329D /* Frameworks */,
+				B2D254A92578807D0055329D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B277B0752567072D0028BE97 /* PBXTargetDependency */,
+				B2D254AD2578807D0055329D /* PBXTargetDependency */,
 			);
 			name = RadioRasclatTests;
 			productName = RadioRasclatTests;
-			productReference = B277B0732567072D0028BE97 /* RadioRasclatTests.xctest */;
+			productReference = B2D254AB2578807D0055329D /* RadioRasclatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B277B07D2567072D0028BE97 /* RadioRasclatUITests */ = {
+		B2D254B52578807E0055329D /* RadioRasclatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B277B08D2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */;
+			buildConfigurationList = B2D254C52578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */;
 			buildPhases = (
-				B277B07A2567072D0028BE97 /* Sources */,
-				B277B07B2567072D0028BE97 /* Frameworks */,
-				B277B07C2567072D0028BE97 /* Resources */,
+				B2D254B22578807E0055329D /* Sources */,
+				B2D254B32578807E0055329D /* Frameworks */,
+				B2D254B42578807E0055329D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B277B0802567072D0028BE97 /* PBXTargetDependency */,
+				B2D254B82578807E0055329D /* PBXTargetDependency */,
 			);
 			name = RadioRasclatUITests;
 			productName = RadioRasclatUITests;
-			productReference = B277B07E2567072D0028BE97 /* RadioRasclatUITests.xctest */;
+			productReference = B2D254B62578807E0055329D /* RadioRasclatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B277B05A2567072A0028BE97 /* Project object */ = {
+		B2D2548D2578807B0055329D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					B277B0612567072A0028BE97 = {
+					B2D254942578807B0055329D = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					B277B0722567072D0028BE97 = {
+					B2D254AA2578807D0055329D = {
 						CreatedOnToolsVersion = 12.2;
-						TestTargetID = B277B0612567072A0028BE97;
+						TestTargetID = B2D254942578807B0055329D;
 					};
-					B277B07D2567072D0028BE97 = {
+					B2D254B52578807E0055329D = {
 						CreatedOnToolsVersion = 12.2;
-						TestTargetID = B277B0612567072A0028BE97;
+						TestTargetID = B2D254942578807B0055329D;
 					};
 				};
 			};
-			buildConfigurationList = B277B05D2567072A0028BE97 /* Build configuration list for PBXProject "RadioRasclat" */;
+			buildConfigurationList = B2D254902578807B0055329D /* Build configuration list for PBXProject "RadioRasclat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +239,37 @@
 				en,
 				Base,
 			);
-			mainGroup = B277B0592567072A0028BE97;
-			productRefGroup = B277B0632567072A0028BE97 /* Products */;
+			mainGroup = B2D2548C2578807B0055329D;
+			productRefGroup = B2D254962578807B0055329D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B277B0612567072A0028BE97 /* RadioRasclat */,
-				B277B0722567072D0028BE97 /* RadioRasclatTests */,
-				B277B07D2567072D0028BE97 /* RadioRasclatUITests */,
+				B2D254942578807B0055329D /* RadioRasclat */,
+				B2D254AA2578807D0055329D /* RadioRasclatTests */,
+				B2D254B52578807E0055329D /* RadioRasclatUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B277B0602567072A0028BE97 /* Resources */ = {
+		B2D254932578807B0055329D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B06D2567072C0028BE97 /* Preview Assets.xcassets in Resources */,
-				B277B06A2567072C0028BE97 /* Assets.xcassets in Resources */,
+				B2D254A52578807D0055329D /* LaunchScreen.storyboard in Resources */,
+				B2D254A22578807D0055329D /* Preview Assets.xcassets in Resources */,
+				B2D2549F2578807D0055329D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B0712567072D0028BE97 /* Resources */ = {
+		B2D254A92578807D0055329D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B07C2567072D0028BE97 /* Resources */ = {
+		B2D254B42578807E0055329D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,48 +279,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B277B05E2567072A0028BE97 /* Sources */ = {
+		B2D254912578807B0055329D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B0682567072A0028BE97 /* ContentView.swift in Sources */,
-				B277B0662567072A0028BE97 /* RadioRasclatApp.swift in Sources */,
+				B2D254992578807B0055329D /* AppDelegate.swift in Sources */,
+				B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */,
+				B2D254D72578813A0055329D /* ImageLoader.swift in Sources */,
+				B2D254CD257880A50055329D /* WebService.swift in Sources */,
+				B2D254D2257881080055329D /* URLImage.swift in Sources */,
+				B2D2549D2578807B0055329D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B06F2567072D0028BE97 /* Sources */ = {
+		B2D254A72578807D0055329D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B0782567072D0028BE97 /* RadioRasclatTests.swift in Sources */,
+				B2D254B02578807E0055329D /* RadioRasclatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B277B07A2567072D0028BE97 /* Sources */ = {
+		B2D254B22578807E0055329D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B277B0832567072D0028BE97 /* RadioRasclatUITests.swift in Sources */,
+				B2D254BB2578807E0055329D /* RadioRasclatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B277B0752567072D0028BE97 /* PBXTargetDependency */ = {
+		B2D254AD2578807D0055329D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B277B0612567072A0028BE97 /* RadioRasclat */;
-			targetProxy = B277B0742567072D0028BE97 /* PBXContainerItemProxy */;
+			target = B2D254942578807B0055329D /* RadioRasclat */;
+			targetProxy = B2D254AC2578807D0055329D /* PBXContainerItemProxy */;
 		};
-		B277B0802567072D0028BE97 /* PBXTargetDependency */ = {
+		B2D254B82578807E0055329D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B277B0612567072A0028BE97 /* RadioRasclat */;
-			targetProxy = B277B07F2567072D0028BE97 /* PBXContainerItemProxy */;
+			target = B2D254942578807B0055329D /* RadioRasclat */;
+			targetProxy = B2D254B72578807E0055329D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		B2D254A32578807D0055329D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D254A42578807D0055329D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		B277B0852567072D0028BE97 /* Debug */ = {
+		B2D254BD2578807E0055329D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +396,7 @@
 			};
 			name = Debug;
 		};
-		B277B0862567072D0028BE97 /* Release */ = {
+		B2D254BE2578807E0055329D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,7 +451,7 @@
 			};
 			name = Release;
 		};
-		B277B0882567072D0028BE97 /* Debug */ = {
+		B2D254C02578807E0055329D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -422,7 +461,6 @@
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,7 +472,7 @@
 			};
 			name = Debug;
 		};
-		B277B0892567072D0028BE97 /* Release */ = {
+		B2D254C12578807E0055329D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -444,7 +482,6 @@
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RadioRasclat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +493,7 @@
 			};
 			name = Release;
 		};
-		B277B08B2567072D0028BE97 /* Debug */ = {
+		B2D254C32578807E0055329D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -464,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = RadioRasclatTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +515,7 @@
 			};
 			name = Debug;
 		};
-		B277B08C2567072D0028BE97 /* Release */ = {
+		B2D254C42578807E0055329D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WTRWY5M2A;
 				INFOPLIST_FILE = RadioRasclatTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +537,7 @@
 			};
 			name = Release;
 		};
-		B277B08E2567072D0028BE97 /* Debug */ = {
+		B2D254C62578807E0055329D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -520,7 +557,7 @@
 			};
 			name = Debug;
 		};
-		B277B08F2567072D0028BE97 /* Release */ = {
+		B2D254C72578807E0055329D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,43 +580,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B277B05D2567072A0028BE97 /* Build configuration list for PBXProject "RadioRasclat" */ = {
+		B2D254902578807B0055329D /* Build configuration list for PBXProject "RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B0852567072D0028BE97 /* Debug */,
-				B277B0862567072D0028BE97 /* Release */,
+				B2D254BD2578807E0055329D /* Debug */,
+				B2D254BE2578807E0055329D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B277B0872567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclat" */ = {
+		B2D254BF2578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B0882567072D0028BE97 /* Debug */,
-				B277B0892567072D0028BE97 /* Release */,
+				B2D254C02578807E0055329D /* Debug */,
+				B2D254C12578807E0055329D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B277B08A2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */ = {
+		B2D254C22578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B08B2567072D0028BE97 /* Debug */,
-				B277B08C2567072D0028BE97 /* Release */,
+				B2D254C32578807E0055329D /* Debug */,
+				B2D254C42578807E0055329D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B277B08D2567072D0028BE97 /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */ = {
+		B2D254C52578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B277B08E2567072D0028BE97 /* Debug */,
-				B277B08F2567072D0028BE97 /* Release */,
+				B2D254C62578807E0055329D /* Debug */,
+				B2D254C72578807E0055329D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B277B05A2567072A0028BE97 /* Project object */;
+	rootObject = B2D2548D2578807B0055329D /* Project object */;
 }
