@@ -18,6 +18,10 @@
 		B2D254CD257880A50055329D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254CC257880A50055329D /* WebService.swift */; };
 		B2D254D2257881080055329D /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254D1257881080055329D /* URLImage.swift */; };
 		B2D254D72578813A0055329D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254D62578813A0055329D /* ImageLoader.swift */; };
+		B2D254E3257883B70055329D /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254E2257883B70055329D /* RecordingModel.swift */; };
+		B2D254E8257888FA0055329D /* GenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254E7257888FA0055329D /* GenreModel.swift */; };
+		B2D254ED25788A920055329D /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254EC25788A920055329D /* ArtistModel.swift */; };
+		B2D254F825788B770055329D /* ShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254F725788B770055329D /* ShowModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		B2D254CC257880A50055329D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B2D254D1257881080055329D /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		B2D254D62578813A0055329D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B2D254E2257883B70055329D /* RecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingModel.swift; sourceTree = "<group>"; };
+		B2D254E7257888FA0055329D /* GenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModel.swift; sourceTree = "<group>"; };
+		B2D254EC25788A920055329D /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		B2D254F725788B770055329D /* ShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +113,10 @@
 		B2D254972578807B0055329D /* RadioRasclat */ = {
 			isa = PBXGroup;
 			children = (
-				B2D254CB2578808B0055329D /* Services */,
 				B2D254982578807B0055329D /* AppDelegate.swift */,
 				B2D2549A2578807B0055329D /* SceneDelegate.swift */,
+				B2D254CB2578808B0055329D /* Services */,
+				B2D254E12578839B0055329D /* Models */,
 				B2D2549C2578807B0055329D /* ContentView.swift */,
 				B2D2549E2578807D0055329D /* Assets.xcassets */,
 				B2D254A32578807D0055329D /* LaunchScreen.storyboard */,
@@ -151,6 +160,17 @@
 				B2D254D62578813A0055329D /* ImageLoader.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B2D254E12578839B0055329D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2D254EC25788A920055329D /* ArtistModel.swift */,
+				B2D254E7257888FA0055329D /* GenreModel.swift */,
+				B2D254E2257883B70055329D /* RecordingModel.swift */,
+				B2D254F725788B770055329D /* ShowModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +306,11 @@
 				B2D254992578807B0055329D /* AppDelegate.swift in Sources */,
 				B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */,
 				B2D254D72578813A0055329D /* ImageLoader.swift in Sources */,
+				B2D254E3257883B70055329D /* RecordingModel.swift in Sources */,
+				B2D254F825788B770055329D /* ShowModel.swift in Sources */,
+				B2D254ED25788A920055329D /* ArtistModel.swift in Sources */,
 				B2D254CD257880A50055329D /* WebService.swift in Sources */,
+				B2D254E8257888FA0055329D /* GenreModel.swift in Sources */,
 				B2D254D2257881080055329D /* URLImage.swift in Sources */,
 				B2D2549D2578807B0055329D /* ContentView.swift in Sources */,
 			);
