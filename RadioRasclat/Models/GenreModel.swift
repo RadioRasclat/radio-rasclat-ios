@@ -21,5 +21,4 @@ struct Genre: Codable, Equatable {
         case id = "_id"
         case title
     }
-
 }
