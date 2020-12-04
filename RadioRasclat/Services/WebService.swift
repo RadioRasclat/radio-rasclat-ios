@@ -11,7 +11,7 @@ class WebService {
         
     func getRecordings(completion: @escaping (RecordingList?) -> ()) {
             
-        guard let url = URL(string: "https://api.radio-rasclat.com/recordings") else {
+        guard let url = URL(string: "https://dmnktoe.de/recordings.json") else {
             fatalError("Invalid URL")
         }
         
