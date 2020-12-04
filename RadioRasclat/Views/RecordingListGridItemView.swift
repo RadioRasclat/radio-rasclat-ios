@@ -22,32 +22,13 @@ struct RecordingListGridItemView: View {
         VStack {
             // Poster
             URLImage(url: "\(recordings.image)", type: "coverArt")
-                .frame(width: 154, height: 228)
+                .frame(width: 150, height: 150)
             
             Text(recordings.title)
-                .font(.footnote)
-                .lineLimit(0)
+                .font(.subheadline)
+                .lineLimit(2)
             
-            HStack {
-                // Rating
-                HStack {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    
-                    Text(recordings.recordingDescription)
-   
-                }
-                
-                HStack {
-                    // Release date
-                    Image(systemName: "calendar")
-                    
-                    Text("\(recordings.timeStart)")
-                        .font(.callout)
-                }
-            }
-        }.padding(.bottom, 20)
-        .frame(width: 154)
+        }
     }
 }
 

@@ -41,14 +41,8 @@ struct RecordingDetailView: View {
                 Text(recording.recordingDescription)
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                
-                if recordingDetailVM.fetchedRecording?.artists != nil {
-                    ArtistsView(artist: (recordingDetailVM.fetchedRecording?.artists)!)
-                        .buttonStyle(PlainButtonStyle())
-                }
             }
         }
-        .padding()
         .navigationBarTitle(recording.title)
     }
 }

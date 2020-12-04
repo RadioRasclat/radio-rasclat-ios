@@ -39,11 +39,12 @@ struct RecordingListView: View {
                                 }
                             }
                         }
-                    }.padding(5)
+                    }
                 }
             }
+            .navigationBarTitle("Broadcasts")
         }
-        .navigationBarTitle("Broadcasts", displayMode: .automatic)
+        .accentColor(.white)
     }
 }
 

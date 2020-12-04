@@ -13,7 +13,6 @@
 		B210CD2D2579A6390046B2F0 /* RecordingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD2C2579A6390046B2F0 /* RecordingDetailView.swift */; };
 		B210CD322579A66B0046B2F0 /* RecordingListGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD312579A66B0046B2F0 /* RecordingListGridItemView.swift */; };
 		B210CD422579D2CC0046B2F0 /* RecordingDetailHeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD412579D2CC0046B2F0 /* RecordingDetailHeroImage.swift */; };
-		B210CD4D2579D63A0046B2F0 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210CD4C2579D63A0046B2F0 /* ArtistsView.swift */; };
 		B2D254992578807B0055329D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254982578807B0055329D /* AppDelegate.swift */; };
 		B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549A2578807B0055329D /* SceneDelegate.swift */; };
 		B2D2549D2578807B0055329D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549C2578807B0055329D /* ContentView.swift */; };
@@ -55,7 +54,6 @@
 		B210CD2C2579A6390046B2F0 /* RecordingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailView.swift; sourceTree = "<group>"; };
 		B210CD312579A66B0046B2F0 /* RecordingListGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingListGridItemView.swift; sourceTree = "<group>"; };
 		B210CD412579D2CC0046B2F0 /* RecordingDetailHeroImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailHeroImage.swift; sourceTree = "<group>"; };
-		B210CD4C2579D63A0046B2F0 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 		B2D254952578807B0055329D /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D254982578807B0055329D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D2549A2578807B0055329D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				B210CD242579A5AB0046B2F0 /* RecordingListView.swift */,
 				B210CD2C2579A6390046B2F0 /* RecordingDetailView.swift */,
 				B210CD412579D2CC0046B2F0 /* RecordingDetailHeroImage.swift */,
-				B210CD4C2579D63A0046B2F0 /* ArtistsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,7 +340,6 @@
 				B210CD252579A5AB0046B2F0 /* RecordingListView.swift in Sources */,
 				B210CD322579A66B0046B2F0 /* RecordingListGridItemView.swift in Sources */,
 				B2D254992578807B0055329D /* AppDelegate.swift in Sources */,
-				B210CD4D2579D63A0046B2F0 /* ArtistsView.swift in Sources */,
 				B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */,
 				B210CD1A2579A3D90046B2F0 /* RecordingListViewModel.swift in Sources */,
 				B2D254D72578813A0055329D /* ImageLoader.swift in Sources */,
