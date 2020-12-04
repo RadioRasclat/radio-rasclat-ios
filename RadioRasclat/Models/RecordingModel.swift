@@ -12,7 +12,7 @@ struct RecordingList: Codable {
     let recordings: [Recording]
     
     enum CodingKeys: String, CodingKey {
-        case recordings
+        case recordings = "results"
     }
 }
 
@@ -25,8 +25,10 @@ struct Recording: Codable, Equatable {
     let image: String
     
     let show: Show
-    let artists: [Artists]
-    let genres: [Genres]
+    let artists: [Artist]
+    let genres: [Genre]
+    
+    var uniqueID = UUID()
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
@@ -36,7 +38,7 @@ struct Recording: Codable, Equatable {
     }
     
     #if DEBUG
-    // static let example = Recording(id: "123456789", title: "DJ State presents G-Files!", timeStart: "2020-09-06T19:30:00.000Z", timeEnd: "2020-09-06T20:30:00.000Z", recordingDescription: "Hello you all.", audio: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/audio/radio-rasclat-2-das-intro-ist-ne-lu-ge-.mp3", image: "https://picsum.photos/id/1060/536/354.jpg", show: Show(id: "123456789", title: "G-Files!", description: "Lorem Ipsum", image: "https://picsum.photos/id/1060/536/354.jpg"), artists: Artists(artists: [Artist(id: "123456789", title: "DJ State", image: "https://picsum.photos/id/1060/536/354.jpg")]), genres: Genres(genres: [Genre(id: "123456789", title: "Dubstep")]))
+    static let example = Recording(id: "123456789", title: "DJ State presents G-Files!", timeStart: "2020-09-06T19:30:00.000Z", timeEnd: "2020-09-06T20:30:00.000Z", recordingDescription: "Hello you all.", audio: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/audio/radio-rasclat-2-das-intro-ist-ne-lu-ge-.mp3", image: "https://picsum.photos/id/1060/536/354.jpg", show: Show(id: "123456789", title: "G-Files!", description: "Lorem Ipsum", image: "https://picsum.photos/id/1060/536/354.jpg"), artists: [Artist(id: "1", title: "Action", image: "https://picsum.photos/id/1060/536/354.jpg")], genres: [Genre(id: "1", title: "Action")])
     #endif
 }
 
