@@ -24,7 +24,7 @@ struct RecordingGridItemView: View {
             URLImage(url: "\(recordings.image)", type: "coverArt")
                 .frame(width: 154, height: 228)
             
-            Text(recordings.title ?? "")
+            Text(recordings.title)
                 .font(.footnote)
                 .lineLimit(0)
             
@@ -48,5 +48,11 @@ struct RecordingGridItemView: View {
             }
         }.padding(.bottom, 20)
         .frame(width: 154)
+    }
+}
+
+struct RecordingGridItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        RecordingGridItemView(recordings: Recording.example)
     }
 }
