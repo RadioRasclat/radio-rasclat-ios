@@ -18,31 +18,32 @@ struct RecordingListView: View {
     }
     
     var body: some View {
-        
-        VStack {
-            if recordingListVM.recordings.isEmpty {
-                Spacer()
-                VStack {
-                    ProgressView()
-                        .scaleEffect(1.5, anchor: .center)
-                        .padding()
-                    
-                    Text("Connecting...").padding(5)
-                }
-                Spacer()
-            } else {
-                ScrollView {
-                    LazyVGrid(columns: twoColumnGrid, spacing: 10) {
-                        ForEach(recordingListVM.recordings, id:\.id) { recording in
-                            NavigationLink(destination: RecordingDetailView()) {
-                                RecordingGridItemView(recordings: recording)
-                            }.buttonStyle(PlainButtonStyle())
-                        }
+        NavigationView {
+            VStack {
+                if recordingListVM.recordings.isEmpty {
+                    Spacer()
+                    VStack {
+                        ProgressView()
+                            .scaleEffect(1.5, anchor: .center)
+                            .padding()
+                        
+                        Text("Connecting...").padding(5)
                     }
-                }.padding(5)
-                .navigationBarTitle("test")
+                    Spacer()
+                } else {
+                    ScrollView {
+                        LazyVGrid(columns: twoColumnGrid, spacing: 20) {
+                            ForEach(recordingListVM.recordings, id:\.id) { recording in
+                                NavigationLink(destination: RecordingDetailView(recording: recording)) {
+                                    RecordingListGridItemView(recordings: recording)
+                                }
+                            }
+                        }
+                    }.padding(5)
+                }
             }
         }
+        .navigationBarTitle("Broadcasts", displayMode: .automatic)
     }
 }
 
