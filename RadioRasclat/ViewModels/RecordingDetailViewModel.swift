@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class RecordingDetailViewModel: ObservableObject {
+    
+    @Published var fetchedRecording: Recording?
+    
+    func getMovieDetails(id: String) {
+        
+        WebService().getRecordingsDetails(recording: id) { recording in
+            
+            if let recording = recording {
+                self.fetchedRecording = recording
+            }
+        }
+    }
+}
