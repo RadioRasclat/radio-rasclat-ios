@@ -26,7 +26,7 @@ struct Show: Codable, Equatable {
         id: "123456789",
         title: "DJ State presents G-Files!",
         description: "Hello you all.",
-        image: "https://picsum.photos/id/1060/536/354.jpg"
+        image: "https://picsum.photos/id/1060/500/500.jpg"
     )
     #endif
 }
