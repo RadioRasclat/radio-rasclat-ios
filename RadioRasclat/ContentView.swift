@@ -10,11 +10,16 @@ import LNPopupUI
 
 struct ContentView: View {
     
-    @State var isPopupPresented: Bool = true
-    @State var isPopupOpen: Bool = true
+    @State var isPopupPresented: Bool = false
+    @State var isPopupOpen: Bool = false
     
     var body: some View {
         TabView {
+            LiveView()
+                .tabItem {
+                    Image(systemName: "dot.radiowaves.left.and.right")
+                    Text("Live")
+                }
             RecordingListView()
                 .tabItem {
                     Image(systemName: "music.note.list")
@@ -25,7 +30,7 @@ struct ContentView: View {
         .popup(isBarPresented: $isPopupPresented, isPopupOpen: $isPopupOpen) {
             
         }
-        //        .popupInteractionStyle(.drag)
+        .popupInteractionStyle(.drag)
         .popupBarStyle(.prominent)
         .popupBarProgressViewStyle(.top)
         .popupBarMarqueeScrollEnabled(true)
