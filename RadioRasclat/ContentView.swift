@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import LNPopupUI
 
 struct ContentView: View {
+    
+    @State var isPopupPresented: Bool = true
+    @State var isPopupOpen: Bool = true
+    
     var body: some View {
         TabView {
             RecordingListView()
@@ -16,6 +21,14 @@ struct ContentView: View {
                     Text("Recordings")
                 }
         }
+        .accentColor(.pink)
+        .popup(isBarPresented: $isPopupPresented, isPopupOpen: $isPopupOpen) {
+            
+        }
+        //        .popupInteractionStyle(.drag)
+        .popupBarStyle(.prominent)
+        .popupBarProgressViewStyle(.top)
+        .popupBarMarqueeScrollEnabled(true)
     }
 }
 
