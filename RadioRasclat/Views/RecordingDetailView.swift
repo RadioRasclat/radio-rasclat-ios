@@ -24,6 +24,12 @@ struct RecordingDetailView: View {
             
             VStack(alignment: .leading) {
                 RecordingDetailHeroImage(recording: recording)
+                
+                Text(recording.title)
+                    .font(.largeTitle)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                
                 if recordingDetailVM.fetchedRecording?.genres.count ?? 0 >= 1 {
                     
                     Text("\(recordingDetailVM.fetchedRecording?.genres.first?.title ?? "")")
@@ -47,11 +53,12 @@ struct RecordingDetailView: View {
                 
                 if recordingDetailVM.fetchedRecording?.artists != nil {
                     ArtistsView(artists: (recordingDetailVM.fetchedRecording?.artists)!)
+                        .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
                 }
                 
             }
         }
-        .navigationBarTitle(recording.title)
+        .navigationBarTitle(recording.title, displayMode: .inline)
     }
 }
 
