@@ -20,7 +20,7 @@ struct ArtistsView: View {
                             .clipShape(Circle())
                             .overlay(
                                 Circle().stroke(Color.gray, lineWidth: 1))
-                            .frame(width: 60, height: 60)
+                            .frame(width: 100, height: 100)
                         
                         Text("\(artist.title!)")
                             .lineLimit(1)
