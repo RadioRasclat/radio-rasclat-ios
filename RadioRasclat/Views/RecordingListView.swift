@@ -44,7 +44,6 @@ struct RecordingListView: View {
             }
             .navigationBarTitle("Broadcasts")
         }
-        .accentColor(.white)
     }
 }
 
