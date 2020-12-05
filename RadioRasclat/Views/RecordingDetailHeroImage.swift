@@ -10,7 +10,6 @@ import SwiftUI
 struct RecordingDetailHeroImage: View {
     
     var recording: Recording
-    var runTime: Int = 0
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -22,31 +21,19 @@ struct RecordingDetailHeroImage: View {
             
             HStack {
                 
-                // Rating avg
                 HStack {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    
-                    Text("test")
-                    
+                    Image(systemName: "play")
                 }
+                
                 Spacer()
                 
-                // Rating count
                 HStack {
-                    Image(systemName: "person.3")
+                    URLImage(url: recording.show.image, type: "coverArt")
+                        .frame(width: 20, height: 20)
                     
-                    Text("test")
-                    
+                    Text(recording.show.title)
                 }
-                Spacer()
                 
-                // Movie runtime
-                HStack {
-                    Image(systemName: "clock")
-                    
-                    Text("\(runTime) mins")
-                }
             }
             .padding()
             .background(Color.black.opacity(0.5))
