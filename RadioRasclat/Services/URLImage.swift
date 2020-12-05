@@ -18,11 +18,11 @@ struct URLImage: View {
         
         switch type {
         case "coverArt":
-            self.placeholder = Image("noImageFound").resizable()
+            self.placeholder = Image("placeholder").resizable()
         case "cast":
-            self.placeholder = Image("noProfileImageFound").resizable()
+            self.placeholder = Image("placeholder").resizable()
         default:
-            self.placeholder = Image("noImageFound").resizable()
+            self.placeholder = Image("placeholder").resizable()
         }
     
         self.imageLoader.load(url: url)
