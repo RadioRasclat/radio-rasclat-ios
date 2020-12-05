@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct RecordingDetailHeroImage: View {
     
     var recording: Recording
+    
+    func playRecording(audio: String) {        
+        print(audio)
+        var player = AVPlayer()
+        let playerItem = AVPlayerItem(url: URL(string: audio)!)
+        player = AVPlayer(playerItem: playerItem)
+        player.play()
+    }
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -19,10 +28,26 @@ struct RecordingDetailHeroImage: View {
             URLImage(url: recording.image, type: "movie")
                 .aspectRatio(contentMode: .fit)
             
-            HStack {
+            HStack(alignment: .center) {
                 
                 HStack {
-                    Image(systemName: "play")
+                    Button(action: {
+                        playRecording(audio: recording.audio)
+                    }) {
+                        Image(systemName: "play")
+                    }
+                }
+                
+                Spacer()
+                
+                HStack {
+                    Image(systemName: "clock")
+                    
+                    VStack(alignment: .leading) {
+                    
+                        Text("27.09.2020")
+                        Text("15:00 - 16:00 Uhr")
+                    }
                 }
                 
                 Spacer()
@@ -30,8 +55,10 @@ struct RecordingDetailHeroImage: View {
                 HStack {
                     URLImage(url: recording.show.image, type: "coverArt")
                         .frame(width: 20, height: 20)
+                        .cornerRadius(3)
                     
                     Text(recording.show.title)
+                        .lineLimit(2)
                 }
                 
             }
