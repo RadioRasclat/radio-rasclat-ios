@@ -8,16 +8,40 @@
 import SwiftUI
 import AVKit
 
+var player: AVPlayer?
+
 struct RecordingDetailHeroImage: View {
     
+    @State var isPlaying : Bool = false
     var recording: Recording
     
-    func playRecording(audio: String) {        
-        print(audio)
-        var player = AVPlayer()
-        let playerItem = AVPlayerItem(url: URL(string: audio)!)
-        player = AVPlayer(playerItem: playerItem)
-        player.play()
+    func playRecording(audio: String) {
+        self.isPlaying.toggle()
+        
+        let urlString = audio
+              
+                guard let url = URL.init(string: urlString) else { return }
+
+                let playerItem = AVPlayerItem.init(url: url)
+                player = AVPlayer.init(playerItem: playerItem)
+
+                do {
+
+                    try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.duckOthers, .defaultToSpeaker, .mixWithOthers, .allowAirPlay])
+                    print("Playback OK")
+                 
+                    try AVAudioSession.sharedInstance().setActive(true)
+                    print("Session is Active")
+                } catch {
+                
+                    print(error)
+                }
+
+                player?.play()
+    }
+    
+    func pauseRecording() {
+        player?.pause()
     }
     
     var body: some View {
@@ -32,9 +56,15 @@ struct RecordingDetailHeroImage: View {
                 
                 HStack {
                     Button(action: {
-                        playRecording(audio: recording.audio)
-                    }) {
-                        Image(systemName: "play")
+                                 if self.isPlaying {
+                                        pauseRecording()
+                                        self.isPlaying = false
+                                 } else {
+                                    playRecording(audio: recording.audio)
+                                    self.isPlaying = true
+                                 }
+                             }) {
+                        Image(systemName: self.isPlaying == true ? "pause.fill" : "play.fill")
                     }
                 }
                 
