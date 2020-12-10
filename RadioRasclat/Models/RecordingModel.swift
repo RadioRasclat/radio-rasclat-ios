@@ -37,9 +37,7 @@ struct Recording: Codable, Equatable {
         case audio, image
     }
     
-    #if DEBUG
     static let example = Recording(id: "123456789", title: "DJ State presents G-Files!", timeStart: "2020-09-06T19:30:00.000Z", timeEnd: "2020-09-06T20:30:00.000Z", recordingDescription: "Hello you all.", audio: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/audio/radio-rasclat-2-das-intro-ist-ne-lu-ge-.mp3", image: "https://picsum.photos/id/1060/500/500.jpg", show: Show(id: "123456789", title: "G-Files!", description: "Lorem Ipsum", image: "https://picsum.photos/id/1060/500/500.jpg"), artists: [Artist(id: "1", title: "Action", image: "https://picsum.photos/id/1060/500/500.jpg")], genres: [Genre(id: "1", title: "Action")])
-    #endif
 }
 
 extension Recording {

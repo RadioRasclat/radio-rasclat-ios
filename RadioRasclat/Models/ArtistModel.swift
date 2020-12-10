@@ -24,11 +24,9 @@ struct Artist: Codable {
         case image
     }
     
-    #if DEBUG
     static let example = Artist(
         id: "123456789",
         title: "Bob Stone",
         image: "https://picsum.photos/id/1060/500/500.jpg"
     )
-    #endif
 }
