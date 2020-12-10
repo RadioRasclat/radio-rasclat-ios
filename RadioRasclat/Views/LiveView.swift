@@ -15,7 +15,7 @@ struct LiveView: View {
     func playRecording() {
         self.isPlaying.toggle()
         
-        let urlString = "https://wdr-diemaus-live.icecastssl.wdr.de/wdr/diemaus/live/mp3/128/stream.mp3"
+        let urlString = "https://station.radio-rasclat.com/live"
               
                 guard let url = URL.init(string: urlString) else { return }
 
