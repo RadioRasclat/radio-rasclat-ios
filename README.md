@@ -39,6 +39,12 @@ We do too, wanna [participate](https://www.radio-rasclat.com/about)?
 
 [![Travis CI](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-02-17&amp;kind=iossoftware&amp;bubble=ios_apps)](https://apps.apple.com/de/app/radio-rasclat/id1499269866)
 
+## Contributors
+
+<a href="https://github.com/RadioRasclat/radio-rasclat-ios/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=RadioRasclat/radio-rasclat-ios" />
+</a>
+
 ## License
 
 ```
