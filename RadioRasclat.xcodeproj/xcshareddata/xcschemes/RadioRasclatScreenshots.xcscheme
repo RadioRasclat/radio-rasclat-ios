@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B2D254942578807B0055329D"
-               BuildableName = "RadioRasclat.app"
-               BlueprintName = "RadioRasclat"
+               BlueprintIdentifier = "B2B958AC258C23B800B588D3"
+               BuildableName = "RadioRasclatScreenshots.xctest"
+               BlueprintName = "RadioRasclatScreenshots"
                ReferencedContainer = "container:RadioRasclat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B2D254AA2578807D0055329D"
-               BuildableName = "RadioRasclatTests.xctest"
-               BlueprintName = "RadioRasclatTests"
-               ReferencedContainer = "container:RadioRasclat.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B2D254B52578807E0055329D"
-               BuildableName = "RadioRasclatUITests.xctest"
-               BlueprintName = "RadioRasclatUITests"
-               ReferencedContainer = "container:RadioRasclat.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -71,16 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B2D254942578807B0055329D"
-            BuildableName = "RadioRasclat.app"
-            BlueprintName = "RadioRasclat"
-            ReferencedContainer = "container:RadioRasclat.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -88,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B2D254942578807B0055329D"
-            BuildableName = "RadioRasclat.app"
-            BlueprintName = "RadioRasclat"
+            BlueprintIdentifier = "B2B958AC258C23B800B588D3"
+            BuildableName = "RadioRasclatScreenshots.xctest"
+            BlueprintName = "RadioRasclatScreenshots"
             ReferencedContainer = "container:RadioRasclat.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

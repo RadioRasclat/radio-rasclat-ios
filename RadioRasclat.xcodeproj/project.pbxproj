@@ -18,6 +18,8 @@
 		B2381072257BFA7F00C7048C /* LNPopupUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B2381070257BFA7F00C7048C /* LNPopupUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B2381077257BFBC400C7048C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2381076257BFBC400C7048C /* PlayerView.swift */; };
 		B238109E257C0DF300C7048C /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238109D257C0DF300C7048C /* LiveView.swift */; };
+		B2B958B0258C23B900B588D3 /* RadioRasclatScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B958AF258C23B900B588D3 /* RadioRasclatScreenshots.swift */; };
+		B2B958BB258C23D600B588D3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B958BA258C23D600B588D3 /* SnapshotHelper.swift */; };
 		B2D254992578807B0055329D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D254982578807B0055329D /* AppDelegate.swift */; };
 		B2D2549B2578807B0055329D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549A2578807B0055329D /* SceneDelegate.swift */; };
 		B2D2549D2578807B0055329D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2549C2578807B0055329D /* ContentView.swift */; };
@@ -36,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B2B958B2258C23B900B588D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D2548D2578807B0055329D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D254942578807B0055329D;
+			remoteInfo = RadioRasclat;
+		};
 		B2D254AC2578807D0055329D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2D2548D2578807B0055329D /* Project object */;
@@ -76,6 +85,10 @@
 		B21AF836257BE1CC001A03EF /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 		B2381076257BFBC400C7048C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		B238109D257C0DF300C7048C /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		B2B958AD258C23B800B588D3 /* RadioRasclatScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioRasclatScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B958AF258C23B900B588D3 /* RadioRasclatScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioRasclatScreenshots.swift; sourceTree = "<group>"; };
+		B2B958B1258C23B900B588D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B958BA258C23D600B588D3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		B2D254952578807B0055329D /* RadioRasclat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioRasclat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D254982578807B0055329D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D2549A2578807B0055329D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +113,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B2B958AA258C23B800B588D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2D254922578807B0055329D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,12 +168,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B2B958AE258C23B800B588D3 /* RadioRasclatScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				B2B958BA258C23D600B588D3 /* SnapshotHelper.swift */,
+				B2B958AF258C23B900B588D3 /* RadioRasclatScreenshots.swift */,
+				B2B958B1258C23B900B588D3 /* Info.plist */,
+			);
+			path = RadioRasclatScreenshots;
+			sourceTree = "<group>";
+		};
 		B2D2548C2578807B0055329D = {
 			isa = PBXGroup;
 			children = (
 				B2D254972578807B0055329D /* RadioRasclat */,
 				B2D254AE2578807E0055329D /* RadioRasclatTests */,
 				B2D254B92578807E0055329D /* RadioRasclatUITests */,
+				B2B958AE258C23B800B588D3 /* RadioRasclatScreenshots */,
 				B2D254962578807B0055329D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,6 +195,7 @@
 				B2D254952578807B0055329D /* RadioRasclat.app */,
 				B2D254AB2578807D0055329D /* RadioRasclatTests.xctest */,
 				B2D254B62578807E0055329D /* RadioRasclatUITests.xctest */,
+				B2B958AD258C23B800B588D3 /* RadioRasclatScreenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +268,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B2B958AC258C23B800B588D3 /* RadioRasclatScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B958B6258C23B900B588D3 /* Build configuration list for PBXNativeTarget "RadioRasclatScreenshots" */;
+			buildPhases = (
+				B2B958A9258C23B800B588D3 /* Sources */,
+				B2B958AA258C23B800B588D3 /* Frameworks */,
+				B2B958AB258C23B800B588D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2B958B3258C23B900B588D3 /* PBXTargetDependency */,
+			);
+			name = RadioRasclatScreenshots;
+			productName = RadioRasclatScreenshots;
+			productReference = B2B958AD258C23B800B588D3 /* RadioRasclatScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B2D254942578807B0055329D /* RadioRasclat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2D254BF2578807E0055329D /* Build configuration list for PBXNativeTarget "RadioRasclat" */;
@@ -299,9 +349,13 @@
 		B2D2548D2578807B0055329D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					B2B958AC258C23B800B588D3 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = B2D254942578807B0055329D;
+					};
 					B2D254942578807B0055329D = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -334,11 +388,19 @@
 				B2D254942578807B0055329D /* RadioRasclat */,
 				B2D254AA2578807D0055329D /* RadioRasclatTests */,
 				B2D254B52578807E0055329D /* RadioRasclatUITests */,
+				B2B958AC258C23B800B588D3 /* RadioRasclatScreenshots */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B2B958AB258C23B800B588D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2D254932578807B0055329D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +428,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B2B958A9258C23B800B588D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B958B0258C23B900B588D3 /* RadioRasclatScreenshots.swift in Sources */,
+				B2B958BB258C23D600B588D3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2D254912578807B0055329D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +482,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B2B958B3258C23B900B588D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D254942578807B0055329D /* RadioRasclat */;
+			targetProxy = B2B958B2258C23B900B588D3 /* PBXContainerItemProxy */;
+		};
 		B2D254AD2578807D0055329D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B2D254942578807B0055329D /* RadioRasclat */;
@@ -435,6 +511,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B2B958B4258C23B900B588D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = RadioRasclatScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmnktoe.RadioRasclatScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioRasclat;
+			};
+			name = Debug;
+		};
+		B2B958B5258C23B900B588D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WTRWY5M2A;
+				INFOPLIST_FILE = RadioRasclatScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmnktoe.RadioRasclatScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioRasclat;
+			};
+			name = Release;
+		};
 		B2D254BD2578807E0055329D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -686,6 +802,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B2B958B6258C23B900B588D3 /* Build configuration list for PBXNativeTarget "RadioRasclatScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B958B4258C23B900B588D3 /* Debug */,
+				B2B958B5258C23B900B588D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2D254902578807B0055329D /* Build configuration list for PBXProject "RadioRasclat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
