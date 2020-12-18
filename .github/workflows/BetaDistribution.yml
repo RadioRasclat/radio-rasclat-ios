@@ -6,7 +6,7 @@ on:
 
 jobs:
   distribute:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
@@ -14,5 +14,5 @@ jobs:
           ruby-version: '2.7'
       - name: setup fastlane
         run: bundle install
-      - name: distribute to firebase
+      - name: distribute to testflight
         run: bundle exec fastlane beta
