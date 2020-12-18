@@ -2,7 +2,7 @@
 
 # Radio Rasclat iOS
 
-![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Build/badge.svg) [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) <img src="https://img.shields.io/github/issues/RadioRasclat/radio-rasclat-ios"> ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
+![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version)
 
 Welcome to Radio Rasclat it's open source iOS app!
 
@@ -29,6 +29,8 @@ The best way to submit feedback and report bugs is to open a GitHub issue.
 Please be sure to include your operating system, device, version number, and
 steps to reproduce reported bugs. Keep in mind that all participants will be
 expected to follow our code of conduct.
+
+<img src="https://img.shields.io/github/issues/RadioRasclat/radio-rasclat-ios">
 
 ## Code of Conduct
 
