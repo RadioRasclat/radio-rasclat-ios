@@ -16,7 +16,7 @@ Welcome to Radio Rasclat it's open source iOS app!
 | Branch    | Tests | Code Coverage | Codefactor | Comments                 |
 | --------- | ----- | ------------- | ---------- | ------------------------ |
 | `master`  | ![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Build/badge.svg) | [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) | [![CodeFactor](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/badge/master)](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/overview/master) | Latest Production Release |
-| `beta`  | ![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Build/badge.svg) | [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) | [![CodeFactor](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/badge/master)](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/overview/master) | Latest Production Release |
+| `beta`  | ![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Build/badge.svg) | [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) | [![CodeFactor](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/badge/master)](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/overview/master) | Beta & Development |
 
 ## Contributing
 
