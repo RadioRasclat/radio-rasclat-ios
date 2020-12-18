@@ -51,7 +51,7 @@ platform :ios do
   desc "Push a new beta build to Testflight"
   lane :beta do
     ensure_git_status_clean
-    # test
+    test
     cert
     sigh(force: true)
     build
