@@ -2,7 +2,7 @@
 
 # Radio Rasclat iOS
 
-![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version)
+![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=%237d29cc&label=iTunes%20Version)
 
 Welcome to Radio Rasclat it's open source iOS app!
 
