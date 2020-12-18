@@ -52,6 +52,8 @@ platform :ios do
   lane :beta do
     ensure_git_status_clean
     test
+    cert
+    sigh(force: true)
     build
     upload_to_testflight
   end
