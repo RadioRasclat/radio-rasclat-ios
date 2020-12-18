@@ -2,7 +2,7 @@
 
 # Radio Rasclat iOS
 
-[![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://travis-ci.com/dmnktoe/radio-rasclat-ios) [![codecov](https://codecov.io/gh/dmnktoe/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/dmnktoe/radio-rasclat-ios) <img src="https://img.shields.io/github/issues/dmnktoe/radio-rasclat-ios"> ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
+![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Build/badge.svg) [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) <img src="https://img.shields.io/github/issues/RadioRasclat/radio-rasclat-ios"> ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
 
 Welcome to Radio Rasclat it's open source iOS app!
 
@@ -38,6 +38,12 @@ We do too, wanna [participate](https://www.radio-rasclat.com/about)?
 ## Demo / Download
 
 [![Travis CI](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-02-17&amp;kind=iossoftware&amp;bubble=ios_apps)](https://apps.apple.com/de/app/radio-rasclat/id1499269866)
+
+## Contributors
+
+<a href="https://github.com/RadioRasclat/radio-rasclat-ios/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=RadioRasclat/radio-rasclat-ios" />
+</a>
 
 ## License
 

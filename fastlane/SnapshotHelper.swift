@@ -61,6 +61,7 @@ open class Snapshot: NSObject {
     }
 
     open class func setupSnapshot(_ app: XCUIApplication, waitForAnimations: Bool = true) {
+
         Snapshot.app = app
         Snapshot.waitForAnimations = waitForAnimations
 
@@ -70,7 +71,7 @@ open class Snapshot: NSObject {
             setLanguage(app)
             setLocale(app)
             setLaunchArguments(app)
-        } catch {
+        } catch let error {
             NSLog(error.localizedDescription)
         }
     }
@@ -107,7 +108,7 @@ open class Snapshot: NSObject {
             NSLog("Couldn't detect/set locale...")
         }
 
-        if locale.isEmpty, !deviceLanguage.isEmpty {
+        if locale.isEmpty && !deviceLanguage.isEmpty {
             locale = Locale(identifier: deviceLanguage).identifier
         }
 
@@ -164,6 +165,12 @@ open class Snapshot: NSObject {
             }
 
             let screenshot = XCUIScreen.main.screenshot()
+            #if os(iOS)
+            let image = XCUIDevice.shared.orientation.isLandscape ?  fixLandscapeOrientation(image: screenshot.image) : screenshot.image
+            #else
+            let image = screenshot.image
+            #endif
+
             guard var simulator = ProcessInfo().environment["SIMULATOR_DEVICE_NAME"], let screenshotsDir = screenshotsDirectory else { return }
 
             do {
@@ -173,12 +180,29 @@ open class Snapshot: NSObject {
                 simulator = regex.stringByReplacingMatches(in: simulator, range: range, withTemplate: "")
 
                 let path = screenshotsDir.appendingPathComponent("\(simulator)-\(name).png")
-                try screenshot.pngRepresentation.write(to: path)
-            } catch {
+                #if swift(<5.0)
+                    UIImagePNGRepresentation(image)?.write(to: path, options: .atomic)
+                #else
+                    try image.pngData()?.write(to: path, options: .atomic)
+                #endif
+            } catch let error {
                 NSLog("Problem writing screenshot: \(name) to \(screenshotsDir)/\(simulator)-\(name).png")
                 NSLog(error.localizedDescription)
             }
         #endif
+    }
+
+    class func fixLandscapeOrientation(image: UIImage) -> UIImage {
+        if #available(iOS 10.0, *) {
+            let format = UIGraphicsImageRendererFormat()
+            format.scale = image.scale
+            let renderer = UIGraphicsImageRenderer(size: image.size, format: format)
+            return renderer.image { context in
+                image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
+            }
+        } else {
+            return image
+        }
     }
 
     class func waitForLoadingIndicatorToDisappear(within timeout: TimeInterval) {
@@ -217,7 +241,7 @@ open class Snapshot: NSObject {
 
 private extension XCUIElementAttributes {
     var isNetworkLoadingIndicator: Bool {
-        if hasWhiteListedIdentifier { return false }
+        if hasAllowListedIdentifier { return false }
 
         let hasOldLoadingIndicatorSize = frame.size == CGSize(width: 10, height: 20)
         let hasNewLoadingIndicatorSize = frame.size.width.isBetween(46, and: 47) && frame.size.height.isBetween(2, and: 3)
@@ -225,10 +249,10 @@ private extension XCUIElementAttributes {
         return hasOldLoadingIndicatorSize || hasNewLoadingIndicatorSize
     }
 
-    var hasWhiteListedIdentifier: Bool {
-        let whiteListedIdentifiers = ["GeofenceLocationTrackingOn", "StandardLocationTrackingOn"]
+    var hasAllowListedIdentifier: Bool {
+        let allowListedIdentifiers = ["GeofenceLocationTrackingOn", "StandardLocationTrackingOn"]
 
-        return whiteListedIdentifiers.contains(identifier)
+        return allowListedIdentifiers.contains(identifier)
     }
 
     func isStatusBar(_ deviceWidth: CGFloat) -> Bool {
@@ -244,13 +268,13 @@ private extension XCUIElementAttributes {
 
 private extension XCUIElementQuery {
     var networkLoadingIndicators: XCUIElementQuery {
-        let isNetworkLoadingIndicator = NSPredicate { evaluatedObject, _ in
+        let isNetworkLoadingIndicator = NSPredicate { (evaluatedObject, _) in
             guard let element = evaluatedObject as? XCUIElementAttributes else { return false }
 
             return element.isNetworkLoadingIndicator
         }
 
-        return containing(isNetworkLoadingIndicator)
+        return self.containing(isNetworkLoadingIndicator)
     }
 
     var deviceStatusBars: XCUIElementQuery {
@@ -260,22 +284,22 @@ private extension XCUIElementQuery {
 
         let deviceWidth = app.windows.firstMatch.frame.width
 
-        let isStatusBar = NSPredicate { evaluatedObject, _ in
+        let isStatusBar = NSPredicate { (evaluatedObject, _) in
             guard let element = evaluatedObject as? XCUIElementAttributes else { return false }
 
             return element.isStatusBar(deviceWidth)
         }
 
-        return containing(isStatusBar)
+        return self.containing(isStatusBar)
     }
 }
 
 private extension CGFloat {
     func isBetween(_ numberA: CGFloat, and numberB: CGFloat) -> Bool {
-        return numberA ... numberB ~= self
+        return numberA...numberB ~= self
     }
 }
 
 // Please don't remove the lines below
 // They are used to detect outdated configuration files
-// SnapshotHelperVersion [1.22]
+// SnapshotHelperVersion [1.24]
