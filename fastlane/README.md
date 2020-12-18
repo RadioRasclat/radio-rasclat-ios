@@ -16,11 +16,31 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
+### ios test
+```
+fastlane ios test
+```
+Run tests
 ### ios screenshots
 ```
 fastlane ios screenshots
 ```
-Generate new localized screenshots
+Take screenshots
+### ios build
+```
+fastlane ios build
+```
+Build application
+### ios upload
+```
+fastlane ios upload
+```
+Upload metadata, screenshots and binary
+### ios beta
+```
+fastlane ios beta
+```
+Push a new beta build to Testflight
 
 ----
 
