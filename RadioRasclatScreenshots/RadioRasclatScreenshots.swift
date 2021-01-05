@@ -1,13 +1,13 @@
 //
-//  RadioRasclatUITests.swift
-//  RadioRasclatUITests
+//  RadioRasclatScreenshots.swift
+//  RadioRasclatScreenshots
 //
-//  Created by Domenik Töfflinger on 03.12.20.
+//  Created by Domenik Töfflinger on 18.12.20.
 //
 
 import XCTest
 
-class RadioRasclatUITests: XCTestCase {
+class RadioRasclatScreenshots: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,17 +22,22 @@ class RadioRasclatUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testPlayRecording() throws {
+    func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
-        
         app.launch()
+        setupSnapshot(app)
+        
+        snapshot("0Live")
+        
         app.tabBars["Tab Bar"].buttons["Recordings"].tap()
+        
+        snapshot("1Recordings")
         
         let elementsQuery = app.scrollViews.otherElements
         elementsQuery.buttons["KW36 — MUSIC: Habian666 • Das Intro ist eine Lüge"].tap()
-        elementsQuery.buttons["play.fill"].tap()
-        elementsQuery.buttons["pause.fill"].tap()
+        
+        snapshot("2RecordingsDetail")
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

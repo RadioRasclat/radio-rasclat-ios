@@ -1,6 +1,0 @@
-We regularly update Radio Rasclat to keep the beats pumping. New in this version:
-
-Bug Fixes:
-• Fixes a bug where the app crashes if no live broadcast image was set. (#39)
-
-Wanna participate, have questions or suggestions? Head over to radio-rasclat.com/about and leave us a note via mail (office@radio-rasclat.com). We're always listening.

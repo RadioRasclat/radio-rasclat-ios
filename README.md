@@ -2,7 +2,7 @@
 
 # Radio Rasclat iOS
 
-[![Travis CI](https://travis-ci.com/dmnktoe/radio-rasclat-ios.svg?branch=master)](https://travis-ci.com/dmnktoe/radio-rasclat-ios) [![codecov](https://codecov.io/gh/dmnktoe/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/dmnktoe/radio-rasclat-ios) <img src="https://img.shields.io/github/issues/dmnktoe/radio-rasclat-ios"> ![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=00b98d&label=iTunes%20Version) <img src="https://img.shields.io/badge/Swift-5-orange.svg">
+![iTunes App Store](https://img.shields.io/itunes/v/1499269866?color=%237d29cc&label=iTunes%20Version)
 
 Welcome to Radio Rasclat it's open source iOS app!
 
@@ -10,6 +10,13 @@ Welcome to Radio Rasclat it's open source iOS app!
 
 1. Install Xcode.
 1. Clone this repository.
+
+## Development
+
+| Branch    | Tests | Code Coverage | Codefactor | Comments                 |
+| --------- | ----- | ------------- | ---------- | ------------------------ |
+| `master`  | ![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Build/badge.svg) | [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) | [![CodeFactor](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/badge/master)](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/overview/master) | Latest Production Release |
+| `beta`  | ![Build](https://github.com/RadioRasclat/radio-rasclat-ios/workflows/Beta%20Build/badge.svg?branch=beta) | [![codecov](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/RadioRasclat/radio-rasclat-ios) | [![CodeFactor](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/badge/master)](https://www.codefactor.io/repository/github/RadioRasclat/radio-rasclat-ios/overview/master) | Beta & Development |
 
 ## Contributing
 
@@ -22,6 +29,8 @@ The best way to submit feedback and report bugs is to open a GitHub issue.
 Please be sure to include your operating system, device, version number, and
 steps to reproduce reported bugs. Keep in mind that all participants will be
 expected to follow our code of conduct.
+
+<img src="https://img.shields.io/github/issues/RadioRasclat/radio-rasclat-ios">
 
 ## Code of Conduct
 
@@ -38,6 +47,12 @@ We do too, wanna [participate](https://www.radio-rasclat.com/about)?
 ## Demo / Download
 
 [![Travis CI](https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-02-17&amp;kind=iossoftware&amp;bubble=ios_apps)](https://apps.apple.com/de/app/radio-rasclat/id1499269866)
+
+## Contributors
+
+<a href="https://github.com/RadioRasclat/radio-rasclat-ios/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=RadioRasclat/radio-rasclat-ios" />
+</a>
 
 ## License
 
