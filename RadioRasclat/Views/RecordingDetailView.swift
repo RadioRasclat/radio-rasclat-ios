@@ -41,10 +41,10 @@ struct RecordingDetailView: View {
                     
                 }
                 
-                Text(recording.recordingDescription)
+                /*Text(recording.recordingDescription)
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15)) */
                 
                 Text("Artists")
                     .font(.caption)
