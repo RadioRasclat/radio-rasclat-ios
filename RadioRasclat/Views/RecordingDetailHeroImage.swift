@@ -70,7 +70,7 @@ struct RecordingDetailHeroImage: View {
                 
                 Spacer()
                 
-                HStack {
+                /*HStack {
                     Image(systemName: "clock")
                     
                     VStack(alignment: .leading) {
@@ -80,15 +80,17 @@ struct RecordingDetailHeroImage: View {
                     }
                 }
                 
-                Spacer()
+                Spacer() */
                 
                 HStack {
-                    URLImage(url: recording.show.image, type: "coverArt")
-                        .frame(width: 20, height: 20)
-                        .cornerRadius(3)
+
                     
                     Text(recording.show.title)
                         .lineLimit(2)
+                    
+                    URLImage(url: recording.show.image, type: "coverArt")
+                        .frame(width: 20, height: 20)
+                        .cornerRadius(3)
                 }
                 
             }
