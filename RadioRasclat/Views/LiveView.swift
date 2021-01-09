@@ -43,6 +43,7 @@ struct LiveView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 Text("Live")
                 Spacer()
                 Button(action: {
@@ -56,6 +57,7 @@ struct LiveView: View {
                          }) {
                     Image(systemName: self.isPlaying == true ? "pause.fill" : "play.fill").font(.system(size: 60))
                 }
+                Spacer()
             }
             .navigationBarTitle("Live")
         }
