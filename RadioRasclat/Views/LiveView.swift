@@ -42,7 +42,9 @@ struct LiveView: View {
     }
     var body: some View {
         NavigationView {
-            HStack {
+            VStack {
+                Text("Live")
+                Spacer()
                 Button(action: {
                              if self.isPlaying {
                                     pauseRecording()
