@@ -1,0 +1,7 @@
+We regularly update Radio Rasclat to keep the beats pumping. New in this version:
+
+New:
+• The app has been re-written in SwiftUI for easier future development.
+• You can now listen to our broadcasts via our app.
+
+Wanna participate, have questions or suggestions? Head over to radio-rasclat.com/about and leave us a note via mail (office@radio-rasclat.com). We're always listening.
