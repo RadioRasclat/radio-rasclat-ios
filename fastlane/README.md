@@ -41,6 +41,11 @@ Upload metadata, screenshots and binary
 fastlane ios beta
 ```
 Push a new beta build to Testflight
+### ios release
+```
+fastlane ios release
+```
+Push a new release build to App Store Connect
 
 ----
 
