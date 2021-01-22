@@ -39,6 +39,16 @@ platform :ios do
     )
   end
 
+  desc "Read changelog with current version"
+  lane :get_changelog do
+    version = get_version_number
+
+    read_changelog(
+      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+      section_identifier: "[#{version}]"	# Specify what section to read
+    )
+  end
+
   desc "Upload metadata, screenshots and binary"
   lane :upload do
     deliver(
@@ -55,6 +65,103 @@ platform :ios do
     cert
     sigh(force: true)
     build
-    upload_to_testflight
+    get_changelog
+    pilot(changelog: changelog)
+  end
+
+  desc "Push a new release build to App Store Connect"
+  lane :release do |lane|
+
+    # ensure you are in master branch
+    # ensure_git_branch
+
+    # ensure that master branch is clean
+    # ensure_git_status_clean
+
+    # clean pod install
+    # cocoapods(clean_install: true)
+    
+    # check the semantic parameter entered
+    if !lane[:bump]
+      raise "No bump type defined! Use one of: patch | minor | major".red
+    end
+
+    # get the last commit comments from Git history
+    # and creates our changelog
+    comments = changelog_from_git_commits(
+      between: [last_git_tag, "HEAD"],
+      pretty: "- %s",
+      date_format: "short",
+      match_lightweight_tag: false, 
+      merge_commit_filtering: "exclude_merges" 
+    ) 
+
+    # calculates the new version according to
+    # the semantic version added
+    type = lane[:bump]
+    old = last_git_tag
+    version = old
+
+    oldArr = old.split('.').map{|v| v.to_i}    
+
+    if type == "patch"
+        version = "#{oldArr[0]}.#{oldArr[1]}.#{oldArr[2] + 1}"
+    elsif type == "minor"
+        version = "#{oldArr[0]}.#{oldArr[1] + 1}.0"
+    elsif type == "major"
+        version = "#{oldArr[0] + 1}.0.0"
+    end   
+
+    if version == old
+        UI.user_error!("Wrong release type parameter. Enter: patch | minor | major")
+    end
+
+    # set the new version number
+    increment_version_number(
+        version_number: version
+    )
+
+    get_changelog
+
+    # test app
+    # test
+
+    # take screenshots
+    # screenshots
+
+    # build app and increment build number
+    # build
+
+    # creates a bump version commit 
+    # commit_version_bump(
+    #  message: "Version bumped to v#{version}",
+    #  xcodeproj: "RadioRasclat.xcodeproj"
+    #)
+
+    # push bump commit
+    #push_to_git_remote(
+    #  tags: false
+    #)
+
+    # create a local tag with the new version
+    #add_git_tag(
+    #  message: comments,
+    #  tag: "v#{version}",
+    #  prefix: "v",
+    #  build_number: version
+    #)    
+
+    # publish a new release into Github
+    #github_release = set_github_release(
+    ##  api_token: ENV["GITHUB_TOKEN"],
+    #  repository_name: "dmnktoe/radio-rasclat-ios",
+    #  name: "#{type.capitalize} version v#{version}",
+    ##  tag_name: "v#{version}",
+    #  description: comments,
+    #  commitish: "master"
+    #)
+
+    # Finally, publish the .ipa on App Store Connect
+    #upload
   end
 end
