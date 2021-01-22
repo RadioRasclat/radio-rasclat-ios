@@ -30,10 +30,10 @@ struct RecordingListView: View {
                     Spacer()
                 } else {
                     ScrollView {
-                        LazyVGrid(columns: twoColumnGrid, spacing: 20) {
+                        LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(recordingListVM.recordings, id:\.id) { recording in
                                 NavigationLink(destination: RecordingDetailView(recording: recording)) {
-                                    RecordingListGridItemView(recordings: recording)
+                                    RecordingCardView(recordings: recording)
                                 }
                             }
                         }
