@@ -1,6 +1,14 @@
 # Changelog
 
-## [3.0.1] - 2021-01-23
+## [3.0.2] - 2021-01-23
+
+We regularly update Radio Rasclat to keep the beats pumping. In this version:
+
+### Changes
+
+- UI improvements on broadcasts view.
+
+## [3.0.1] - 2021-01-22
 
 We regularly update Radio Rasclat to keep the beats pumping. In this version:
 
@@ -24,5 +32,6 @@ We present Radio Rasclat Web in version four. The entire application has been en
 
 Wanna participate, have questions or suggestions? Head over to radio-rasclat.com/about and leave us a note via mail (office@radio-rasclat.com). We're always listening.
 
+[3.0.2]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.2
 [3.0.1]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.1
 [3.0.0]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.0
