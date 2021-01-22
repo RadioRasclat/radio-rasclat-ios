@@ -123,12 +123,12 @@ platform :ios do
 
     # push bump commit
     push_to_git_remote(
-      tags: false
+     tags: false
     )
 
     # create a local tag with the new version
     add_git_tag(
-      message: comments,
+      message: "RadioRasclat_iOS_#{version}",
       tag: "#{version}"
       build_number: version
     )    
@@ -137,13 +137,16 @@ platform :ios do
     github_release = set_github_release(
       api_token: ENV["GITHUB_TOKEN"],
       repository_name: "RadioRasclat/radio-rasclat-ios",
-      name: "#{type.capitalize} version v#{version}",
-      tag_name: "v#{version}",
-      description: changelog,
+      name: "RadioRasclat_iOS_#{version}",
+      tag_name: "#{version}",
+      description: read_changelog(
+        changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+        section_identifier: "[#{version}]"	# Specify what section to read
+      ),
       commitish: "master"
     )
 
     # Finally, publish the .ipa on App Store Connect
-    # upload
+    upload
   end
 end
