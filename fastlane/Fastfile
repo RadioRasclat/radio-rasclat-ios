@@ -104,10 +104,10 @@ platform :ios do
     version = get_version_number
 
     # test app
-    # test
+    test
 
     # take screenshots
-    # screenshots
+    screenshots
 
     # build app and increment build number
     build
