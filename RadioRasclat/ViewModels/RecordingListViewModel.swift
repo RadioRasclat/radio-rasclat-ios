@@ -10,18 +10,12 @@ import Foundation
 class RecordingListViewModel: ObservableObject {
     
     @Published var recordings = [Recording]()
-    
-    private var fetchedRecordings = [RecordingList]()
-    
+        
     func fetchRecordings() {
         
-        WebService().getRecordings() { recording in
-            
-            if let recording = recording {
-                self.fetchedRecordings.append(recording)
-                for recording in recording.recordings {
-                    self.recordings.append(recording)
-                }
+        WebService().getRecordings() { (recordings) in
+            if let recordings = recordings {
+                self.recordings = recordings
             }
         }
     }

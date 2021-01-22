@@ -9,9 +9,9 @@ import Foundation
 
 class WebService {
         
-    func getRecordings(completion: @escaping (RecordingList?) -> ()) {
+    func getRecordings(completion: @escaping ([Recording]?) -> ()) {
             
-        guard let url = URL(string: "https://dmnktoe.de/recordings.json") else {
+        guard let url = URL(string: "https://api.radio-rasclat.com/recordings") else {
             fatalError("Invalid URL")
         }
         
@@ -35,10 +35,10 @@ class WebService {
             
             do {
                 let decoder = JSONDecoder()
-                let recordings = try decoder.decode(RecordingList.self, from: data)
+                let recordings = try decoder.decode([Recording].self, from: data)
                 
                 DispatchQueue.main.async {
-                    print(recordings.recordings.count)
+                    print(recordings.count)
                     completion(recordings)
                 }
                 
