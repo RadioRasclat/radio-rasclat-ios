@@ -60,6 +60,9 @@ platform :ios do
 
   desc "Push a new beta build to Testflight"
   lane :beta do
+    ensure_git_branch(
+      branch: 'beta'
+    )
     ensure_git_status_clean
     test
     cert
@@ -73,28 +76,15 @@ platform :ios do
   lane :release do |lane|
 
     # ensure you are in master branch
-    # ensure_git_branch
+    ensure_git_branch
 
     # ensure that master branch is clean
-    # ensure_git_status_clean
-
-    # clean pod install
-    # cocoapods(clean_install: true)
+    ensure_git_status_clean
     
     # check the semantic parameter entered
     if !lane[:bump]
       raise "No bump type defined! Use one of: patch | minor | major".red
     end
-
-    # get the last commit comments from Git history
-    # and creates our changelog
-    comments = changelog_from_git_commits(
-      between: [last_git_tag, "HEAD"],
-      pretty: "- %s",
-      date_format: "short",
-      match_lightweight_tag: false, 
-      merge_commit_filtering: "exclude_merges" 
-    ) 
 
     # calculates the new version according to
     # the semantic version added
@@ -124,16 +114,16 @@ platform :ios do
     get_changelog
 
     # test app
-    # test
+    test
 
     # take screenshots
-    # screenshots
+    screenshots
 
     # build app and increment build number
-    # build
+    build
 
     # creates a bump version commit 
-    # commit_version_bump(
+    #commit_version_bump(
     #  message: "Version bumped to v#{version}",
     #  xcodeproj: "RadioRasclat.xcodeproj"
     #)
