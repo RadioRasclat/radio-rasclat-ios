@@ -69,12 +69,6 @@ platform :ios do
 
     # ensure that master branch is clean
     ensure_git_status_clean
-
-    # read changelog
-    read_changelog(
-      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
-      section_identifier: "[#{version}]"	# Specify what section to read
-    )
     
     # check the semantic parameter entered
     # if !lane[:bump]
@@ -106,9 +100,10 @@ platform :ios do
     #     version_number: version
     # )
 
+    # get version number
     version = get_version_number
 
-    # get changelog from CHANGELOG.MD
+    # read changelog
     read_changelog(
       changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
       section_identifier: "[#{version}]"	# Specify what section to read
