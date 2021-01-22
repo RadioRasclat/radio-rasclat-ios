@@ -39,16 +39,6 @@ platform :ios do
     )
   end
 
-  desc "Read changelog with current version"
-  lane :get_changelog do
-    version = get_version_number
-
-    read_changelog(
-      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
-      section_identifier: "[#{version}]"	# Specify what section to read
-    )
-  end
-
   desc "Upload metadata, screenshots and binary"
   lane :upload do
     deliver(
@@ -68,8 +58,7 @@ platform :ios do
     cert
     sigh(force: true)
     build
-    get_changelog
-    pilot(changelog: changelog)
+    upload_to_testflight
   end
 
   desc "Push a new release build to App Store Connect"
@@ -111,7 +100,11 @@ platform :ios do
         version_number: version
     )
 
-    get_changelog
+    # get changelog from CHANGELOG.MD
+    read_changelog(
+      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+      section_identifier: "[#{version}]"	# Specify what section to read
+    )
 
     # test app
     test
@@ -123,35 +116,34 @@ platform :ios do
     build
 
     # creates a bump version commit 
-    #commit_version_bump(
-    #  message: "Version bumped to v#{version}",
-    #  xcodeproj: "RadioRasclat.xcodeproj"
-    #)
+    commit_version_bump(
+      message: "Version bumped to v#{version}",
+      xcodeproj: "RadioRasclat.xcodeproj"
+    )
 
     # push bump commit
-    #push_to_git_remote(
-    #  tags: false
-    #)
+    push_to_git_remote(
+      tags: false
+    )
 
     # create a local tag with the new version
-    #add_git_tag(
-    #  message: comments,
-    #  tag: "v#{version}",
-    #  prefix: "v",
-    #  build_number: version
-    #)    
+    add_git_tag(
+      message: comments,
+      tag: "#{version}"
+      build_number: version
+    )    
 
     # publish a new release into Github
-    #github_release = set_github_release(
-    ##  api_token: ENV["GITHUB_TOKEN"],
-    #  repository_name: "dmnktoe/radio-rasclat-ios",
-    #  name: "#{type.capitalize} version v#{version}",
-    ##  tag_name: "v#{version}",
-    #  description: comments,
-    #  commitish: "master"
-    #)
+    github_release = set_github_release(
+      api_token: ENV["GITHUB_TOKEN"],
+      repository_name: "RadioRasclat/radio-rasclat-ios",
+      name: "#{type.capitalize} version v#{version}",
+      tag_name: "v#{version}",
+      description: changelog,
+      commitish: "master"
+    )
 
     # Finally, publish the .ipa on App Store Connect
-    #upload
+    # upload
   end
 end
