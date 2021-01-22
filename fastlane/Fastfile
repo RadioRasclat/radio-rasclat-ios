@@ -71,34 +71,36 @@ platform :ios do
     ensure_git_status_clean
     
     # check the semantic parameter entered
-    if !lane[:bump]
-      raise "No bump type defined! Use one of: patch | minor | major".red
-    end
+    # if !lane[:bump]
+    #   raise "No bump type defined! Use one of: patch | minor | major".red
+    # end
 
     # calculates the new version according to
     # the semantic version added
-    type = lane[:bump]
-    old = last_git_tag
-    version = old
+    # type = lane[:bump]
+    # old = last_git_tag
+    # version = old
 
-    oldArr = old.split('.').map{|v| v.to_i}    
+    # oldArr = old.split('.').map{|v| v.to_i}    
 
-    if type == "patch"
-        version = "#{oldArr[0]}.#{oldArr[1]}.#{oldArr[2] + 1}"
-    elsif type == "minor"
-        version = "#{oldArr[0]}.#{oldArr[1] + 1}.0"
-    elsif type == "major"
-        version = "#{oldArr[0] + 1}.0.0"
-    end   
+    # if type == "patch"
+    #     version = "#{oldArr[0]}.#{oldArr[1]}.#{oldArr[2] + 1}"
+    # elsif type == "minor"
+    #     version = "#{oldArr[0]}.#{oldArr[1] + 1}.0"
+    # elsif type == "major"
+    #     version = "#{oldArr[0] + 1}.0.0"
+    # end   
 
-    if version == old
-        UI.user_error!("Wrong release type parameter. Enter: patch | minor | major")
-    end
+    # if version == old
+    #     UI.user_error!("Wrong release type parameter. Enter: patch | minor | major")
+    # end
 
     # set the new version number
-    increment_version_number(
-        version_number: version
-    )
+    # increment_version_number(
+    #     version_number: version
+    # )
+
+    version = get_version_number
 
     # get changelog from CHANGELOG.MD
     read_changelog(
@@ -107,44 +109,45 @@ platform :ios do
     )
 
     # test app
-    test
+    # test
 
     # take screenshots
-    screenshots
+    # screenshots
 
     # build app and increment build number
     build
 
     # creates a bump version commit 
-    commit_version_bump(
-      message: "Version bumped to v#{version}",
-      xcodeproj: "RadioRasclat.xcodeproj"
-    )
+    # commit_version_bump(
+    #   message: "Version bumped to v#{version}",
+    #   xcodeproj: "RadioRasclat.xcodeproj"
+    # )
 
     # push bump commit
-    push_to_git_remote(
-     tags: false
-    )
+    # push_to_git_remote(
+    #  tags: false
+    # )
 
     # create a local tag with the new version
-    add_git_tag(
-      message: "RadioRasclat_iOS_#{version}",
-      tag: "#{version}"
-    )    
+    # add_git_tag(
+    #   message: "RadioRasclat_iOS_#{version}",
+    #   tag: "#{version}"
+    # )    
 
     # publish a new release into Github
-    github_release = set_github_release(
-      api_token: ENV["GITHUB_TOKEN"],
-      repository_name: "RadioRasclat/radio-rasclat-ios",
-      name: "RadioRasclat_iOS_#{version}",
-      tag_name: "#{version}",
-      description: read_changelog(
-        changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
-        section_identifier: "[#{version}]"	# Specify what section to read
-      ),
-      commitish: "master"
-    )
+    # github_release = set_github_release(
+    #   api_token: ENV["GITHUB_TOKEN"],
+    #   repository_name: "RadioRasclat/radio-rasclat-ios",
+    #   name: "RadioRasclat_iOS_#{version}",
+    #   tag_name: "#{version}",
+    #   description: read_changelog(
+    #     changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+    #     section_identifier: "[#{version}]"	# Specify what section to read
+    #   ),
+    #   commitish: "master"
+    # )
 
+    # Set changelog on App Store Connect
     set_changelog(changelog: read_changelog(
       changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
       section_identifier: "[#{version}]"	# Specify what section to read
