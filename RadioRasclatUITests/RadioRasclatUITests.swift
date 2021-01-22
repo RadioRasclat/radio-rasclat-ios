@@ -25,14 +25,16 @@ class RadioRasclatUITests: XCTestCase {
     func testPlayRecording() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
-        
         app.launch()
-        app.tabBars["Tab Bar"].buttons["Recordings"].tap()
         
-        let elementsQuery = app.scrollViews.otherElements
-        elementsQuery.buttons["KW36 • Kasseler Woche der Museen, KW36 — MUSIC: DJ Talent 3"].tap()
-        elementsQuery.buttons["play.fill"].tap()
-        elementsQuery.buttons["pause.fill"].tap()
+        let tabBar = app.tabBars["Tab Bar"]
+        tabBar.buttons["Recordings"].tap()
+        
+        let scrollViewsQuery = app.scrollViews
+        scrollViewsQuery.otherElements.buttons["KW36 • Kasseler Woche der Museen, KW36 — MUSIC: Habian666 • Das Intro ist eine Lüge"].tap()
+        
+        scrollViewsQuery.otherElements.containing(.button, identifier:"play.fill").children(matching: .image).element(boundBy: 0).tap()
+        
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
