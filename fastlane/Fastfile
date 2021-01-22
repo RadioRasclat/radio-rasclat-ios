@@ -69,6 +69,12 @@ platform :ios do
 
     # ensure that master branch is clean
     ensure_git_status_clean
+
+    # read changelog
+    read_changelog(
+      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+      section_identifier: "[#{version}]"	# Specify what section to read
+    )
     
     # check the semantic parameter entered
     # if !lane[:bump]
@@ -148,10 +154,10 @@ platform :ios do
     # )
 
     # Set changelog on App Store Connect
-    set_changelog(changelog: read_changelog(
-      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
-      section_identifier: "[#{version}]"	# Specify what section to read
-    ))
+    set_changelog(
+      changelog: changelog,
+      version: "#{version}"
+    )
 
     # Finally, publish the .ipa on App Store Connect
     upload
