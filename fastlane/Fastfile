@@ -103,12 +103,6 @@ platform :ios do
     # get version number
     version = get_version_number
 
-    # read changelog
-    read_changelog(
-      changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
-      section_identifier: "[#{version}]"	# Specify what section to read
-    )
-
     # test app
     # test
 
@@ -150,7 +144,10 @@ platform :ios do
 
     # Set changelog on App Store Connect
     set_changelog(
-      changelog: changelog,
+      changelog: read_changelog(
+        changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+        section_identifier: "[#{version}]"	# Specify what section to read
+      ),
       version: "#{version}"
     )
 
