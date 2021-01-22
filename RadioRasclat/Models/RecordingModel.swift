@@ -7,16 +7,7 @@
 
 import Foundation
 
-// MARK: - RecordingList
-struct RecordingList: Codable {
-    let recordings: [Recording]
-    
-    enum CodingKeys: String, CodingKey {
-        case recordings = "results"
-    }
-}
-
-// MARK: - Result
+// MARK: - Recording
 struct Recording: Codable, Equatable {
     let id: String
     let title, timeStart, timeEnd: String
