@@ -30,7 +30,7 @@ class RadioRasclatUITests: XCTestCase {
         app.tabBars["Tab Bar"].buttons["Recordings"].tap()
         
         let elementsQuery = app.scrollViews.otherElements
-        elementsQuery.buttons["KW36 — MUSIC: Habian666 • Das Intro ist eine Lüge"].tap()
+        elementsQuery.buttons["KW36 • Kasseler Woche der Museen, KW36 — MUSIC: DJ Talent 3"].tap()
         elementsQuery.buttons["play.fill"].tap()
         elementsQuery.buttons["pause.fill"].tap()
 
