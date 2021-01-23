@@ -15,7 +15,7 @@ struct RecordingDetailView: View {
         
     init(recording: Recording) {
         self.recording = recording
-        recordingDetailVM.getMovieDetails(id: recording.id)
+        recordingDetailVM.getRecordingDetails(id: recording.id)
     }
     
     var body: some View {

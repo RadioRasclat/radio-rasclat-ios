@@ -11,7 +11,7 @@ class RecordingDetailViewModel: ObservableObject {
     
     @Published var fetchedRecording: Recording?
     
-    func getMovieDetails(id: String) {
+    func getRecordingDetails(id: String) {
         
         WebService().getRecordingsDetails(recording: id) { recording in
             

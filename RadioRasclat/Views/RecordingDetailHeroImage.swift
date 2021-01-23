@@ -103,7 +103,7 @@ struct RecordingDetailHeroImage: View {
     }
 }
 
-struct MovieHeroImage_Previews: PreviewProvider {
+struct RecordingDetailHeroImage_Previews: PreviewProvider {
     static var previews: some View {
         RecordingDetailHeroImage(recording: Recording.example)
     }
