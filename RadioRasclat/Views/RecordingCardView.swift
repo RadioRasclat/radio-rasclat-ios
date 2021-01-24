@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DateHelper
 
 struct RecordingCardView: View {
     
@@ -28,10 +29,13 @@ struct RecordingCardView: View {
                             .foregroundColor(.primary)
                             .lineLimit(3)
                             .padding(.bottom, 2)
-                        Text(recordings.timeStart)
-                            .font(.headline)
-                            .fontWeight(.black)
-                            .foregroundColor(.secondary)
+                        
+                        if let date = Date(detectFromString: recordings.timeStart) {
+                            Text(date.toString(format: .custom("dd.MM.yyyy • HH:mm")))
+                                .font(.headline)
+                                .fontWeight(.black)
+                                .foregroundColor(.secondary)
+                        }
                     }
                     .layoutPriority(100)
      
