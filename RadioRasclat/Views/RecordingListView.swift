@@ -41,6 +41,7 @@ struct RecordingListView: View {
                 }
             }
             .navigationBarTitle("Broadcasts")
+            .navigationBarItems(leading: Text(String(recordingListVM.recordings.count)) + Text("+"))
         }
     }
 }
