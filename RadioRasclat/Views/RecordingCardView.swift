@@ -45,7 +45,7 @@ struct RecordingCardView: View {
         .cornerRadius(10)
         .overlay(
         RoundedRectangle(cornerRadius: 10)
-            .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 1)
+            .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 2)
         )
         .padding([.top, .horizontal])
     }
