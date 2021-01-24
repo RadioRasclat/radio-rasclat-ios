@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HTMLEntities
 
 struct RecordingDetailView: View {
     
@@ -26,25 +27,23 @@ struct RecordingDetailView: View {
                 RecordingDetailHeroImage(recording: recording)
                 
                 Text(recording.title)
-                    .font(.largeTitle)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .font(.title)
+                    .fontWeight(.black)
                     .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                 
                 if recordingDetailVM.fetchedRecording?.genres.count ?? 0 >= 1 {
-                    
                     Text("\(recordingDetailVM.fetchedRecording?.genres.first?.title ?? "")")
                         .font(.footnote)
                         .foregroundColor(.gray)
                         .padding(2)
                         .border(Color.gray)
                         .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
-                    
                 }
-                
-                /*Text(recording.recordingDescription)
+                                
+                Text(recording.recordingDescription.htmlUnescape())
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15)) */
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                 
                 Text("Artists")
                     .font(.caption)

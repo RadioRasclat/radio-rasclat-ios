@@ -18,6 +18,7 @@
 		B2381072257BFA7F00C7048C /* LNPopupUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B2381070257BFA7F00C7048C /* LNPopupUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B2381077257BFBC400C7048C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2381076257BFBC400C7048C /* PlayerView.swift */; };
 		B238109E257C0DF300C7048C /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238109D257C0DF300C7048C /* LiveView.swift */; };
+		B24EF6A725BDE95F0012AD86 /* HTMLEntities in Frameworks */ = {isa = PBXBuildFile; productRef = B24EF6A625BDE95F0012AD86 /* HTMLEntities */; };
 		B26D49A825BB37B4001340CF /* RecordingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D49A725BB37B4001340CF /* RecordingCardView.swift */; };
 		B2B958B0258C23B900B588D3 /* RadioRasclatScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B958AF258C23B900B588D3 /* RadioRasclatScreenshots.swift */; };
 		B2B958BB258C23D600B588D3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B958BA258C23D600B588D3 /* SnapshotHelper.swift */; };
@@ -126,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24EF6A725BDE95F0012AD86 /* HTMLEntities in Frameworks */,
 				B2381071257BFA7F00C7048C /* LNPopupUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +307,7 @@
 			name = RadioRasclat;
 			packageProductDependencies = (
 				B2381070257BFA7F00C7048C /* LNPopupUI */,
+				B24EF6A625BDE95F0012AD86 /* HTMLEntities */,
 			);
 			productName = RadioRasclat;
 			productReference = B2D254952578807B0055329D /* RadioRasclat.app */;
@@ -383,6 +386,7 @@
 			mainGroup = B2D2548C2578807B0055329D;
 			packageReferences = (
 				B238106F257BFA7F00C7048C /* XCRemoteSwiftPackageReference "LNPopupUI" */,
+				B24EF6A525BDE95F0012AD86 /* XCRemoteSwiftPackageReference "swift-html-entities" */,
 			);
 			productRefGroup = B2D254962578807B0055329D /* Products */;
 			projectDirPath = "";
@@ -862,6 +866,14 @@
 				minimumVersion = 1.2.7;
 			};
 		};
+		B24EF6A525BDE95F0012AD86 /* XCRemoteSwiftPackageReference "swift-html-entities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/swift-html-entities.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.200;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -869,6 +881,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B238106F257BFA7F00C7048C /* XCRemoteSwiftPackageReference "LNPopupUI" */;
 			productName = LNPopupUI;
+		};
+		B24EF6A625BDE95F0012AD86 /* HTMLEntities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24EF6A525BDE95F0012AD86 /* XCRemoteSwiftPackageReference "swift-html-entities" */;
+			productName = HTMLEntities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
