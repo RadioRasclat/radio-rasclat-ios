@@ -25,6 +25,11 @@ struct ContentView: View {
                     Image(systemName: "music.note.list")
                     Text("Recordings")
                 }
+            ScheduleListView()
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Schedule")
+                }
         }
         .accentColor(.pink)
         .popup(isBarPresented: $isPopupPresented, isPopupOpen: $isPopupOpen) {
