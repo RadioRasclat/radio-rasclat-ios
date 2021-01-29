@@ -17,16 +17,18 @@ struct LiveView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                
-                LiveInfoView(liveInfo: liveVM.liveInfo ?? LiveInfo(name: "OFF AIR", description: "Radio Rasclat will come back soon!", url: "OFF AIR", imagePath: "https://radio-rasclat.com/assets/svg/logo.svg", starts: "", ends: ""))
-                
-                Divider()
-                
-                Spacer()
-                
+            ScrollView {
+                VStack {
+                    
+                    LiveInfoView(liveInfo: liveVM.liveInfo ?? LiveInfo(name: "OFF AIR", description: "Radio Rasclat will come back soon!", url: "OFF AIR", imagePath: "https://radio-rasclat.com/assets/svg/logo.svg", starts: "", ends: ""))
+                    
+                    Divider()
+                    
+                    Spacer()
+                    
+                }
+                .padding(15)
             }
-            .padding(15)
             .navigationBarTitle("Live")
         }
     }
