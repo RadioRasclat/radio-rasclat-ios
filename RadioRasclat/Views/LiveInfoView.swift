@@ -7,13 +7,43 @@
 
 import SwiftUI
 import DateHelper
+import AVKit
 
 struct LiveInfoView: View {
-
+    
+    @State var isPlaying: Bool = false
+    
     var liveInfo: LiveInfo
 
     init(liveInfo: LiveInfo) {
         self.liveInfo = liveInfo
+    }
+    
+    func playRecording() {
+        self.isPlaying.toggle()
+
+        let urlString = "https://station.radio-rasclat.com/live"
+
+        guard let url = URL.init(string: urlString) else { return }
+
+        let playerItem = AVPlayerItem.init(url: url)
+        player = AVPlayer.init(playerItem: playerItem)
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.duckOthers, .defaultToSpeaker, .mixWithOthers, .allowAirPlay])
+            print("Playback OK")
+
+            try AVAudioSession.sharedInstance().setActive(true)
+            print("Session is Active")
+        } catch {
+            print(error)
+        }
+        
+        player?.play()
+    }
+
+    func pauseRecording() {
+        player?.pause()
     }
 
     var body: some View {
@@ -25,36 +55,59 @@ struct LiveInfoView: View {
                 .overlay(RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 2))
                 .shadow(radius: 10)
-            
-            Text(liveInfo.name)
-                .font(.title)
-                .fontWeight(.black)
-                .foregroundColor(.primary)
-                .lineLimit(2)
-                .padding(.bottom, 2)
-            
-            Text(liveInfo.description)
-                .font(.caption)
-                .fontWeight(.black)
-                .foregroundColor(.primary)
-                .lineLimit(2)
-                .padding(.bottom, 2)
+                .padding(.bottom, 15)
             
             HStack {
-                if let date = Date(detectFromString: liveInfo.starts) {
-                    Text(date.toString(format: .custom("HH:mm")))
-                        .font(.footnote)
-                        .fontWeight(.black)
-                        .foregroundColor(.secondary)
+                Button(action: {
+                    if self.isPlaying {
+                        pauseRecording()
+                        self.isPlaying = false
+                    } else {
+                        playRecording()
+                        self.isPlaying = true
+                    }
+                }) {
+                    Image(systemName: self.isPlaying == true ? "pause.fill" : "play.fill").font(.system(size: 30))
+                        .padding()
+                        .background(Color.pink)
+                        .foregroundColor(Color.white)
+                        .clipShape(Circle())
                 }
+                .padding(.trailing, 25)
+                .padding(.leading, 15)
                 
-                Text("—")
-                
-                if let date = Date(detectFromString: liveInfo.ends) {
-                    Text(date.toString(format: .custom("HH:mm")))
-                        .font(.footnote)
+                VStack(alignment: .leading) {
+                    Text(liveInfo.name)
+                        .font(.title)
                         .fontWeight(.black)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(.primary)
+                        .lineLimit(2)
+                        .padding(.bottom, 2)
+                    
+                    Text(liveInfo.description)
+                        .font(.caption)
+                        .fontWeight(.black)
+                        .foregroundColor(.primary)
+                        .lineLimit(2)
+                        .padding(.bottom, 2)
+                    
+                    HStack {
+                        if let date = Date(detectFromString: liveInfo.starts) {
+                            Text(date.toString(format: .custom("HH:mm")))
+                                .font(.footnote)
+                                .fontWeight(.black)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        Text("—")
+                        
+                        if let date = Date(detectFromString: liveInfo.ends) {
+                            Text(date.toString(format: .custom("HH:mm")))
+                                .font(.footnote)
+                                .fontWeight(.black)
+                                .foregroundColor(.secondary)
+                        }
+                    }
                 }
             }
         })
