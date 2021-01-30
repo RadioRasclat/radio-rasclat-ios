@@ -49,12 +49,23 @@ struct LiveInfoView: View {
     var body: some View {
         
         VStack(alignment: .leading, spacing: 10, content: {
+            Text(Image(systemName: "antenna.radiowaves.left.and.right"))
+                .font(.caption)
+                .fontWeight(.medium)
+                .foregroundColor(.secondary) +
+                
+            Text(" Now on Radio Rasclat!")
+                .font(.caption)
+                .fontWeight(.medium)
+                .foregroundColor(.secondary)
+            
             URLImage(url: liveInfo.imagePath, type: "movie")
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(10)
                 .overlay(RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 2))
                 .shadow(radius: 10)
+                .padding(.trailing, 2)
                 .padding(.bottom, 15)
             
             HStack {

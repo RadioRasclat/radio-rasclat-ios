@@ -19,10 +19,12 @@ struct LiveView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    
-                    LiveInfoView(liveInfo: liveVM.liveInfo ?? LiveInfo(name: "OFF AIR", description: "Radio Rasclat will come back soon!", url: "OFF AIR", imagePath: "https://radio-rasclat.com/assets/svg/logo.svg", starts: "", ends: ""))
+                                        
+                    LiveInfoView(liveInfo: liveVM.liveInfo ?? LiveInfo(name: "OFF AIR", description: "Radio Rasclat will come back soon!", url: "OFF AIR", imagePath: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/images/rr-logo-grain_600x.jpg", starts: "", ends: ""))
                     
                     Divider()
+                    
+                    // NextUpInfoView()
                     
                     Spacer()
                     
