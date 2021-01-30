@@ -15,8 +15,6 @@ class ScheduleViewModel: ObservableObject {
         
         WebService().getSchedule() { schedule in
             
-            print(schedule?.monday ?? "default value")
-            
             if let schedule = schedule {
                 self.schedule = schedule
             }

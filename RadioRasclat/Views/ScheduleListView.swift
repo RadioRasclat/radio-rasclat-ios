@@ -10,32 +10,78 @@ import SwiftUI
 struct ScheduleListView: View {
     
     @ObservedObject private var scheduleVM = ScheduleViewModel()
-    
-    @State private var pickerSelection = 0
-        
+            
     init() {
         scheduleVM.getSchedule()
     }
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                
-                ScrollView {
-                    
-                    Picker("Select a week", selection: $pickerSelection) {
-                      Text("This week").tag(0)
-                      Text("Next week").tag(1)
+            ScrollView {
+                VStack(alignment: .leading) {
+                    if ((scheduleVM.schedule?.monday.isEmpty) != nil) {
+                        Text("Monday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.monday)
+                            .padding(.bottom, 10)
                     }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .padding()
                     
-                    Text("Montag")
-                    ScheduleDayView()
+                    if ((scheduleVM.schedule?.tuesday.isEmpty) != nil) {
+                        Text("Tuesday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.tuesday)
+                            .padding(.bottom, 10)
+                    }
                     
-                    Text("Tuesday")
-                    ScheduleDayView()
+                    if ((scheduleVM.schedule?.wednesday.isEmpty) != nil) {
+                        Text("Wednesday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.wednesday)
+                            .padding(.bottom, 10)
+                    }
+                    
+                    if ((scheduleVM.schedule?.thursday.isEmpty) != nil) {
+                        Text("Thursday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.thursday)
+                            .padding(.bottom, 10)
+                    }
+                    
+                    if ((scheduleVM.schedule?.friday.isEmpty) != nil) {
+                        Text("Friday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.friday)
+                            .padding(.bottom, 10)
+                    }
+                    
+                    if ((scheduleVM.schedule?.saturday.isEmpty) != nil) {
+                        Text("Saturday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.saturday)
+                            .padding(.bottom, 10)
+                    }
+                    
+                    if ((scheduleVM.schedule?.sunday.isEmpty) != nil) {
+                        Text("Sunday")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        ScheduleDayView(scheduleDay: scheduleVM.schedule!.sunday)
+                    }
                 }
+                .padding(15)
             }
             .navigationBarTitle("Schedule")
         }

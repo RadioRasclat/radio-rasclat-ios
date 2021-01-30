@@ -30,7 +30,7 @@ struct Schedule: Codable {
 }
 
 // MARK: - Day
-struct Day: Codable {
+struct Day: Codable, Hashable {
     let name: String
     let startTimestamp, endTimestamp: String
     let description: String?
