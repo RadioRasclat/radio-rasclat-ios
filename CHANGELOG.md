@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.1.0] - 2021-01-30
+
+We regularly update Radio Rasclat to keep the beats pumping and we're proud to present you the first big update for our iOS-App. In this version:
+
+### New
+
+- The Live tab now gives you more information about which show is currently live on Radio Rasclat and how long it will last.
+- In the new schedule tab you can now get information about our program on the go.
+
+### Changes
+
+- All over UI improvements.
+- Changes the primary color.
+
 ## [3.0.3] - 2021-01-23
 
 We regularly update Radio Rasclat to keep the beats pumping. In this version:
@@ -22,9 +36,9 @@ We regularly update Radio Rasclat to keep the beats pumping. In this version:
 
 We regularly update Radio Rasclat to keep the beats pumping. In this version:
 
-### New
+### Changes
 
-- All recordings are now loaded directly and synchronously from the server. Previously, the recordings for the app had to be entered manually.
+- Fixes a bug where the Broadcasts tab takes an infinite time to load. All recordings are now loaded directly and synchronously from the server. Previously, the recordings for the app had to be entered manually.
 
 ## [3.0.0] - 2021-01-06
 
@@ -42,6 +56,7 @@ We present Radio Rasclat Web in version four. The entire application has been en
 
 Wanna participate, have questions or suggestions? Head over to radio-rasclat.com/about and leave us a note via mail (office@radio-rasclat.com). We're always listening.
 
+[3.1.0]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.1.0
 [3.0.3]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.3
 [3.0.2]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.2
 [3.0.1]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.1
