@@ -20,6 +20,7 @@
 		B238109E257C0DF300C7048C /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238109D257C0DF300C7048C /* LiveView.swift */; };
 		B24EF66625BCB0B60012AD86 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = B24EF66525BCB0B60012AD86 /* Sentry */; };
 		B24EF6BC25BDF9710012AD86 /* DateHelper in Frameworks */ = {isa = PBXBuildFile; productRef = B24EF6BB25BDF9710012AD86 /* DateHelper */; };
+		B252B9E825C503340065BCA8 /* ScheduleDayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252B9E725C503340065BCA8 /* ScheduleDayRow.swift */; };
 		B26D49A825BB37B4001340CF /* RecordingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D49A725BB37B4001340CF /* RecordingCardView.swift */; };
 		B271654725C2B513005C0A03 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271654625C2B513005C0A03 /* ScheduleModel.swift */; };
 		B271654C25C2B6D9005C0A03 /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271654B25C2B6D9005C0A03 /* ScheduleListView.swift */; };
@@ -92,6 +93,7 @@
 		B21AF836257BE1CC001A03EF /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 		B2381076257BFBC400C7048C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		B238109D257C0DF300C7048C /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		B252B9E725C503340065BCA8 /* ScheduleDayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDayRow.swift; sourceTree = "<group>"; };
 		B26D49A725BB37B4001340CF /* RecordingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingCardView.swift; sourceTree = "<group>"; };
 		B271654625C2B513005C0A03 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 		B271654B25C2B6D9005C0A03 /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				B238109D257C0DF300C7048C /* LiveView.swift */,
 				B271654B25C2B6D9005C0A03 /* ScheduleListView.swift */,
 				B271655025C2B6F5005C0A03 /* ScheduleDayView.swift */,
+				B252B9E725C503340065BCA8 /* ScheduleDayRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				B271654C25C2B6D9005C0A03 /* ScheduleListView.swift in Sources */,
 				B2D2549D2578807B0055329D /* ContentView.swift in Sources */,
 				B238109E257C0DF300C7048C /* LiveView.swift in Sources */,
+				B252B9E825C503340065BCA8 /* ScheduleDayRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
