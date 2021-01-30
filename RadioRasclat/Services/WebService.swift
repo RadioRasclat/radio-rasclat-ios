@@ -48,6 +48,46 @@ class WebService {
         // execute the HTTP request
         task.resume()
     }
+    
+    func getLiveInfo(completion: @escaping (LiveInfo?) -> ()) {
+            
+        guard let url = URL(string: "https://api.radio-rasclat.com/meta/shows/current") else {
+            fatalError("Invalid URL")
+        }
+        
+        let config = URLSessionConfiguration.default
+        config.urlCache = URLCache.shared
+        let session = URLSession(configuration: config)
+        
+        let urlRequest = URLRequest(url: url, timeoutInterval: 15.0)
+        let task = session.dataTask(with: urlRequest) { data, response, error in
+                        
+            // Check for errors
+            guard error == nil else {
+                print ("error: \(error!)")
+                return
+            }
+            // Check that data has been returned
+            guard let data = data else {
+                print("No data")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let liveInfo = try decoder.decode(LiveInfo?.self, from: data)
+                
+                DispatchQueue.main.async {
+                    completion(liveInfo)
+                }
+                
+            } catch let err {
+                print("Error", err)
+            }
+        }
+        // execute the HTTP request
+        task.resume()
+    }
         
     func getRecordings(completion: @escaping ([Recording]?) -> ()) {
             
@@ -78,7 +118,6 @@ class WebService {
                 let recordings = try decoder.decode([Recording].self, from: data)
                 
                 DispatchQueue.main.async {
-                    print(recordings.count)
                     completion(recordings)
                 }
                 

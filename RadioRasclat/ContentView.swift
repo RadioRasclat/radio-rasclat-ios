@@ -31,7 +31,7 @@ struct ContentView: View {
                     Text("Schedule")
                 }
         }
-        .accentColor(.pink)
+        .accentColor(Color("AccentColor"))
         .popup(isBarPresented: $isPopupPresented, isPopupOpen: $isPopupOpen) {
             
         }
