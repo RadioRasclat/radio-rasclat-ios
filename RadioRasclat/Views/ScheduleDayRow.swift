@@ -18,7 +18,8 @@ struct ScheduleDayRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0, content: {
             Text(program?.name ?? "There is no program scheduled.")
-                .foregroundColor(.primary)
+                .foregroundColor(Color("AccentColor"))
+                .fontWeight(.bold)
                 .padding(.bottom, 5)
             
             if (program?.description != "") {
@@ -45,6 +46,6 @@ struct ScheduleDayRow: View {
             }
         })
         .padding()
-        .background(Color.white)
+        .background(Color("LightColor"))
     }
 }
