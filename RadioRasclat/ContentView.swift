@@ -26,7 +26,7 @@ struct ContentView: View {
                     Text("Recordings")
                 }
         }
-        .accentColor(.accentColor)
+        .accentColor(Color("AccentColor"))
         .popup(isBarPresented: $isPopupPresented, isPopupOpen: $isPopupOpen) {
             
         }

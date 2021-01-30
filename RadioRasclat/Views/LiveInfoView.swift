@@ -69,7 +69,7 @@ struct LiveInfoView: View {
                 }) {
                     Image(systemName: self.isPlaying == true ? "pause.fill" : "play.fill").font(.system(size: 30))
                         .padding()
-                        .background(Color.accentColor)
+                        .background(Color("AccentColor"))
                         .foregroundColor(Color.white)
                         .clipShape(Circle())
                 }
