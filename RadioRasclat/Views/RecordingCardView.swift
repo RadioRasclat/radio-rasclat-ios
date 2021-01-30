@@ -18,10 +18,12 @@ struct RecordingCardView: View {
 
             HStack {
                 VStack(alignment: .leading) {
+                    
                     Text(recordings.show.title)
                         .font(.headline)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(Color("AccentColor"))
                         .padding(.bottom, 2)
+                    
                     Text(recordings.title)
                         .font(.title)
                         .fontWeight(.black)
