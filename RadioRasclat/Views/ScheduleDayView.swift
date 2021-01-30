@@ -14,10 +14,6 @@ struct ScheduleDayView: View {
         
     init(scheduleDay: [Day?]) {
         self.scheduleDay = scheduleDay
-                
-        let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.97, alpha: 1.00)
-        UIScrollView.appearance().backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.97, alpha: 1.00)
     }
     
     var body: some View {
