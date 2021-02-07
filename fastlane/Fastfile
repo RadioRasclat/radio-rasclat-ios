@@ -50,14 +50,24 @@ platform :ios do
 
   desc "Push a new beta build to Testflight"
   lane :beta do
-    ensure_git_branch(
-      branch: 'beta'
-    )
+
+    # ensure that master branch is clean
     ensure_git_status_clean
+
+    # adds beta badge to app icon
+    add_badge
+
+    # test app
     test
+
+    # manage authentication and certificates
     cert
     sigh(force: true)
+
+    # build app and increment build number
     build
+
+    # upload beta version to testflight
     upload_to_testflight
   end
 
