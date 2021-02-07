@@ -31,11 +31,6 @@ Take screenshots
 fastlane ios build
 ```
 Build application
-### ios upload
-```
-fastlane ios upload
-```
-Upload metadata, screenshots and binary
 ### ios beta
 ```
 fastlane ios beta
