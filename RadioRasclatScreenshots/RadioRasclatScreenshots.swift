@@ -35,7 +35,7 @@ class RadioRasclatScreenshots: XCTestCase {
         snapshot("1Recordings")
         
         let scrollViewsQuery = app.scrollViews
-        scrollViewsQuery.otherElements.buttons["KW36 • Kasseler Woche der Museen, KW36 — MUSIC: Habian666 • Das Intro ist eine Lüge, 06.09.2020 • 21:30"].tap()
+        scrollViewsQuery.otherElements.buttons.firstMatch.tap()
         
         snapshot("2RecordingsDetail")
         
