@@ -31,13 +31,31 @@ class RadioRasclatUITests: XCTestCase {
         tabBar.buttons["Recordings"].tap()
         
         let scrollViewsQuery = app.scrollViews
-        scrollViewsQuery.otherElements.buttons["KW36 • Kasseler Woche der Museen, KW36 — MUSIC: Habian666 • Das Intro ist eine Lüge"].tap()
+        scrollViewsQuery.otherElements.buttons["KW36 • Kasseler Woche der Museen, KW36 — MUSIC: Habian666 • Das Intro ist eine Lüge, 06.09.2020 • 21:30"].tap()
         
         scrollViewsQuery.otherElements.containing(.button, identifier:"play.fill").children(matching: .image).element(boundBy: 0).tap()
+    }
+    
+    func testPlayLive() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
         
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let tabBar = app.tabBars["Tab Bar"]
+        tabBar.buttons["Live"].tap()
+        app.scrollViews.otherElements.buttons["play.fill"].tap()
+        app.scrollViews.otherElements.buttons["pause.fill"].tap()
+        
+    }
+    
+    func testSchedule() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        let tabBar = app.tabBars["Tab Bar"]
+        tabBar.buttons["Schedule"].tap()
+        
     }
 
     func testLaunchPerformance() throws {
