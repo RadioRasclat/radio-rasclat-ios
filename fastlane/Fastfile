@@ -39,15 +39,6 @@ platform :ios do
     )
   end
 
-  desc "Upload metadata, screenshots and binary"
-  lane :upload do
-    deliver(
-      force: true,
-      automatic_release: false,
-      submit_for_review: false
-    )
-  end
-
   desc "Push a new beta build to Testflight"
   lane :beta do
 
@@ -162,6 +153,12 @@ platform :ios do
     )
 
     # Finally, publish the .ipa on App Store Connect
-    upload
+    deliver(
+      overwrite_screenshots: true,
+      build_number: number_of_commits,
+      force: true,
+      automatic_release: true,
+      submit_for_review: false
+    )
   end
 end
