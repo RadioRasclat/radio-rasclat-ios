@@ -63,6 +63,14 @@ platform :ios do
 
     # stash git changes
     reset_git_repo(force: true)
+
+    # display a notification
+    notification(
+      title: "Radio Rasclat iOS",
+      subtitle: "Beta",
+      message: "A new beta build (#{number_of_commits}) has been submitted to Testflight.",
+      app_icon: "https://radio-rasclat.com/assets/images/radio-rasclat-logo.png"
+    )
   end
 
   desc "Push a new release build to App Store Connect"
@@ -159,6 +167,17 @@ platform :ios do
       force: true,
       automatic_release: true,
       submit_for_review: false
+    )
+
+    # stash git changes
+    reset_git_repo(force: true)
+
+    # display a notification
+    notification(
+      title: "Radio Rasclat iOS",
+      subtitle: "Production Release",
+      message: "A new version (#{version}) has been submitted to the App Store.",
+      content_image: "https://radio-rasclat.com/assets/images/radio-rasclat-logo.png"
     )
   end
 end
