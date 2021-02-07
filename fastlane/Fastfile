@@ -55,7 +55,7 @@ platform :ios do
     ensure_git_status_clean
 
     # adds beta badge to app icon
-    add_badge
+    add_badge(dark: true)
 
     # test app
     test
@@ -69,6 +69,9 @@ platform :ios do
 
     # upload beta version to testflight
     upload_to_testflight
+
+    # stash git changes
+    reset_git_repo(force: true)
   end
 
   desc "Push a new release build to App Store Connect"
