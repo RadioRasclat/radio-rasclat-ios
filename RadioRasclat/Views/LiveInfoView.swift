@@ -59,14 +59,25 @@ struct LiveInfoView: View {
                 .fontWeight(.medium)
                 .foregroundColor(.secondary)
             
-            URLImage(url: liveInfo.imagePath, type: "movie")
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(10)
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 2))
-                .shadow(radius: 10)
-                .padding(.trailing, 2)
-                .padding(.bottom, 15)
+            if liveInfo.imagePath.isEmpty {
+                URLImage(url: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/images/rr-logo-grain_600x.jpg", type: "movie")
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 2))
+                    .shadow(radius: 10)
+                    .padding(.trailing, 2)
+                    .padding(.bottom, 15)
+            } else {
+                URLImage(url: liveInfo.imagePath, type: "movie")
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color(.sRGB, red: 150 / 255, green: 150 / 255, blue: 150 / 255, opacity: 0.2), lineWidth: 2))
+                    .shadow(radius: 10)
+                    .padding(.trailing, 2)
+                    .padding(.bottom, 15)
+            }
             
             HStack {
                 Button(action: {
