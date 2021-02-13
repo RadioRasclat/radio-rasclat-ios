@@ -139,17 +139,17 @@ platform :ios do
     )    
 
     # publish a new release into Github
-    github_release = set_github_release(
-      api_token: ENV["GITHUB_TOKEN"],
-      repository_name: "RadioRasclat/radio-rasclat-ios",
-      name: "RadioRasclat_iOS_#{version}",
-      tag_name: "#{version}",
-      description: read_changelog(
-        changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
-        section_identifier: "[#{version}]"	# Specify what section to read
-      ),
-      commitish: "master"
-    )
+    # github_release = set_github_release(
+    #  api_token: ENV["GITHUB_TOKEN"],
+    #  repository_name: "RadioRasclat/radio-rasclat-ios",
+    #  name: "RadioRasclat_iOS_#{version}",
+    #  tag_name: "#{version}",
+    #  description: read_changelog(
+    #    changelog_path: './CHANGELOG.md',	# Specify path to CHANGELOG.md
+    #    section_identifier: "[#{version}]"	# Specify what section to read
+    #  ),
+    #  commitish: "master"
+    #)
 
     # Set changelog on App Store Connect
     set_changelog(
