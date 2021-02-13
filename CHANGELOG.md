@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.1.1] - 2021-02-13
+
+R:ADIO R:EIN is back with a new radio program: "Blurring Boundaries". During the tour week we offer you talks, readings, interviews, podcasts and music that cross borders.
+
+We regularly update Radio Rasclat to keep the beats pumping and we're proud to present you the first big update for our iOS-App. In this version:
+
+### Fixes
+
+- Fixes a bug where the app crashed, if no live image was set.
+
 ## [3.1.0] - 2021-01-30
 
 We regularly update Radio Rasclat to keep the beats pumping and we're proud to present you the first big update for our iOS-App. In this version:
@@ -56,6 +66,7 @@ We present Radio Rasclat Web in version four. The entire application has been en
 
 Wanna participate, have questions or suggestions? Head over to radio-rasclat.com/about and leave us a note via mail (office@radio-rasclat.com). We're always listening.
 
+[3.1.1]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.1.1
 [3.1.0]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.1.0
 [3.0.3]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.3
 [3.0.2]: https://github.com/RadioRasclat/radio-rasclat-ios/releases/tag/3.0.2
