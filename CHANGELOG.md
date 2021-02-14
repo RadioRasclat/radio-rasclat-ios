@@ -4,7 +4,7 @@
 
 R:ADIO R:EIN is back with a new radio program: "Blurring Boundaries". During the tour week we offer you talks, readings, interviews, podcasts and music that cross borders.
 
-We regularly update Radio Rasclat to keep the beats pumping and we're proud to present you the first big update for our iOS-App. In this version:
+We regularly update Radio Rasclat to keep the beats pumping. In this version:
 
 ### Fixes
 
