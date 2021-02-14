@@ -163,9 +163,8 @@ platform :ios do
     # Finally, publish the .ipa on App Store Connect
     deliver(
       overwrite_screenshots: true,
-      build_number: "#{number_of_commits}",
       force: true,
-      automatic_release: true,
+      automatic_release: false,
       submit_for_review: false
     )
 
