@@ -19,7 +19,7 @@ class WebService {
         config.urlCache = URLCache.shared
         let session = URLSession(configuration: config)
         
-        let urlRequest = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 15.0)
+        let urlRequest = URLRequest(url: url, timeoutInterval: 15.0)
         let task = session.dataTask(with: urlRequest) { data, response, error in
                         
             // Check for errors
