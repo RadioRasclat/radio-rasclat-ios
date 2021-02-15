@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.1.2] - 2021-02-15
+
+R:ADIO R:EIN is back with a new radio program: "Blurring Boundaries". During the tour week we offer you talks, readings, interviews, podcasts and music that cross borders.
+
+We regularly update Radio Rasclat to keep the beats pumping. In this version:
+
+### Fixes
+
+- Fixes an issue where the current applicable schedule could not be loaded.
+
 ## [3.1.1] - 2021-02-13
 
 R:ADIO R:EIN is back with a new radio program: "Blurring Boundaries". During the tour week we offer you talks, readings, interviews, podcasts and music that cross borders.
