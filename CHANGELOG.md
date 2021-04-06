@@ -1,5 +1,23 @@
 # Changelog
 
+## [3.1.3] - 2021-04-07
+
+We regularly update Radio Rasclat to keep the beats pumping. In this version:
+
+### New
+
+- "More" tab with a new about section.
+- Localization in German.
+
+### Changes
+
+- Bring back the default Radio Rasclat logo.
+- Rename the app on homescreen to "Rasclat".
+
+### Fixes
+
+- Fixes an issue where the schedule list wasn't displayed in full width.
+
 ## [3.1.2] - 2021-02-15
 
 R:ADIO R:EIN is back with a new radio program: "Blurring Boundaries". During the tour week we offer you talks, readings, interviews, podcasts and music that cross borders.
