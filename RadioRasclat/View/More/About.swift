@@ -12,7 +12,7 @@ struct About: View {
         VStack(alignment: .leading) {
 
             Text("\(Constants.appVersionString)")
-                .padding()
+                .padding(.bottom, 15)
             VStack(alignment: .leading, spacing: 10) {
                 Text("Dependencies:")
                     .foregroundColor(.gray)
@@ -30,9 +30,7 @@ struct About: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 12))
             }
-            .padding()
         }
-        .padding()
     }
 }
 
