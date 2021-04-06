@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  RadioRasclat
+
+  Created by Domenik Töfflinger on 07.04.21.
+  
+*/
+
+"Artists" = "Künstler";
+
+"Broadcasts" = "Aufnahmen";
+"More" = "Mehr";
+"Schedule" = "Programm";
+
+"Monday" = "Montag";
+"Tuesday" = "Dienstag";
+"Wednesday" = "Mittwoch";
+"Thursday" = "Donnerstag";
+"Friday" = "Freitag";
+"Saturday" = "Samstag";
+"Sunday" = "Sonntag";
+
+"Now on Radio Rasclat!" = "Jetzt bei Radio Rasclat!";
