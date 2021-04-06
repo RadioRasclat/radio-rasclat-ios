@@ -49,15 +49,18 @@ struct LiveInfoView: View {
     var body: some View {
         
         VStack(alignment: .leading, spacing: 10, content: {
-            Text(Image(systemName: "antenna.radiowaves.left.and.right"))
-                .font(.caption)
-                .fontWeight(.medium)
-                .foregroundColor(.secondary) +
-                
-            Text(" Now on Radio Rasclat!")
-                .font(.caption)
-                .fontWeight(.medium)
-                .foregroundColor(.secondary)
+            
+            HStack(spacing: 5) {
+                Text(Image(systemName: "antenna.radiowaves.left.and.right"))
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .foregroundColor(.secondary)
+                    
+                Text("Now on Radio Rasclat!")
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .foregroundColor(.secondary)
+            }
             
             if liveInfo.imagePath.isEmpty {
                 URLImage(url: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/images/rr-logo-grain_600x.jpg", type: "movie")
