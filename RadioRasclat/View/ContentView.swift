@@ -23,7 +23,7 @@ struct ContentView: View {
             RecordingListView()
                 .tabItem {
                     Image(systemName: "music.note.list")
-                    Text("Recordings")
+                    Text("Broadcasts")
                 }
             ScheduleListView()
                 .tabItem {
@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
             MoreView()
                 .tabItem {
-                    Image(systemName: "ellipsis")
+                    Image(systemName: "gear")
                     Text("More")
                 }
         }
