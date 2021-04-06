@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ArtistsView: View {
+struct RecordingDetailArtistsView: View {
     
     var artists: [Artist]
     
@@ -33,8 +33,8 @@ struct ArtistsView: View {
     }
 }
 
-struct ArtistsView_Previews: PreviewProvider {
+struct RecordingDetailArtistsView_Previews: PreviewProvider {
     static var previews: some View {
-        ArtistsView(artists: [Artist.example])
+        RecordingDetailArtistsView(artists: [Artist.example])
     }
 }

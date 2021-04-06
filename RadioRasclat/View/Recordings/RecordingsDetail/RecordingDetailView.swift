@@ -52,7 +52,7 @@ struct RecordingDetailView: View {
                     .padding(EdgeInsets(top: 20, leading: 15, bottom: 0, trailing: 0))
                 
                 if recordingDetailVM.fetchedRecording?.artists != nil {
-                    ArtistsView(artists: (recordingDetailVM.fetchedRecording?.artists)!)
+                    RecordingDetailArtistsView(artists: (recordingDetailVM.fetchedRecording?.artists)!)
                         .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
                 }
                 

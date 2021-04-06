@@ -30,6 +30,11 @@ struct ContentView: View {
                     Image(systemName: "calendar")
                     Text("Schedule")
                 }
+            MoreView()
+                .tabItem {
+                    Image(systemName: "ellipsis")
+                    Text("More")
+                }
         }
         .accentColor(Color("AccentColor"))
         .popup(isBarPresented: $isPopupPresented, isPopupOpen: $isPopupOpen) {
