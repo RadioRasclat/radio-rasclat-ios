@@ -81,6 +81,7 @@ struct ScheduleListView: View {
                         ScheduleDayView(scheduleDay: scheduleVM.schedule!.sunday)
                     }
                 }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
                 .padding(15)
             }
             .fixFlickering()
