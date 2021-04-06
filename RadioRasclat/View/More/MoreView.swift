@@ -16,9 +16,10 @@ struct MoreView: View {
                 VStack {
                     About()
                 }
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .padding(5)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+                .padding(15)
             }
+            .fixFlickering()
             .navigationBarTitle("More")
 
         }

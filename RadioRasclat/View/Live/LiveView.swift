@@ -22,15 +22,16 @@ struct LiveView: View {
                                         
                     LiveInfoView(liveInfo: liveVM.liveInfo ?? LiveInfo(name: "OFF AIR", description: "Radio Rasclat will come back soon!", url: "OFF AIR", imagePath: "https://s3.eu-central-1.wasabisys.com/prod.radiorasclat.uploads/20201104/images/rr-logo-grain_600x.jpg", starts: "", ends: ""))
                     
-                    Divider()
+                    // Divider()
                     
                     // NextUpInfoView()
                     
-                    Spacer()
+                    // Spacer()
                     
                 }
                 .padding(15)
             }
+            .fixFlickering()
             .navigationBarTitle("Live")
         }
     }

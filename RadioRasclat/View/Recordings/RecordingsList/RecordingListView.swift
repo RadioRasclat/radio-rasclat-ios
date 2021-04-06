@@ -38,6 +38,7 @@ struct RecordingListView: View {
                             }
                         }
                     }
+                    .fixFlickering()
                 }
             }
             .navigationBarTitle("Broadcasts")

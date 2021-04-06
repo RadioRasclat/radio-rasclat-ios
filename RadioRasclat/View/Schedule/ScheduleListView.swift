@@ -83,6 +83,7 @@ struct ScheduleListView: View {
                 }
                 .padding(15)
             }
+            .fixFlickering()
             .navigationBarTitle("Schedule")
         }
     }

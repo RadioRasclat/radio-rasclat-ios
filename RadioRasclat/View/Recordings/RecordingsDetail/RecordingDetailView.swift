@@ -58,6 +58,7 @@ struct RecordingDetailView: View {
                 
             }
         }
+        .fixFlickering()
         .navigationBarTitle(recording.title, displayMode: .inline)
     }
 }
