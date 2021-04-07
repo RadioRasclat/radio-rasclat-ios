@@ -28,7 +28,7 @@ class RadioRasclatUITests: XCTestCase {
         app.launch()
         
         let tabBar = app.tabBars["Tab Bar"]
-        tabBar.buttons["Recordings"].tap()
+        tabBar.buttons["Broadcasts"].tap()
         
         let scrollViewsQuery = app.scrollViews
         scrollViewsQuery.otherElements.buttons.firstMatch.tap()

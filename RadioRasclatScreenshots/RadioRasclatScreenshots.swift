@@ -30,14 +30,14 @@ class RadioRasclatScreenshots: XCTestCase {
         
         snapshot("0Live")
         
-        app.tabBars["Tab Bar"].buttons["Recordings"].tap()
+        app.tabBars["Tab Bar"].buttons["Broadcasts"].tap()
         
-        snapshot("1Recordings")
+        snapshot("1Broadcasts")
         
         let scrollViewsQuery = app.scrollViews
         scrollViewsQuery.otherElements.buttons.firstMatch.tap()
         
-        snapshot("2RecordingsDetail")
+        snapshot("2BroadcastsDetail")
         
         app.tabBars["Tab Bar"].buttons["Schedule"].tap()
         
